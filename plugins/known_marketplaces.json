@@ -1,0 +1,26 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/root/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-03-10T04:33:07.803Z"
+  },
+  "voicemode": {
+    "source": {
+      "source": "github",
+      "repo": "mbailey/voicemode"
+    },
+    "installLocation": "/root/.claude/plugins/marketplaces/voicemode",
+    "lastUpdated": "2026-03-09T17:11:46.033Z"
+  },
+  "netskope": {
+    "source": {
+      "source": "github",
+      "repo": "netSkope/claude-skills"
+    },
+    "installLocation": "/root/.claude/plugins/marketplaces/netskope",
+    "lastUpdated": "2026-02-24T13:25:45.299Z"
+  }
+}

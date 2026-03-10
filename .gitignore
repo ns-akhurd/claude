@@ -1,0 +1,41 @@
+# Session conversation history
+projects/
+
+# Per-session task lists
+tasks/
+
+# Debug logs
+debug/
+
+# Telemetry data
+telemetry/
+
+# File edit history (per session)
+file-history/
+
+# Conversation history
+history.jsonl
+
+# Caches (re-generatable)
+cache/
+paste-cache/
+stats-cache.json
+plugins/cache/
+plugins/install-counts-cache.json
+
+# Session/runtime state
+session-env/
+shell-snapshots/
+ide/
+dashboard/
+backups/
+
+# Session plans & todos
+plans/
+todos/
+
+# Dynamic policy (fetched at runtime)
+policy-limits.json
+
+# Contains API keys — NEVER commit
+config.json

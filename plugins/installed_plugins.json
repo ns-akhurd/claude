@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "plugins": {
+    "eng-skills@netskope": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/netskope/eng-skills/1.1.0",
+        "version": "1.1.0",
+        "installedAt": "2026-02-24T13:25:55.487Z",
+        "lastUpdated": "2026-02-24T13:25:55.487Z",
+        "gitCommitSha": "52b312eaa07fa4b1653c42e3a96e79df71dbe792"
+      }
+    ],
+    "clangd-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-09T16:14:17.453Z",
+        "lastUpdated": "2026-03-09T16:14:17.453Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-09T16:14:18.749Z",
+        "lastUpdated": "2026-03-09T16:14:18.749Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-09T16:14:20.035Z",
+        "lastUpdated": "2026-03-09T16:14:20.035Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "gopls-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/gopls-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-09T16:14:21.342Z",
+        "lastUpdated": "2026-03-09T16:14:21.342Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "lua-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/lua-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-09T16:14:22.597Z",
+        "lastUpdated": "2026-03-09T16:14:22.597Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ],
+    "voicemode@voicemode": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/voicemode/voicemode/8.5.0p0",
+        "version": "8.5.0p0",
+        "installedAt": "2026-03-09T17:11:41.791Z",
+        "lastUpdated": "2026-03-09T17:11:41.791Z",
+        "gitCommitSha": "02677a962004bd7e7877e14e780fff5bf2be80c0"
+      }
+    ]
+  }
+}

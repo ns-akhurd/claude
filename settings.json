@@ -1,0 +1,55 @@
+{
+  "awsAuthRefresh": "aws sso login --profile NSBedrockViewer-242201274356",
+  "env": {
+    "AWS_PROFILE": "NSBedrockViewer-242201274356",
+    "CLAUDE_CODE_USE_BEDROCK": "1",
+    "AWS_REGION": "us-east-1",
+    "ENABLE_LSP_TOOL": "1",
+    "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin"
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "Task"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(rm -rf *)",
+      "Bash(rmdir *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean -f*)",
+      "Bash(git branch -D *)",
+      "Bash(dd *)",
+      "Bash(mkfs*)",
+      "Bash(shutdown*)",
+      "Bash(reboot*)",
+      "Bash(halt*)",
+      "Bash(chmod 777 *)",
+      "Bash(> /etc/*)"
+    ],
+    "defaultMode": "dontAsk"
+  },
+  "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "/bin/bash /root/.claude/statusline-robbyrussell.sh"
+  },
+  "enabledPlugins": {
+    "voicemode@voicemode": false,
+    "eng-skills@netskope": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "lua-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "high"
+}
