@@ -70,6 +70,16 @@
         "lastUpdated": "2026-03-09T17:11:41.791Z",
         "gitCommitSha": "02677a962004bd7e7877e14e780fff5bf2be80c0"
       }
+    ],
+    "slack@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/slack/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-12T17:22:27.536Z",
+        "lastUpdated": "2026-03-12T17:22:27.536Z",
+        "gitCommitSha": "5a4ffe5ef353c1893eb0f1762a9071bebeeb7fde"
+      }
     ]
   }
 }

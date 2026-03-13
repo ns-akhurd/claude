@@ -79,6 +79,10 @@ Rules:
 4. For overlapping use-cases (e.g. "research then implement"): create BOTH docs; fill analysis first, then impl
 5. NEVER ask the user whether to create the document — just create it
 
+**2.7 "No Code Yet" Guard** — When iterating on any plan before implementation: MUST include an explicit "do not write any code yet" instruction in every planning prompt until the written plan is reviewed and approved by the user. NEVER start implementation without explicit user sign-off on the plan document.
+
+**2.8 Hooks for Deterministic Enforcement** — CLAUDE.md instructions are advisory; hooks are deterministic. MUST use hooks (not CLAUDE.md) for any action that must happen on every invocation without exception (e.g., lint after edit, block writes to sensitive paths, run tests before commit). NEVER rely on CLAUDE.md instructions alone to enforce required actions.
+
 ## 3. Communication & Permissions
 
 **3.1 No Re-Asking Permission** — If user already approved an action pattern and requests the same kind of follow-up: MUST find AND fix in one pass. NEVER re-list findings and ask "Want me to fix these?"
@@ -89,15 +93,40 @@ Rules:
 3. MUST write rules for yourself that prevent the same mistake from recurring
 4. MUST review `tasks/lessons.md` at the start of each session for the relevant project
 
-## 4. Parallelism & Context
+## 4. Parallelism & Subagent Management
 
-**4.1 Subagents** — MUST use subagents liberally to keep main context window clean.
+**4.1 When to Spawn Subagents** — MUST use subagents for:
 - Multiple independent subtasks → launch parallel subagents in ONE message
 - Large content (logs, many files, broad search) → delegate to protect main context
-- ONE task per subagent for focused execution — NEVER overload a single subagent with unrelated work
-- NOT for: single reads, one grep, simple lookups
+- Any exploration that may return >200 lines of tool output
+- Work that benefits from isolated context (separate concern, separate codebase area)
+- NOT for: single reads, one grep, simple lookups, or tasks with <3 tool calls
 
-**4.2 Background Notifications** — If already retrieved and used: respond in one sentence. NEVER re-read, re-summarize, or act again.
+**4.2 Spawning Discipline** — MUST follow these rules when creating subagents:
+1. ONE task per subagent — NEVER overload a single subagent with unrelated work
+2. MUST specify in the prompt: (a) exact goal, (b) exact files/patterns to examine, (c) exact output format expected, (d) constraints/boundaries
+3. MUST set `max_turns` proportional to task complexity: simple lookup=3, exploration=10, code gen=15
+4. MUST select model tier per Rule 8.4: haiku for reads/grep/explore, sonnet for code gen/review, opus only for complex architecture
+5. MUST launch ALL independent subagents in ONE tool-call message — NEVER spawn sequentially when parallel is possible
+6. NEVER duplicate work between subagents — each subagent MUST have a non-overlapping scope
+7. NEVER spawn a subagent for work the main agent has already completed or is mid-way through
+
+**4.3 Validating Subagent Completions** — AFTER every subagent returns:
+1. MUST check the result addresses the original goal — if partial or off-target, either fix inline or re-delegate with corrected prompt
+2. MUST verify factual claims from subagents before presenting to user — subagents can hallucinate file paths, line numbers, or code details
+3. MUST NOT blindly paste subagent output to user — synthesize, deduplicate, and present coherently
+4. IF subagent returns an error or empty result: MUST diagnose (wrong path? wrong pattern? tool failure?) and retry with corrected parameters — NEVER silently drop failed subagent results
+5. IF multiple subagents return overlapping or conflicting findings: MUST reconcile before presenting — state which is authoritative and why
+
+**4.4 Subagent Anti-Patterns** — NEVER do these:
+- NEVER spawn a subagent then immediately do the same work yourself in the main context
+- NEVER spawn >5 subagents in a single message without clear justification (diminishing returns, context thrashing)
+- NEVER use subagents as a delay tactic — if you already know the answer, answer directly
+- NEVER re-spawn a failed subagent with identical parameters — adjust the prompt, scope, or model first
+
+**4.5 Background Notifications** — If already retrieved and used: respond in one sentence. NEVER re-read, re-summarize, or act again.
+
+**4.6 Fresh-Context Code Review** — For non-trivial code review: MUST use a separate new Claude session with clean context — NEVER ask the session that wrote the code to also review it. A fresh session is unbiased and catches issues the authoring session rationalizes away.
 
 ## 5. Code & Design Quality
 
@@ -121,6 +150,11 @@ Rules:
 
 **5.5 Label Computed Values** — In user-facing UI: MUST label computed/estimated metrics (e.g., "~est.", "calc."). NEVER present computed values as exact system measurements.
 
+**5.7 Parallel Component Symmetry** — IF adding a feature, parameter, or behavioural change to one component in a set of functionally parallel components (engines, adapters, services, plugins, clients):
+1. MUST immediately identify ALL sibling components in that set
+2. MUST apply the same change to ALL siblings in the SAME pass — NEVER wait for the user to ask "same for X?"
+3. MUST document any sibling where the change intentionally does NOT apply, and state the reason explicitly
+
 **5.6 Demand Elegance (Balanced)** — For non-trivial changes:
 - MUST pause and ask "is there a more elegant way?" before finalizing
 - If a fix feels hacky: MUST apply the rule "Knowing everything I know now, implement the elegant solution"
@@ -136,6 +170,11 @@ Rules:
 - NEVER submit without: all URLs fetched, all claims cited, failed URLs flagged, reference table present
 
 **6.2 Complete Data Display** — MUST show ALL items. NEVER truncate to "top N". If >1000 items → write to file. NEVER summarize when asked to display.
+
+IF the data has multiple dimensions (e.g., N patterns × M row sizes, N engines × M configs):
+1. MUST show ALL N×M combinations — NEVER pick "representative" rows or columns as a substitute
+2. NEVER produce a single summary table that collapses a dimension; produce per-group subtables if needed
+3. Self-check before submitting any report table: "Have I shown every value of every dimension?" If NO, expand before sending.
 
 **6.3 Completion Notices** — After creating/updating a file: "Done. See `<path>`." NEVER repeat or summarize what you just wrote.
 
@@ -207,6 +246,8 @@ NEVER use `opus` for search/read/reformat tasks.
 
 **8.9 Scoped Delegation** — Define tight subagent scope: exact files, exact grep pattern, exact output format. Set `max_turns` for bounded tasks. Read-only exploration → `subagent_type: "Explore"`.
 
+**8.10 Preserve Compaction State** — For multi-session tasks: MUST add compaction-preservation instructions to CLAUDE.md (e.g., `"When compacting, always preserve the full list of modified files and any test commands"`). NEVER rely on default compaction to preserve task-critical context.
+
 ## 9. Shell Scripts on Windows/WSL
 
 **9.1 Strip CRLF** — After writing any `.sh` file while CWD is on Windows-mounted fs (`/mnt/c/...`):
@@ -246,10 +287,37 @@ NEVER skip — CRLF causes `bash: set: -: invalid option` and silent runtime fai
 
 **10.4** Use Grep/Glob only for text/pattern searches (comments, strings, config values) where LSP doesn't apply.
 
-## 11. Core Principles
+## 11. Memory
 
-**11.1 Simplicity First** — MUST make every change as simple as possible. Impact the minimal code necessary. NEVER introduce complexity that isn't required by the current task.
+**11.0 Memory Directory** — Project memory lives at `.claude/projects/<project>/memory/`. `MEMORY.md` is auto-loaded each session (truncated after line 200 — keep it tight). Store deep notes in topic files (e.g., `architecture.md`, `patterns.md`) and link from `MEMORY.md`.
 
-**11.2 No Laziness** — MUST find root causes. NEVER apply temporary fixes or workarounds. Hold senior developer standards on every change — no shortcuts, no "good enough for now."
+**11.1 Read Memory at Session Start** — MUST read `MEMORY.md` on the first tool call of every session for the active project. NEVER skip — it contains confirmed patterns, decisions, and past mistakes.
 
-**11.3 Minimal Impact** — Changes MUST touch only what is necessary. NEVER refactor surrounding code, rename unrelated symbols, or "clean up while you're in there" unless explicitly asked.
+**11.2 Write Memory After Significant Work** — MUST update memory after any of:
+- A non-trivial architectural or design decision is made
+- A recurring pattern or convention is confirmed (e.g., build flags, naming, test approach)
+- A bug root-cause is found and fixed
+- A user correction or preference is captured (also write to `CLAUDE.md` per Rule 3.2)
+- A new component, file layout, or integration is understood
+
+**11.3 Memory Write Rules:**
+1. MUST update existing entries — NEVER duplicate what's already there
+2. MUST delete or correct entries that turn out to be wrong
+3. NEVER write session-specific state (current task, in-progress work) — memory is persistent facts only
+4. Topic files for depth; `MEMORY.md` for index + quick-reference only
+5. NEVER leave `MEMORY.md` >200 lines — summarise or move to topic files
+
+**11.4 Proactive Triggers** — MUST write to memory without being asked when:
+- User says "always", "never", "from now on", or corrects repeated behavior
+- A build/test/config trick is discovered that will save time next session
+- An important file path, binary location, or environment quirk is confirmed
+
+**11.5 Learning Digest** — A continuously updated harvest of Claude/AI best practices lives at `~/.claude/learning/digest.md`. MUST consult this file when looking for productivity improvements, workflow patterns, or prompting techniques. Populated by `/learn-web` (on-demand) and a weekly Monday cron. HIGH-confidence tips are auto-promoted into this file as new rules.
+
+## 12. Core Principles
+
+**12.1 Simplicity First** — MUST make every change as simple as possible. Impact the minimal code necessary. NEVER introduce complexity that isn't required by the current task.
+
+**12.2 No Laziness** — MUST find root causes. NEVER apply temporary fixes or workarounds. Hold senior developer standards on every change — no shortcuts, no "good enough for now."
+
+**12.3 Minimal Impact** — Changes MUST touch only what is necessary. NEVER refactor surrounding code, rename unrelated symbols, or "clean up while you're in there" unless explicitly asked.
