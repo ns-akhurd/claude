@@ -39,3 +39,7 @@ policy-limits.json
 
 # Contains API keys — NEVER commit
 config.json
+.credentials.json
+
+# MCP auth cache
+mcp-needs-auth-cache.json
