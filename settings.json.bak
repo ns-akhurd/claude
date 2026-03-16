@@ -40,30 +40,6 @@
     "defaultMode": "dontAsk"
   },
   "model": "sonnet",
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash|WebFetch|Read|Grep|Agent|Task|mcp__plugin_context-mode_context-mode__ctx_execute|mcp__plugin_context-mode_context-mode__ctx_execute_file|mcp__plugin_context-mode_context-mode__ctx_batch_execute",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.21/hooks/pretooluse.mjs"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"/root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/sessionstart.mjs\""
-          }
-        ]
-      }
-    ]
-  },
   "statusLine": {
     "type": "command",
     "command": "/bin/bash /root/.claude/statusline-robbyrussell.sh"
@@ -77,9 +53,7 @@
     "gopls-lsp@claude-plugins-official": true,
     "lua-lsp@claude-plugins-official": true,
     "slack@claude-plugins-official": true,
-    "context-mode@context-mode": true,
-    "superpowers@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true
+    "context-mode@context-mode": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {

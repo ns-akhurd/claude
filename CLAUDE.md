@@ -32,6 +32,11 @@ Post-edit self-check: verified claims vs code? code blocks executable? lists/tab
 2. MUST number every requirement; map each to where target addresses it (or note missing)
 3. NEVER skim or start writing findings before finishing the full read; user MUST NOT need "review again" more than once
 
+**1.4 Evidence Provenance for Internal Claims** — When asserting how code behaves, what a system produces, or what data shows:
+1. MUST explicitly state the evidence source: "confirmed from actual output at `<path>`", "read from source code at `<file>:<line>`", or "inferred from code structure"
+2. MUST prefer actual output/data (CSV, logs, test results) over code reading when both are available — code may not execute as written
+3. NEVER present code-reading inferences as confirmed facts without labeling them: "based on code at X" or "code shows Y (not empirically confirmed)"
+
 **1.3 Ripple-Effect Checking** — After ANY fix to command/flag/path/CLI syntax/behavioral contract:
 1. IMMEDIATELY grep entire repo for all references to the changed element; fix all broken refs in SAME pass
 2. For semantic changes: grep for concept name and check every occurrence for semantic consistency — NEVER rely solely on literal string grep
@@ -321,3 +326,31 @@ NEVER skip — CRLF causes `bash: set: -: invalid option` and silent runtime fai
 **12.2 No Laziness** — MUST find root causes. NEVER apply temporary fixes or workarounds. Hold senior developer standards on every change — no shortcuts, no "good enough for now."
 
 **12.3 Minimal Impact** — Changes MUST touch only what is necessary. NEVER refactor surrounding code, rename unrelated symbols, or "clean up while you're in there" unless explicitly asked.
+
+## 13. Slack
+
+**13.1 Message Order** — ALWAYS pass `oldest`/`limit` or equivalent params to read Slack channel messages in descending time order (most recent first). NEVER read a channel without fetching the most recent messages first.
+
+## 14. Grill Mode (`/grill`)
+
+**14.1 Scope** — When `/grill` is invoked, MUST ruthlessly interrogate ALL output produced in the current session (code, plans, documents, configs). NEVER accept anything at face value. NEVER let vague or "sounds right" answers pass.
+
+**14.2 Mandatory Read** — MUST read EVERY file created or modified in the session BEFORE grilling. NEVER grill from memory, summaries, or cached context.
+
+**14.3 Six-Lens Interrogation** — MUST apply ALL six question lenses (WHAT, WHY, HOW, WHERE, WHEN, WHICH) to every artifact. NEVER skip a lens. NEVER skip a file.
+
+**14.4 Severity Tagging** — Every finding MUST be tagged: `[CRITICAL]`, `[GAP]`, `[UNCLEAR]`, `[SMELL]`, or `[QUESTION]`. NEVER use softened language ("might be an issue"). State what is wrong and why.
+
+**14.5 Evidence-Based** — MUST verify every claim against actual code on disk. MUST run commands or read files to confirm. NEVER trust what was "intended."
+
+**14.6 Structured Output** — MUST produce a numbered findings table (`#`, `Severity`, `File/Section`, `Finding`, `Action Required`) and a final verdict: **PASS**, **CONDITIONAL PASS**, or **FAIL** (CRITICAL findings present → FAIL, no exceptions).
+
+**14.7 No Rubber-Stamping** — NEVER say "looks good" without evidence. NEVER skip files. NEVER accept "it should work" — demand proof. If no issues found, look harder — every non-trivial output has at least one gap.
+
+**14.8 Follow-Up** — MUST surface `[QUESTION]` items directly to the user with pointed questions. NEVER assume answers on behalf of the user.
+
+**14.9 Caveat Propagation Check** — For every limitation, caveat, or known-bad finding identified anywhere in the document: MUST grep every recommendation table, conclusion, summary, and strategy section for references to the same concept. NEVER pass if a limitation is flagged in one section while the same concept is recommended without caveat in another section. This is `[CRITICAL]` — inconsistency between limitation and recommendation sections is a correctness defect, not a style issue.
+
+**14.10 Stale Rationale Check** — For every explanation or rationale that cites a specific number, range, mechanism, or causal reason: MUST verify the explanation is consistent with the current computed/measured values present in the same document. Any explanation that cites a number or mechanism that does not match current data is `[CRITICAL]`. NEVER assume an explanation was updated when the values it describes were changed.
+
+**14.11 Validation Section Self-Verification** — For every claim, formula, or count asserted in a checklist/validation/post-generation section: MUST independently verify the claim against the actual document or source data — NEVER accept a checklist item as passing without confirming it. For every computed ratio or speedup formula: verify the numerator/denominator direction matches the winner stated in adjacent prose (e.g., if prose says "HS faster", ratio MUST be HS/cuDF, not cuDF/HS). Errors here are `[GAP]` minimum, `[CRITICAL]` if the formula inverts the stated conclusion.

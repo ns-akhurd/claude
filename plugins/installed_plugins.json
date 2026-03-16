@@ -80,6 +80,36 @@
         "lastUpdated": "2026-03-12T17:22:27.536Z",
         "gitCommitSha": "5a4ffe5ef353c1893eb0f1762a9071bebeeb7fde"
       }
+    ],
+    "context-mode@context-mode": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/context-mode/context-mode/1.0.21",
+        "version": "1.0.21",
+        "installedAt": "2026-03-13T16:07:56.246Z",
+        "lastUpdated": "2026-03-16T05:26:49.775Z",
+        "gitCommitSha": "162d9851ea6cd0723a1515788770f0a23fbcbe2b"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.2",
+        "version": "5.0.2",
+        "installedAt": "2026-03-14T14:27:00.501Z",
+        "lastUpdated": "2026-03-14T14:27:00.501Z",
+        "gitCommitSha": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90"
+      }
+    ],
+    "claude-md-management@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-14T14:27:57.799Z",
+        "lastUpdated": "2026-03-14T14:27:57.799Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
     ]
   }
 }
