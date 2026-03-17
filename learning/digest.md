@@ -39,27 +39,27 @@ Each entry:
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/best-practices)
 **Tip:** Use `/btw` for side questions that shouldn't enter conversation history — the answer appears in a dismissible overlay and never consumes context.
 **Confidence:** HIGH
-**Status:** pending
+**Status:** [noted 2026-03-17 — CLI feature, no CLAUDE.md change needed; use when needing quick answers without polluting context]
 
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/memory)
 **Tip:** Use CLAUDE.md `@path/to/file` import syntax to modularize instructions — reference README, package.json, or workflow docs directly rather than duplicating their content in CLAUDE.md.
 **Confidence:** HIGH
-**Status:** pending
+**Status:** [noted 2026-03-17 — already applied in .claude/CLAUDE.md via @pr-conventions.md, @CLAUDE_CODE_BEST_PRACTICES.md, @USER_PREFERENCES.md]
 
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/memory)
 **Tip:** Use `.claude/rules/` directory with `paths:` YAML frontmatter to scope rules to specific file types (e.g., only load API rules when editing `src/api/**/*.ts`) — reduces noise and saves context.
 **Confidence:** HIGH
-**Status:** pending
+**Status:** [deferred 2026-03-17 — no file-type-specific rules needed yet; revisit if adding Go/Python modules]
 
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/memory)
 **Tip:** Run `/init` in any project to auto-generate a starter CLAUDE.md — Claude analyzes build systems, test frameworks, and code patterns to produce a solid starting file to refine.
 **Confidence:** HIGH
-**Status:** pending
+**Status:** [noted 2026-03-17 — N/A for dataplane (CLAUDE.md already established); apply to new projects]
 
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/best-practices)
 **Tip:** Use `claude --continue` to resume the most recent session or `claude --resume` to pick from recent sessions — treat sessions like branches for different workstreams.
 **Confidence:** HIGH
-**Status:** pending
+**Status:** [noted 2026-03-17 — added as workflow tip to MEMORY.md]
 
 ### [2026-03-13] Source: Anthropic Official Docs (code.claude.com/docs/en/best-practices)
 **Tip:** For large features, have Claude interview you first using `AskUserQuestion` tool before writing specs — it surfaces unknowns about edge cases, UX, and tradeoffs you haven't considered; then start a fresh session to implement.

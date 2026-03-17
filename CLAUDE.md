@@ -88,7 +88,17 @@ Rules:
 
 **2.8 Hooks for Deterministic Enforcement** — CLAUDE.md instructions are advisory; hooks are deterministic. MUST use hooks (not CLAUDE.md) for any action that must happen on every invocation without exception (e.g., lint after edit, block writes to sensitive paths, run tests before commit). NEVER rely on CLAUDE.md instructions alone to enforce required actions.
 
+**2.9 "Should" is Banned** — NEVER say "this should work", "should be correct", or "should pass":
+- After any fix: MUST run the relevant binary/test and show actual output proving correctness
+- "Should" is a hedge that means the work was not verified — it is not acceptable
+- Evidence before assertion, always
+
 ## 3. Communication & Permissions
+
+**3.0 Ask Before Assuming** — When an instruction is ambiguous (target file unclear, scope unclear, wording unspecified):
+- MUST ask a single focused clarifying question BEFORE taking any action
+- NEVER infer the answer and proceed — assumptions waste effort and create unwanted changes
+- Example: "update claude instructions" → ask "Which file — project CLAUDE.md, global ~/.claude/CLAUDE.md, or both?" before editing anything
 
 **3.1 No Re-Asking Permission** — If user already approved an action pattern and requests the same kind of follow-up: MUST find AND fix in one pass. NEVER re-list findings and ask "Want me to fix these?"
 
@@ -166,6 +176,11 @@ Rules:
 - NEVER apply elegance checks to simple, obvious fixes — do not over-engineer
 - MUST challenge your own work before presenting it to the user
 
+**5.8 Grep Before Add** — Before writing any new function, constant, or data structure:
+- MUST grep the codebase for existing similar implementations first
+- If one exists: extend or reuse it — NEVER create a near-duplicate
+- Duplicate code is a defect, not a shortcut
+
 ## 6. Documentation & Reports
 
 **6.1 Citation & Link Validation** — In any report/research doc with external sources:
@@ -226,6 +241,11 @@ DO NOT declare a deployment guide complete without checking all 9 items above.
 - MUST point at logs, errors, and failing tests, then resolve them without prompting the user
 - MUST fix failing CI tests without being told how — zero context switching required from the user
 - NEVER say "I found the issue, would you like me to fix it?" — fix it immediately
+
+**7.5 Two-Attempt Limit** — If the same fix, test strategy, or grep pattern fails twice:
+- MUST STOP immediately — NEVER attempt a third retry with the same approach
+- MUST use `AskUserQuestion` to surface: (1) what was tried, (2) what failed, (3) what alternatives exist
+- Looping on a broken approach wastes time and signals a wrong mental model — escalate instead
 
 ## 8. Token Efficiency
 
@@ -291,6 +311,10 @@ NEVER skip — CRLF causes `bash: set: -: invalid option` and silent runtime fai
 **10.3** After every file edit, MUST check LSP diagnostics via the active plugin; fix any type errors or missing imports in the same turn before declaring done.
 
 **10.4** Use Grep/Glob only for text/pattern searches (comments, strings, config values) where LSP doesn't apply.
+
+**10.5 Never Guess Signatures** — Before calling any function not read in this session:
+- MUST use `goToDefinition` (LSP) or Read the header to confirm parameter order, types, and return value
+- NEVER guess or infer a signature from a call site — wrong guesses compile silently and fail at runtime
 
 ## 11. Memory
 
