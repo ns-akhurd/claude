@@ -108,6 +108,11 @@ Rules:
 3. MUST write rules for yourself that prevent the same mistake from recurring
 4. MUST review `tasks/lessons.md` at the start of each session for the relevant project
 
+**3.3 Tool Denial in Auto-Approve Mode** — When a tool call is denied while running in "don't ask" (auto-approve) mode:
+  - MUST immediately use `AskUserQuestion` to surface the denial and ask the user for explicit permission before proceeding
+  - NEVER silently skip, ignore, work around, or continue past a denied action without user acknowledgment
+  - State clearly: which tool was denied, what action it would have taken, and what permission is needed to continue
+
 ## 4. Parallelism & Subagent Management
 
 **4.1 When to Spawn Subagents** — MUST use subagents for:

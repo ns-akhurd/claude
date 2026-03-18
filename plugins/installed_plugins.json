@@ -84,20 +84,20 @@
     "context-mode@context-mode": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/context-mode/context-mode/1.0.21",
-        "version": "1.0.21",
+        "installPath": "/root/.claude/plugins/cache/context-mode/context-mode/1.0.20",
+        "version": "1.0.20",
         "installedAt": "2026-03-13T16:07:56.246Z",
-        "lastUpdated": "2026-03-16T05:26:49.775Z",
+        "lastUpdated": "2026-03-18T06:02:35.006Z",
         "gitCommitSha": "162d9851ea6cd0723a1515788770f0a23fbcbe2b"
       }
     ],
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.2",
-        "version": "5.0.2",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.5",
+        "version": "5.0.5",
         "installedAt": "2026-03-14T14:27:00.501Z",
-        "lastUpdated": "2026-03-14T14:27:00.501Z",
+        "lastUpdated": "2026-03-18T05:32:11.036Z",
         "gitCommitSha": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90"
       }
     ],

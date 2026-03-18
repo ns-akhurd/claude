@@ -18,7 +18,23 @@
       "WebFetch",
       "Task",
       "mcp__plugin_slack_slack__*",
-      "mcp__plugin_context-mode_context-mode__*"
+      "mcp__plugin_context-mode_context-mode__*",
+      "Skill",
+      "Agent",
+      "AskUserQuestion",
+      "LSP",
+      "TaskCreate",
+      "TaskUpdate",
+      "TaskList",
+      "TaskGet",
+      "TaskOutput",
+      "TaskStop",
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "CronCreate",
+      "CronList",
+      "CronDelete",
+      "Edit(/root/.claude/*)"
     ],
     "deny": [
       "Bash(rm *)",
@@ -47,7 +63,27 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.21/hooks/pretooluse.mjs"
+            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/pretooluse.mjs"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/posttooluse.mjs"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,os,subprocess; d=json.loads(os.environ.get('CLAUDE_TOOL_INPUT','{}')); f=d.get('file_path',''); f and any(f.endswith(e) for e in ('.cpp','.hpp','.h','.c')) and subprocess.run(['/opt/llvm-21/bin/clang-format','-i',f])\" 2>/dev/null || true"
           }
         ]
       }
@@ -59,6 +95,50 @@
           {
             "type": "command",
             "command": "node \"/root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/sessionstart.mjs\""
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/precompact.mjs"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/userpromptsubmit.mjs"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh 'Claude needs your permission!'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh 'Claude finished!'"
           }
         ]
       }
