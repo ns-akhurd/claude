@@ -5,7 +5,7 @@
     "CLAUDE_CODE_USE_BEDROCK": "1",
     "AWS_REGION": "us-east-1",
     "ENABLE_LSP_TOOL": "1",
-    "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin"
+    "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
   },
   "permissions": {
     "allow": [
