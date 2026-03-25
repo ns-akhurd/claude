@@ -18,7 +18,9 @@
       "WebFetch",
       "Task",
       "mcp__plugin_slack_slack__*",
+      "mcp__slack__*",
       "mcp__plugin_context-mode_context-mode__*",
+      "mcp__plugin_context7_context7__*",
       "Skill",
       "Agent",
       "AskUserQuestion",
@@ -31,10 +33,13 @@
       "TaskStop",
       "EnterPlanMode",
       "ExitPlanMode",
+      "EnterWorktree",
+      "ExitWorktree",
+      "ListMcpResourcesTool",
+      "ReadMcpResourceTool",
       "CronCreate",
       "CronList",
-      "CronDelete",
-      "Edit(/root/.claude/*)"
+      "CronDelete"
     ],
     "deny": [
       "Bash(rm *)",
@@ -53,9 +58,12 @@
       "Bash(chmod 777 *)",
       "Bash(> /etc/*)"
     ],
-    "defaultMode": "dontAsk"
+    "defaultMode": "dontAsk",
+    "additionalDirectories": [
+      "/root/.claude"
+    ]
   },
-  "model": "sonnet",
+  "model": "opusplan",
   "hooks": {
     "PreToolUse": [
       {
@@ -159,7 +167,9 @@
     "slack@claude-plugins-official": true,
     "context-mode@context-mode": true,
     "superpowers@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true
+    "claude-md-management@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "context7@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {
