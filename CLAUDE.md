@@ -69,6 +69,8 @@ MUST write doc FIRST — before any grep, read, or code change. MUST update as w
 
 **2.10 Artifact Placement** — IF writing any spec, plan, or analysis doc inside a user's project: (1) MUST place at project root or single-level `docs/` — NEVER create nested skill-convention paths. (2) IF skill specifies a different default path, MUST override with project root. (3) IF uncertain, MUST ask BEFORE writing.
 
+**2.11 Scope-First Analysis** — When user references a specific file, function, or component: MUST constrain analysis to that exact target FIRST. NEVER search broadly or explore adjacent code before addressing the specified target. Expand scope ONLY on explicit request.
+
 ## 3. Communication & Permissions
 
 **3.0 Ask Before Assuming** — When an instruction is ambiguous: MUST ask a single focused clarifying question BEFORE taking any action. NEVER infer and proceed. Example: "update claude instructions" → ask "Which file — project CLAUDE.md, global ~/.claude/CLAUDE.md, or both?"
