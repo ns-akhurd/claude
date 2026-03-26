@@ -1,0 +1,58 @@
+{
+  "session_id": "289347cf-b294-4b63-a738-275506d7983c",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-02-26T14:04:41.036Z",
+  "duration_minutes": 38,
+  "user_message_count": 5,
+  "assistant_message_count": 58,
+  "tool_counts": {
+    "TaskCreate": 6,
+    "TaskUpdate": 12,
+    "Glob": 2,
+    "Read": 7,
+    "Write": 6,
+    "Bash": 1,
+    "Grep": 1,
+    "Edit": 3
+  },
+  "languages": {
+    "Python": 3,
+    "Shell": 4,
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 78,
+  "output_tokens": 54971,
+  "first_prompt": "Implement the following plan:  # Plan: Unicode Script Oracle Generator  ## Context  The existing infrastructure generates EDK word-boundary oracle data for ICU `[:P:]` punctuation characters (819 char…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    385.499,
+    607.31,
+    135.737,
+    186.625
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2206,
+  "lines_removed": 30,
+  "files_modified": 5,
+  "message_hours": [
+    19,
+    19,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T14:04:41.036Z",
+    "2026-02-26T14:23:18.914Z",
+    "2026-02-26T14:33:52.596Z",
+    "2026-02-26T14:39:26.875Z",
+    "2026-02-26T14:42:54.701Z"
+  ]
+}

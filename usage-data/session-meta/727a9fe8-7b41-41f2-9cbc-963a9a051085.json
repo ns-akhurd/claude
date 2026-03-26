@@ -1,0 +1,41 @@
+{
+  "session_id": "727a9fe8-7b41-41f2-9cbc-963a9a051085",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-25T13:35:56.699Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 7,
+  "tool_counts": {
+    "Read": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 15,
+  "output_tokens": 2044,
+  "first_prompt": "what are ways to reduce token cost in claude and get max efficieny with zero compromise on quality of agent behavior",
+  "user_interruptions": 0,
+  "user_response_times": [
+    77.273
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 65,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T13:35:56.699Z",
+    "2026-02-25T13:37:56.423Z"
+  ]
+}

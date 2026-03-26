@@ -1,0 +1,98 @@
+{
+  "session_id": "fb9cfd80-6adc-4009-a835-1efdeaa866ed",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-26T04:25:47.826Z",
+  "duration_minutes": 2,
+  "user_message_count": 1,
+  "assistant_message_count": 14,
+  "tool_counts": {
+    "Read": 1,
+    "Write": 1,
+    "Bash": 4,
+    "Edit": 1
+  },
+  "languages": {
+    "Python": 2,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 20,
+  "output_tokens": 974,
+  "first_prompt": "No prompt",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 404,
+  "lines_removed": 1,
+  "files_modified": 2,
+  "message_hours": [
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T04:25:47.828Z"
+  ]
+}    131.79,
+    6.466,
+    6.466,
+    113.575,
+    113.572,
+    113.574,
+    146.933,
+    172.705,
+    2.507
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 2,
+    "Other": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2129,
+  "lines_removed": 65,
+  "files_modified": 7,
+  "message_hours": [
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T17:04:29.245Z",
+    "2026-02-25T17:10:42.746Z",
+    "2026-02-25T17:13:08.299Z",
+    "2026-02-25T17:13:08.299Z",
+    "2026-02-25T17:16:33.040Z",
+    "2026-02-25T17:25:35.167Z",
+    "2026-02-25T17:28:46.040Z",
+    "2026-02-25T17:28:46.040Z",
+    "2026-02-25T17:33:27.174Z",
+    "2026-02-25T17:33:27.171Z",
+    "2026-02-25T17:33:27.173Z",
+    "2026-02-25T17:34:00.532Z",
+    "2026-02-25T17:38:55.157Z",
+    "2026-02-25T17:40:49.334Z"
+  ]
+}:55.157Z",
+    "2026-02-25T17:40:49.334Z",
+    "2026-02-26T04:22:22.151Z"
+  ]
+}

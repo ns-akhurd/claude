@@ -1,0 +1,53 @@
+{
+  "session_id": "ffda7f2b-976e-4cfe-b332-7ac36c94cbce",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-18T05:28:50.148Z",
+  "duration_minutes": 34,
+  "user_message_count": 4,
+  "assistant_message_count": 49,
+  "tool_counts": {
+    "ToolSearch": 5,
+    "Grep": 1,
+    "Glob": 4,
+    "Read": 5,
+    "Skill": 1,
+    "Bash": 4,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 133,
+  "output_tokens": 17360,
+  "first_prompt": "/grill what are cudf chanlleges for using it in dlp usecases where there are many regex to be scanned at once, couple of once that I know are , no by default multi regex support, can achive by ORing e…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    64.243,
+    1362.862
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 31,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T05:32:07.798Z",
+    "2026-03-18T05:32:07.798Z",
+    "2026-03-18T05:37:15.805Z",
+    "2026-03-18T06:00:21.489Z"
+  ]
+}

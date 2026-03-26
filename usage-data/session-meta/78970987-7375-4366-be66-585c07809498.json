@@ -1,0 +1,56 @@
+{
+  "session_id": "78970987-7375-4366-be66-585c07809498",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-25T05:53:43.373Z",
+  "duration_minutes": 185,
+  "user_message_count": 7,
+  "assistant_message_count": 40,
+  "tool_counts": {
+    "Bash": 6,
+    "Glob": 4,
+    "Read": 5,
+    "Grep": 2
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 292,
+  "output_tokens": 840,
+  "first_prompt": "/eng-skills:jira what does this ticket do ENG-819869",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1644.71,
+    67.3
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11,
+    11,
+    13,
+    13,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T05:53:43.373Z",
+    "2026-02-25T05:53:43.350Z",
+    "2026-02-25T05:53:43.373Z",
+    "2026-02-25T08:29:23.692Z",
+    "2026-02-25T08:29:23.692Z",
+    "2026-02-25T08:56:58.813Z",
+    "2026-02-25T08:58:14.094Z"
+  ]
+}-02-25T08:58:14.094Z",
+    "2026-02-25T12:21:44.973Z",
+    "2026-02-25T12:21:57.491Z"
+  ]
+}

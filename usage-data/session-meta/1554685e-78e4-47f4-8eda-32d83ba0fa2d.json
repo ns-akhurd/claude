@@ -1,0 +1,58 @@
+{
+  "session_id": "1554685e-78e4-47f4-8eda-32d83ba0fa2d",
+  "project_path": "/root",
+  "start_time": "2026-03-18T06:02:11.188Z",
+  "duration_minutes": 25,
+  "user_message_count": 5,
+  "assistant_message_count": 49,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Skill": 1,
+    "Read": 1,
+    "Bash": 12,
+    "Write": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 2,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 117,
+  "output_tokens": 15243,
+  "first_prompt": "add nofity for wsl for claode with bashrc and zsh as well , i dont use ghossty Claude desktop notifications (Mac Only)  Add this to your ~/.claude/settings.json   \"hooks\": {     \"PermissionRequest\": […",
+  "user_interruptions": 0,
+  "user_response_times": [
+    1024.453,
+    30.638,
+    63.34,
+    13.259
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Other": 3,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 58,
+  "lines_removed": 1,
+  "files_modified": 2,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T06:02:40.655Z",
+    "2026-03-18T06:23:20.482Z",
+    "2026-03-18T06:24:06.275Z",
+    "2026-03-18T06:26:13.451Z",
+    "2026-03-18T06:26:43.527Z"
+  ]
+}

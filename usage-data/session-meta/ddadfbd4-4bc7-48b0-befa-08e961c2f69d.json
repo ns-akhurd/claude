@@ -1,0 +1,86 @@
+{
+  "session_id": "ddadfbd4-4bc7-48b0-befa-08e961c2f69d",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-06T04:07:33.946Z",
+  "duration_minutes": 5833,
+  "user_message_count": 16,
+  "assistant_message_count": 83,
+  "tool_counts": {
+    "ToolSearch": 4,
+    "Glob": 2,
+    "Read": 13,
+    "Write": 5,
+    "Edit": 14,
+    "Grep": 4
+  },
+  "languages": {
+    "Markdown": 27,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 15895,
+  "output_tokens": 65354,
+  "first_prompt": "analse the csv file in the director and generate a report of cudf vs hyperscan in cpu and gpu consumption",
+  "user_interruptions": 0,
+  "user_response_times": [
+    2950.521,
+    85.64,
+    57.838,
+    311.573,
+    603.98
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Too Large": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1319,
+  "lines_removed": 60,
+  "files_modified": 4,
+  "message_hours": [
+    9,
+    9,
+    9,
+    11,
+    12,
+    12,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-06T04:07:33.946Z",
+    "2026-03-06T04:07:39.980Z",
+    "2026-03-06T04:08:17.840Z",
+    "2026-03-06T06:19:21.552Z",
+    "2026-03-06T07:08:55.527Z",
+    "2026-03-06T07:10:59.106Z",
+    "2026-03-10T04:49:45.637Z",
+    "2026-03-10T04:49:45.637Z",
+    "2026-03-10T04:49:45.637Z",
+    "2026-03-10T04:50:49.804Z",
+    "2026-03-10T04:53:23.403Z",
+    "2026-03-10T05:00:01.405Z",
+    "2026-03-10T05:00:14.768Z",
+    "2026-03-10T05:11:34.695Z",
+    "2026-03-10T05:13:11.998Z",
+    "2026-03-10T05:17:06.808Z"
+  ]
+}:13:11.998Z",
+    "2026-03-10T05:17:06.808Z",
+    "2026-03-10T05:22:53.505Z",
+    "2026-03-10T05:22:53.505Z",
+    "2026-03-10T05:23:34.821Z"
+  ]
+}

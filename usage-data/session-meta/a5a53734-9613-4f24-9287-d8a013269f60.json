@@ -1,0 +1,78 @@
+{
+  "session_id": "a5a53734-9613-4f24-9287-d8a013269f60",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-04T11:09:48.898Z",
+  "duration_minutes": 1208,
+  "user_message_count": 15,
+  "assistant_message_count": 41,
+  "tool_counts": {
+    "Bash": 2,
+    "Read": 6,
+    "EnterPlanMode": 1,
+    "AskUserQuestion": 1,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 85,
+  "output_tokens": 26222,
+  "first_prompt": "how cudf work on gpu, what are the thing to consider to get best perf when running regex on gpu using cudf,",
+  "user_interruptions": 1,
+  "user_response_times": [
+    25.385,
+    220.886,
+    681.566,
+    118.271,
+    816.852,
+    11.445
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "User Rejected": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 246,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    16,
+    16,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    11,
+    11,
+    11,
+    11,
+    11,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-04T11:09:48.898Z",
+    "2026-03-04T11:10:44.159Z",
+    "2026-03-04T16:34:23.082Z",
+    "2026-03-04T16:38:48.762Z",
+    "2026-03-04T16:51:07.925Z",
+    "2026-03-04T16:51:37.333Z",
+    "2026-03-04T16:53:58.973Z",
+    "2026-03-04T17:08:04.021Z",
+    "2026-03-04T17:08:26.601Z",
+    "2026-03-05T06:23:05.802Z",
+    "2026-03-05T06:23:05.802Z",
+    "2026-03-05T06:23:07.648Z",
+    "2026-03-05T06:26:05.859Z",
+    "2026-03-05T06:26:05.859Z",
+    "2026-03-05T06:32:09.700Z"
+  ]
+}

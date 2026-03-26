@@ -1,0 +1,47 @@
+{
+  "session_id": "02ffa7f7-1150-408f-b300-5985821e3ca1",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-03-04T02:00:23.469Z",
+  "duration_minutes": 22,
+  "user_message_count": 4,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "EnterPlanMode": 1,
+    "Agent": 3,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 9837,
+  "output_tokens": 4457,
+  "first_prompt": "create a plan like DPU_HOST_DEPLOYMENT_GUIDE.md for doca 2.2.1 with BF3 devices, For DOCA 2.2.1, the specific DPDK version bundled is mlnx-dpdk 22.11.   create a thorough plan for the same, use the le…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 112,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    7,
+    7,
+    7,
+    7
+  ],
+  "user_message_timestamps": [
+    "2026-03-04T02:00:23.469Z",
+    "2026-03-04T02:00:23.469Z",
+    "2026-03-04T02:00:23.469Z",
+    "2026-03-04T02:01:03.068Z"
+  ]
+}

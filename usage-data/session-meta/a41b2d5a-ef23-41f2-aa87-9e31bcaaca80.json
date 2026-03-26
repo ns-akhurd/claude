@@ -1,0 +1,41 @@
+{
+  "session_id": "a41b2d5a-ef23-41f2-aa87-9e31bcaaca80",
+  "project_path": "/root/code/dataplane/libs/dlp",
+  "start_time": "2026-02-24T13:40:15.475Z",
+  "duration_minutes": 181,
+  "user_message_count": 1,
+  "assistant_message_count": 47,
+  "tool_counts": {
+    "Read": 3,
+    "Bash": 16,
+    "Write": 1
+  },
+  "languages": {
+    "Python": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 418,
+  "output_tokens": 2021,
+  "first_prompt": "formt the python file correclty /root/code/dataplane/libs/dlp/ciengine/test/dlp_ciengine_test/src/punctuation.py",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "File Too Large": 1,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 391,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T16:39:34.864Z"
+  ]
+}

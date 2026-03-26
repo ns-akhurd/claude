@@ -1,0 +1,52 @@
+{
+  "session_id": "45c07a1a-4d5e-471c-a5db-69840469c245",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-23T08:18:17.151Z",
+  "duration_minutes": 408,
+  "user_message_count": 4,
+  "assistant_message_count": 20,
+  "tool_counts": {
+    "Bash": 1,
+    "Task": 3,
+    "Read": 1,
+    "EnterPlanMode": 1,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 46,
+  "output_tokens": 1080,
+  "first_prompt": "what are the options available for testing a dpdk regex on eumlator or simulator or something as hardware is not available , i need to test aleast dpdk part of it",
+  "user_interruptions": 1,
+  "user_response_times": [
+    183.588,
+    64.163
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 103,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    13,
+    13,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T08:18:17.151Z",
+    "2026-02-23T08:22:44.436Z",
+    "2026-02-23T15:02:21.504Z",
+    "2026-02-23T15:05:56.024Z"
+  ]
+}

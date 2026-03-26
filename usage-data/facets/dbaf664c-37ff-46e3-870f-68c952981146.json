@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Summarize the dlp-oncall Slack channel using Claude Code's Slack integration",
+  "goal_categories": {
+    "slack_channel_summary": 1,
+    "configuration_setup": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "wrong_approach": 1
+  },
+  "friction_detail": "Claude initially tried adding mcpServers to settings.json which wasn't valid, then had to switch to .mcp.json, and ultimately couldn't complete the original task within the session.",
+  "primary_success": "proactive_help",
+  "brief_summary": "User wanted to summarize a Slack channel but the MCP server wasn't configured; Claude set up the config but the user had to restart to complete the task.",
+  "session_id": "dbaf664c-37ff-46e3-870f-68c952981146"
+}

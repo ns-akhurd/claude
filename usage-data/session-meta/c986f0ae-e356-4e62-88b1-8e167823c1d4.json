@@ -1,0 +1,48 @@
+{
+  "session_id": "c986f0ae-e356-4e62-88b1-8e167823c1d4",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-14T09:37:14.295Z",
+  "duration_minutes": 2,
+  "user_message_count": 3,
+  "assistant_message_count": 20,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Bash": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_execute_file": 1,
+    "Read": 3
+  },
+  "languages": {
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 54,
+  "output_tokens": 2335,
+  "first_prompt": "genreate report",
+  "user_interruptions": 0,
+  "user_response_times": [
+    10.802,
+    10.802
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-03-14T09:37:24.512Z",
+    "2026-03-14T09:38:01.202Z",
+    "2026-03-14T09:38:01.202Z"
+  ]
+}

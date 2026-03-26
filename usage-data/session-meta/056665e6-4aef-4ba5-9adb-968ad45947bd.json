@@ -1,0 +1,54 @@
+{
+  "session_id": "056665e6-4aef-4ba5-9adb-968ad45947bd",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-17T01:28:14.845Z",
+  "duration_minutes": 3,
+  "user_message_count": 3,
+  "assistant_message_count": 26,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Glob": 1,
+    "Read": 7,
+    "Grep": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_execute_file": 4
+  },
+  "languages": {
+    "Markdown": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 62,
+  "output_tokens": 2568,
+  "first_prompt": "for comprehensiv result, anser the following quetsions I'm assuming count_re is just returning the number of entity matches per entity per row? I'm assuming findall is returning the number and the act…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    30.816,
+    30.866
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 4
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    6,
+    7,
+    7
+  ],
+  "user_message_timestamps": [
+    "2026-03-17T01:29:24.857Z",
+    "2026-03-17T01:31:13.190Z",
+    "2026-03-17T01:31:13.240Z"
+  ]
+}03-17T01:31:13.240Z",
+    "2026-03-17T04:38:07.889Z",
+    "2026-03-17T04:38:10.510Z",
+    "2026-03-17T04:38:12.054Z"
+  ]
+}

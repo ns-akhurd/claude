@@ -1,0 +1,60 @@
+{
+  "session_id": "ff611412-43e3-4f19-b29c-079019c56aa8",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-24T09:03:34.648Z",
+  "duration_minutes": 167,
+  "user_message_count": 7,
+  "assistant_message_count": 92,
+  "tool_counts": {
+    "Read": 25,
+    "Bash": 3,
+    "Write": 2,
+    "AskUserQuestion": 1,
+    "Edit": 17
+  },
+  "languages": {
+    "Markdown": 25,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14370,
+  "output_tokens": 4199,
+  "first_prompt": "in the feasibilty study done , if I want to run regex scan on dpu using dpdk, please check if whatever is needed is already present, and easy to run on dpu hardware",
+  "user_interruptions": 0,
+  "user_response_times": [
+    95.53,
+    760.355,
+    37.633,
+    3100.108,
+    40.346,
+    216.785
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 730,
+  "lines_removed": 65,
+  "files_modified": 3,
+  "message_hours": [
+    14,
+    14,
+    16,
+    16,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T09:03:34.648Z",
+    "2026-02-24T09:06:47.617Z",
+    "2026-02-24T10:37:49.068Z",
+    "2026-02-24T10:39:08.259Z",
+    "2026-02-24T11:31:45.591Z",
+    "2026-02-24T11:38:54.065Z",
+    "2026-02-24T11:50:29.835Z"
+  ]
+}

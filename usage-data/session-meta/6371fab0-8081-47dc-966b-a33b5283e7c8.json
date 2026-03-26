@@ -1,0 +1,68 @@
+{
+  "session_id": "6371fab0-8081-47dc-966b-a33b5283e7c8",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-24T08:05:43.677Z",
+  "duration_minutes": 145,
+  "user_message_count": 8,
+  "assistant_message_count": 200,
+  "tool_counts": {
+    "Read": 15,
+    "Glob": 2,
+    "Bash": 51,
+    "TaskCreate": 1,
+    "TaskUpdate": 3,
+    "Edit": 9,
+    "TaskOutput": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1628,
+  "output_tokens": 8118,
+  "first_prompt": "make sure the /root/code/dataplane/libs/dlp/ciengine/test/dlp_ciengine_test/src/test_DlpEdkWordBoundaryClassifier.hpp file cover all the cases as per DlpEdkWordBoundaryClassifier.hpp that is 100%, if…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    56.793,
+    1352.865,
+    20.01
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "File Not Found": 1,
+    "Other": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 604,
+  "lines_removed": 14,
+  "files_modified": 3,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T08:05:43.677Z",
+    "2026-02-24T08:05:43.676Z",
+    "2026-02-24T08:05:43.676Z",
+    "2026-02-24T08:05:48.421Z",
+    "2026-02-24T08:11:07.296Z",
+    "2026-02-24T08:35:42.009Z",
+    "2026-02-24T08:45:42.691Z",
+    "2026-02-24T10:30:26.932Z"
+  ]
+}.691Z",
+    "2026-02-24T10:30:26.932Z",
+    "2026-02-24T10:32:15.609Z",
+    "2026-02-24T13:17:52.566Z",
+    "2026-02-24T13:17:52.565Z",
+    "2026-02-24T13:17:52.565Z"
+  ]
+}

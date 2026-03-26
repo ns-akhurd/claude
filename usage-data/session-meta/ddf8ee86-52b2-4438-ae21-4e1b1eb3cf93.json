@@ -1,0 +1,38 @@
+{
+  "session_id": "ddf8ee86-52b2-4438-ae21-4e1b1eb3cf93",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-02-27T10:57:00.894Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 9,
+  "tool_counts": {
+    "Bash": 3
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 17,
+  "output_tokens": 1810,
+  "first_prompt": "for folder /root/code/dataplane/,   ➜  src git:(pr/ENG-917884/unit_tests) ✗ git push origin pr/ENG-917884/unit_tests To github.com:ns-akhurd/dataplane.git  ! [rejected]              pr/ENG-917884/unit…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    120.291
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T10:57:00.894Z",
+    "2026-02-27T10:59:30.801Z"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "session_id": "44fa3984-ca1c-4d8e-905c-6572591dfcab",
+  "project_path": "/root/.claude",
+  "start_time": "2026-03-13T09:46:16.930Z",
+  "duration_minutes": 84,
+  "user_message_count": 7,
+  "assistant_message_count": 42,
+  "tool_counts": {
+    "ToolSearch": 6,
+    "Bash": 9,
+    "Glob": 2,
+    "Read": 4,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 3
+  },
+  "git_commits": 2,
+  "git_pushes": 2,
+  "input_tokens": 264,
+  "output_tokens": 4180,
+  "first_prompt": "commit the changes and push",
+  "user_interruptions": 0,
+  "user_response_times": [
+    12.541,
+    2526.713,
+    2065.961,
+    2065.961,
+    12.197
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 5,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    15,
+    15,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-03-13T09:46:16.930Z",
+    "2026-03-13T09:47:32.725Z",
+    "2026-03-13T10:30:30.847Z",
+    "2026-03-13T11:08:31.057Z",
+    "2026-03-13T11:08:31.057Z",
+    "2026-03-13T11:08:42.835Z",
+    "2026-03-13T11:09:26.847Z"
+  ]
+}

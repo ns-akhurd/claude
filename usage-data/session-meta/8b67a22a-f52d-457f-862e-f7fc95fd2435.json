@@ -1,0 +1,45 @@
+{
+  "session_id": "8b67a22a-f52d-457f-862e-f7fc95fd2435",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-09T12:34:58.842Z",
+  "duration_minutes": 6,
+  "user_message_count": 4,
+  "assistant_message_count": 18,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Grep": 5,
+    "Glob": 2,
+    "Read": 3
+  },
+  "languages": {
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 22501,
+  "output_tokens": 9042,
+  "first_prompt": "explain the cudf 32k prefix limit in details with simple example and provide info on how prefix are calculated",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-03-09T12:34:58.842Z",
+    "2026-03-09T12:34:58.806Z",
+    "2026-03-09T12:37:42.623Z",
+    "2026-03-09T12:37:49.264Z"
+  ]
+}

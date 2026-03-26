@@ -1,0 +1,51 @@
+{
+  "session_id": "a1b625a6-522b-497a-89ee-a8ed5a00d3ec",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-27T14:49:01.545Z",
+  "duration_minutes": 2,
+  "user_message_count": 6,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Read": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 18,
+  "output_tokens": 709,
+  "first_prompt": "what is context size when claude session start if it is high why ?",
+  "user_interruptions": 0,
+  "user_response_times": [
+    4.7,
+    56.043
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T14:49:01.545Z",
+    "2026-02-27T14:49:01.544Z",
+    "2026-02-27T14:49:01.545Z",
+    "2026-02-27T14:49:59.896Z",
+    "2026-02-27T14:50:14.854Z",
+    "2026-02-27T14:51:16.017Z"
+  ]
+}   "2026-02-27T14:51:16.017Z"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "session_id": "618f9cac-7108-40ad-8afa-83952f3c014c",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-03-13T04:04:08.342Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 26,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Glob": 3,
+    "Read": 13,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 7,
+    "Python": 1,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 27003,
+  "output_tokens": 5130,
+  "first_prompt": "No prompt",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 169,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-03-13T04:04:08.342Z",
+    "2026-03-13T04:04:08.342Z"
+  ]
+}

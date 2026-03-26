@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Commit and push code changes, clean up gitignore, and summarize a Slack channel",
+  "goal_categories": {
+    "git_operations": 3,
+    "slack_integration": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 3
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {
+    "tool_unavailable": 1
+  },
+  "friction_detail": "Slack MCP server was not authenticated, preventing the channel summary task from completing.",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User wanted to commit/push changes, update gitignore, and summarize a Slack channel; git tasks succeeded but Slack summarization failed due to missing OAuth authentication.",
+  "session_id": "44fa3984-ca1c-4d8e-905c-6572591dfcab"
+}

@@ -1,0 +1,40 @@
+{
+  "session_id": "964b23cb-a7c4-4a8a-af5c-f0352fd48625",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-24T13:27:13.585Z",
+  "duration_minutes": 986,
+  "user_message_count": 4,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "Bash": 4
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 94,
+  "output_tokens": 390,
+  "first_prompt": "/eng-skills:confluence where do i find test for regex scanning purpose",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    18,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T13:27:13.585Z",
+    "2026-02-24T13:27:13.585Z",
+    "2026-02-25T05:53:36.377Z",
+    "2026-02-25T05:53:38.235Z"
+  ]
+}

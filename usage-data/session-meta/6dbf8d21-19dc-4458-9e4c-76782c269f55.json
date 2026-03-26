@@ -1,0 +1,62 @@
+{
+  "session_id": "6dbf8d21-19dc-4458-9e4c-76782c269f55",
+  "project_path": "/root/code/keyviewfilter/EductionSDK_25.3.0_LINUX_ARM",
+  "start_time": "2026-02-23T06:26:01.729Z",
+  "duration_minutes": 9,
+  "user_message_count": 1,
+  "assistant_message_count": 94,
+  "tool_counts": {
+    "Bash": 40,
+    "Read": 7,
+    "TaskCreate": 4,
+    "TaskUpdate": 11,
+    "Glob": 1,
+    "TaskOutput": 1
+  },
+  "languages": {
+    "Markdown": 2,
+    "YAML": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 102,
+  "output_tokens": 5747,
+  "first_prompt": "I need you to test the arm edktool in the qemu env, you can find test files here, samples/eduction_from_settings/resources/test/grammar/test.ecr samples/eduction_from_settings/resources/test/grammar/t…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 4
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T06:26:01.729Z"
+  ]
+}ge_hours": [
+    11,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T06:26:01.729Z",
+    "2026-02-23T06:36:55.060Z",
+    "2026-02-23T06:46:15.228Z",
+    "2026-02-23T07:06:40.147Z",
+    "2026-02-23T07:15:04.669Z",
+    "2026-02-23T07:16:00.817Z",
+    "2026-02-23T07:21:27.266Z"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "session_id": "aa2001fa-db18-4e6e-a36e-a25ec2a0fefa",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-06T15:19:15.348Z",
+  "duration_minutes": 48,
+  "user_message_count": 6,
+  "assistant_message_count": 49,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 10,
+    "Glob": 1,
+    "TaskCreate": 3,
+    "TaskUpdate": 8,
+    "Write": 2,
+    "Edit": 5
+  },
+  "languages": {
+    "Markdown": 4,
+    "Shell": 5,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 569,
+  "output_tokens": 35249,
+  "first_prompt": "Implement the following plan:  # Plan: Benchmark Overhaul — 8 Requirements  ## Context The current `bench_dlp_confluence_patterns.cpp` has several gaps: - Patterns are hardcoded (not configurable) - c…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    592.436,
+    592.436,
+    191.265,
+    1466.72
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 1208,
+  "lines_removed": 5,
+  "files_modified": 4,
+  "message_hours": [
+    20,
+    20,
+    21,
+    21,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-03-06T15:19:15.348Z",
+    "2026-03-06T15:19:24.037Z",
+    "2026-03-06T15:38:46.588Z",
+    "2026-03-06T15:38:46.588Z",
+    "2026-03-06T15:42:17.584Z",
+    "2026-03-06T16:07:29.034Z"
+  ]
+}38:46.588Z",
+    "2026-03-06T15:38:46.588Z",
+    "2026-03-06T15:42:17.584Z",
+    "2026-03-06T16:07:29.034Z",
+    "2026-03-06T16:12:11.764Z",
+    "2026-03-06T16:13:24.039Z",
+    "2026-03-06T16:13:24.038Z",
+    "2026-03-06T16:13:24.038Z",
+    "2026-03-07T07:55:13.112Z"
+  ]
+}

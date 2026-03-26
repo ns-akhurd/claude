@@ -1,0 +1,65 @@
+{
+  "session_id": "01510f44-654c-4bcd-bf8d-075c90b61adb",
+  "project_path": "/root/code/nvidia/feasibility",
+  "start_time": "2026-03-23T02:30:48.689Z",
+  "duration_minutes": 5,
+  "user_message_count": 8,
+  "assistant_message_count": 40,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Read": 2,
+    "Edit": 2,
+    "Skill": 1,
+    "Bash": 5
+  },
+  "languages": {
+    "Markdown": 2,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 112,
+  "output_tokens": 4096,
+  "first_prompt": "try edditing ~/.claude/claude.md file",
+  "user_interruptions": 0,
+  "user_response_times": [
+    20.912,
+    10.167,
+    51.266,
+    48.743,
+    48.742,
+    48.742
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 2,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 5,
+  "lines_removed": 2,
+  "files_modified": 2,
+  "message_hours": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "user_message_timestamps": [
+    "2026-03-23T02:31:02.586Z",
+    "2026-03-23T02:31:34.037Z",
+    "2026-03-23T02:32:18.630Z",
+    "2026-03-23T02:32:31.031Z",
+    "2026-03-23T02:33:57.690Z",
+    "2026-03-23T02:35:54.157Z",
+    "2026-03-23T02:35:54.156Z",
+    "2026-03-23T02:35:54.156Z"
+  ]
+}

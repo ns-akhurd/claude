@@ -1,0 +1,69 @@
+{
+  "session_id": "1e97b380-73f8-4553-89ae-779bc3f13047",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-03-10T04:31:02.160Z",
+  "duration_minutes": 16,
+  "user_message_count": 9,
+  "assistant_message_count": 72,
+  "tool_counts": {
+    "ToolSearch": 4,
+    "Read": 4,
+    "Edit": 11,
+    "Grep": 5,
+    "Glob": 1,
+    "Bash": 10,
+    "Write": 2
+  },
+  "languages": {
+    "Markdown": 13,
+    "JSON": 1
+  },
+  "git_commits": 3,
+  "git_pushes": 3,
+  "input_tokens": 120,
+  "output_tokens": 14938,
+  "first_prompt": "add claude global claude instruction , to make sure when claude adds new instruction rules they must be imperitive , clear , consise and ensure agent alway honour them",
+  "user_interruptions": 1,
+  "user_response_times": [
+    73.163,
+    49.277,
+    7.406,
+    7.806,
+    180.859,
+    154.715,
+    46.557
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 163,
+  "lines_removed": 12,
+  "files_modified": 3,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-10T04:31:02.160Z",
+    "2026-03-10T04:32:42.169Z",
+    "2026-03-10T04:35:43.276Z",
+    "2026-03-10T04:36:26.021Z",
+    "2026-03-10T04:36:26.421Z",
+    "2026-03-10T04:37:42.738Z",
+    "2026-03-10T04:41:09.191Z",
+    "2026-03-10T04:45:46.405Z",
+    "2026-03-10T04:46:45.063Z"
+  ]
+}

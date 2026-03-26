@@ -1,0 +1,77 @@
+{
+  "session_id": "65a84c7d-a940-4906-a90f-1d0309451cef",
+  "project_path": "/root/code/dataplane/libs/dlp",
+  "start_time": "2026-02-24T08:02:30.054Z",
+  "duration_minutes": 314,
+  "user_message_count": 11,
+  "assistant_message_count": 18,
+  "tool_counts": {
+    "Read": 4,
+    "Task": 2,
+    "Edit": 1,
+    "Glob": 1
+  },
+  "languages": {
+    "JSON": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 43,
+  "output_tokens": 32904,
+  "first_prompt": "make sure the /root/code/dataplane/libs/dlp/ciengine/test/dlp_ciengine_test/src/test_DlpEdkWordBoundaryClassifier.hpp file cover all the cases as per DlpEdkWordBoundaryClassifier.hpp that is 100%, if…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    106.138,
+    110.408,
+    110.407,
+    110.407,
+    111.479,
+    88.05,
+    55.233,
+    55.232,
+    55.232
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 3,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T08:02:30.054Z",
+    "2026-02-24T08:10:16.709Z",
+    "2026-02-24T08:10:20.979Z",
+    "2026-02-24T08:10:20.978Z",
+    "2026-02-24T08:10:20.978Z",
+    "2026-02-24T08:10:22.050Z",
+    "2026-02-24T08:12:10.245Z",
+    "2026-02-24T08:13:13.362Z",
+    "2026-02-24T08:13:13.361Z",
+    "2026-02-24T08:13:13.361Z",
+    "2026-02-24T13:15:50.520Z"
+  ]
+} "2026-02-24T08:10:22.050Z",
+    "2026-02-24T08:12:10.245Z",
+    "2026-02-24T08:13:13.362Z",
+    "2026-02-24T08:13:13.361Z",
+    "2026-02-24T08:13:13.361Z",
+    "2026-02-24T13:15:50.520Z",
+    "2026-02-24T13:36:13.594Z"
+  ]
+}

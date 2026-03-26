@@ -1,0 +1,59 @@
+{
+  "session_id": "c9a2ca05-3754-450f-a9f9-00c4f81efb88",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-14T14:37:43.745Z",
+  "duration_minutes": 21,
+  "user_message_count": 6,
+  "assistant_message_count": 42,
+  "tool_counts": {
+    "ToolSearch": 4,
+    "Skill": 1,
+    "Write": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 6,
+    "Read": 1,
+    "Edit": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_stats": 1
+  },
+  "languages": {
+    "Markdown": 5
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 82,
+  "output_tokens": 20920,
+  "first_prompt": "how does nsdlp or dataplane repo handle logical operator like AND , OR , NOT, NEAR etc. Can you please help me uderstand with usecases , look at code thoroughly , create a document",
+  "user_interruptions": 0,
+  "user_response_times": [
+    147.504,
+    433.666,
+    115.05,
+    115.05
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 590,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-03-14T14:38:59.013Z",
+    "2026-03-14T14:39:27.696Z",
+    "2026-03-14T14:45:27.212Z",
+    "2026-03-14T14:54:07.315Z",
+    "2026-03-14T14:57:56.571Z",
+    "2026-03-14T14:57:56.571Z"
+  ]
+}

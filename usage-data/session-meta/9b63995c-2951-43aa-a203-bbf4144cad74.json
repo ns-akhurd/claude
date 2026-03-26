@@ -1,0 +1,60 @@
+{
+  "session_id": "9b63995c-2951-43aa-a203-bbf4144cad74",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-06T15:02:22.281Z",
+  "duration_minutes": 17,
+  "user_message_count": 7,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "ToolSearch": 5,
+    "Bash": 2,
+    "Read": 4,
+    "EnterPlanMode": 1,
+    "Agent": 4,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 3,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14395,
+  "output_tokens": 6557,
+  "first_prompt": "ls",
+  "user_interruptions": 0,
+  "user_response_times": [
+    405.247
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 76,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-03-06T15:02:22.281Z",
+    "2026-03-06T15:02:30.562Z",
+    "2026-03-06T15:09:28.374Z",
+    "2026-03-06T15:09:37.753Z",
+    "2026-03-06T15:10:17.439Z",
+    "2026-03-06T15:10:33.585Z",
+    "2026-03-06T15:18:50.171Z"
+  ]
+}

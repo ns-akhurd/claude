@@ -1,0 +1,56 @@
+{
+  "session_id": "1e67a43a-6c5c-45a2-a90f-42f0e1aa1f79",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-03-09T16:46:05.743Z",
+  "duration_minutes": 12,
+  "user_message_count": 7,
+  "assistant_message_count": 40,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Bash": 9,
+    "TaskCreate": 5,
+    "TaskUpdate": 9
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 102,
+  "output_tokens": 5387,
+  "first_prompt": "since claude remote is not avialabel what options are avilable to achive remote claude session from mobile",
+  "user_interruptions": 0,
+  "user_response_times": [
+    113.448,
+    186.744,
+    31.378,
+    29.943,
+    29.934,
+    29.934
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    22,
+    22,
+    22,
+    22,
+    22,
+    22,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-03-09T16:47:11.784Z",
+    "2026-03-09T16:49:24.563Z",
+    "2026-03-09T16:53:04.276Z",
+    "2026-03-09T16:57:24.086Z",
+    "2026-03-09T16:58:10.629Z",
+    "2026-03-09T16:58:10.620Z",
+    "2026-03-09T16:58:10.620Z"
+  ]
+}

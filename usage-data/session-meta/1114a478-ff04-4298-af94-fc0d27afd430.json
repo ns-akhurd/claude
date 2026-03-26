@@ -1,0 +1,70 @@
+{
+  "session_id": "1114a478-ff04-4298-af94-fc0d27afd430",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-16T06:21:09.561Z",
+  "duration_minutes": 15,
+  "user_message_count": 3,
+  "assistant_message_count": 47,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Read": 2,
+    "Edit": 13,
+    "Grep": 4,
+    "Bash": 4
+  },
+  "languages": {
+    "Markdown": 15
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 111,
+  "output_tokens": 18156,
+  "first_prompt": "fix the gaps and grill again",
+  "user_interruptions": 0,
+  "user_response_times": [
+    335.377,
+    51.09
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 38,
+  "lines_removed": 17,
+  "files_modified": 1,
+  "message_hours": [
+    11,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-16T06:21:09.562Z",
+    "2026-03-16T06:30:08.106Z",
+    "2026-03-16T06:34:10.791Z"
+  ]
+}3,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-16T06:53:31.243Z",
+    "2026-03-16T07:03:43.423Z",
+    "2026-03-16T07:11:11.246Z",
+    "2026-03-16T08:00:34.402Z",
+    "2026-03-16T08:01:54.374Z",
+    "2026-03-16T08:06:31.113Z",
+    "2026-03-16T08:08:57.704Z",
+    "2026-03-16T08:12:26.499Z",
+    "2026-03-16T08:14:15.806Z",
+    "2026-03-16T08:26:52.623Z",
+    "2026-03-16T08:28:39.020Z",
+    "2026-03-17T06:31:21.456Z",
+    "2026-03-17T06:31:21.456Z",
+    "2026-03-17T06:31:21.456Z"
+  ]
+}

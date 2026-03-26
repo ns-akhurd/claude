@@ -23,6 +23,8 @@ Edit this file to add/remove sources. The `/learn-web` skill reads this at runti
 | Reddit | r/LocalLLaMA top weekly | `https://www.reddit.com/r/LocalLLaMA/top/.json?t=week&limit=10` | BLOCKED — skip |
 | Reddit | r/programming AI posts | `https://www.reddit.com/r/programming/search.json?q=claude+ai+coding&sort=top&t=week` | BLOCKED — skip |
 | GitHub | awesome-claude-code | `https://github.com/heshenxian1/awesome-claude-code` | 404 — skip |
+| Blog | Simon Willison — Agentic Engineering Patterns | `https://simonwillison.net/guides/agentic-engineering-patterns/` | OK |
+| GitHub | Addy Osmani — Gemini CLI Tips (agentic coding patterns) | `https://github.com/addyosmani/gemini-cli-tips` | OK |
 | X/Twitter | Andrej Karpathy (nitter) | `https://nitter.net/karpathy` | EMPTY — skip |
 | X/Twitter | Simon Willison (nitter) | `https://nitter.net/simonw` | EMPTY — skip |
 | X/Twitter | Anthropic AI (nitter) | `https://nitter.net/AnthropicAI` | EMPTY — skip |

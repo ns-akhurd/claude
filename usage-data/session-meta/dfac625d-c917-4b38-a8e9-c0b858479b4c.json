@@ -1,0 +1,55 @@
+{
+  "session_id": "dfac625d-c917-4b38-a8e9-c0b858479b4c",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-25T04:55:11.938Z",
+  "duration_minutes": 13,
+  "user_message_count": 4,
+  "assistant_message_count": 104,
+  "tool_counts": {
+    "Read": 32,
+    "Grep": 13,
+    "Edit": 32,
+    "Task": 2
+  },
+  "languages": {
+    "Markdown": 64
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 8022,
+  "output_tokens": 8035,
+  "first_prompt": "now review the plan, verify the details against actula documents /root/code/nvidia/DLP_DPDK_REGEX_OFFLOAD_PLAN.md,",
+  "user_interruptions": 0,
+  "user_response_times": [
+    264.635,
+    40.701,
+    40.701
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 64,
+  "lines_removed": 46,
+  "files_modified": 2,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T04:55:11.939Z",
+    "2026-02-25T05:02:17.485Z",
+    "2026-02-25T05:07:02.410Z",
+    "2026-02-25T05:07:02.410Z"
+  ]
+}2026-02-25T05:07:02.410Z",
+    "2026-02-25T05:07:02.410Z",
+    "2026-02-25T05:09:57.643Z",
+    "2026-02-25T05:09:57.642Z",
+    "2026-02-25T05:09:57.642Z"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "session_id": "e5466c1d-13c5-41c1-b9f9-efb432947808",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-24T13:43:56.573Z",
+  "duration_minutes": 59,
+  "user_message_count": 3,
+  "assistant_message_count": 56,
+  "tool_counts": {
+    "Task": 3,
+    "Glob": 4,
+    "Read": 11,
+    "Grep": 9,
+    "Edit": 9
+  },
+  "languages": {
+    "Markdown": 11
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 74,
+  "output_tokens": 1634,
+  "first_prompt": "evaluate the plan on how to integrate dpu with current dlp engine, path of /root/code/dataplane, @DLP_DPDK_REGEX_OFFLOAD_PLAN.md  also has the details make sure the details are through , please make s…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    50.454,
+    87.97
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "User Rejected": 3
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 451,
+  "lines_removed": 81,
+  "files_modified": 1,
+  "message_hours": [
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T13:43:56.573Z",
+    "2026-02-24T13:45:15.835Z",
+    "2026-02-24T13:45:53.351Z"
+  ]
+}

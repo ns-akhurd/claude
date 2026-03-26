@@ -1,0 +1,63 @@
+{
+  "session_id": "e886ac97-61bf-4264-b322-ff1f94fdc4e0",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-17T06:39:14.902Z",
+  "duration_minutes": 27,
+  "user_message_count": 8,
+  "assistant_message_count": 101,
+  "tool_counts": {
+    "Read": 4,
+    "ToolSearch": 3,
+    "Edit": 9,
+    "Bash": 26,
+    "Glob": 8
+  },
+  "languages": {},
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 425,
+  "output_tokens": 16559,
+  "first_prompt": "Implement the following plan:  # Plan: Add Hyperscan Prefilter Mode to bench_hs_flexible.cpp  ## Context  `bench_hs_flexible.cpp` is a standalone Hyperscan benchmark tool supporting single/multi-patte…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    261.002,
+    56.735,
+    5.18,
+    24.92,
+    363.998,
+    43.287,
+    265.34
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Other": 2,
+    "Command Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 23,
+  "lines_removed": 6,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-17T06:39:14.607Z",
+    "2026-03-17T06:46:01.924Z",
+    "2026-03-17T06:50:15.767Z",
+    "2026-03-17T06:51:39.711Z",
+    "2026-03-17T06:51:59.451Z",
+    "2026-03-17T06:59:44.213Z",
+    "2026-03-17T07:00:41.898Z",
+    "2026-03-17T07:05:33.103Z"
+  ]
+}

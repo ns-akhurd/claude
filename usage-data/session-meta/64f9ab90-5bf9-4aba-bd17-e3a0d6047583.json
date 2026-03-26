@@ -1,0 +1,55 @@
+{
+  "session_id": "64f9ab90-5bf9-4aba-bd17-e3a0d6047583",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-02-24T16:12:09.865Z",
+  "duration_minutes": 34,
+  "user_message_count": 2,
+  "assistant_message_count": 41,
+  "tool_counts": {
+    "Read": 4,
+    "Grep": 2,
+    "Bash": 13
+  },
+  "languages": {
+    "Python": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 51,
+  "output_tokens": 365,
+  "first_prompt": "can you run this file /root/code/dataplane/libs/dlp/ciengine/test/dlp_ciengine_test/src/regen_oracle_and_test.sh",
+  "user_interruptions": 0,
+  "user_response_times": [
+    497.196
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Too Large": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    21,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T16:12:09.865Z",
+    "2026-02-24T16:43:14.425Z"
+  ]
+}.020Z"
+  ]
+}moved": 0,
+  "files_modified": 4,
+  "message_hours": [
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-02-24T11:57:11.196Z"
+  ]
+}

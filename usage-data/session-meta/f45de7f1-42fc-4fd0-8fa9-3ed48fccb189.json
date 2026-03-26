@@ -1,0 +1,67 @@
+{
+  "session_id": "f45de7f1-42fc-4fd0-8fa9-3ed48fccb189",
+  "project_path": "/root/code/dataplane/libs/dlp/ciengine/test/edk_hs_test",
+  "start_time": "2026-02-23T16:10:58.674Z",
+  "duration_minutes": 78,
+  "user_message_count": 9,
+  "assistant_message_count": 101,
+  "tool_counts": {
+    "Read": 12,
+    "Bash": 31,
+    "TaskOutput": 6,
+    "Edit": 4
+  },
+  "languages": {
+    "Python": 11,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 133,
+  "output_tokens": 3932,
+  "first_prompt": "<task-notification> <task-id>b0adaf5</task-id> <tool-use-id>toolu_012ZQqiAT79PVk4ZCP1YBJx5</tool-use-id> <output-file>/tmp/claude-0/-root-code-dataplane/tasks/b0adaf5.output</output-file> <status>comp…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    2944.683,
+    836.825
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Command Failed": 5
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 64,
+  "lines_removed": 7,
+  "files_modified": 1,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    22,
+    22,
+    22,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T16:10:58.675Z",
+    "2026-02-23T16:20:11.625Z",
+    "2026-02-23T16:20:24.530Z",
+    "2026-02-23T16:20:28.221Z",
+    "2026-02-23T16:20:32.234Z",
+    "2026-02-23T17:09:38.750Z",
+    "2026-02-23T17:13:42.001Z",
+    "2026-02-23T17:13:45.728Z",
+    "2026-02-23T17:27:45.867Z"
+  ]
+}728Z",
+    "2026-02-23T17:27:45.867Z",
+    "2026-02-23T17:29:05.987Z",
+    "2026-02-24T03:58:19.976Z",
+    "2026-02-24T03:58:19.976Z"
+  ]
+}

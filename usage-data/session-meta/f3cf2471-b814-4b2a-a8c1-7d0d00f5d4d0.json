@@ -1,0 +1,56 @@
+{
+  "session_id": "f3cf2471-b814-4b2a-a8c1-7d0d00f5d4d0",
+  "project_path": "/root/code/dataplane/libs/dlp/ciengine/test/edk_hs_test",
+  "start_time": "2026-02-23T07:02:40.863Z",
+  "duration_minutes": 242,
+  "user_message_count": 3,
+  "assistant_message_count": 47,
+  "tool_counts": {
+    "TaskList": 1,
+    "Bash": 11,
+    "TaskUpdate": 3,
+    "Read": 5,
+    "TaskCreate": 1,
+    "EnterPlanMode": 1,
+    "Task": 1,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Python": 3,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 63,
+  "output_tokens": 479,
+  "first_prompt": "can we avoid any code changes done to this file libs/dlp/ciengine/src/DlpHyperscanEngine.cpp",
+  "user_interruptions": 0,
+  "user_response_times": [
+    808.004
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "User Rejected": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 160,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-23T07:02:40.864Z",
+    "2026-02-23T10:43:13.681Z",
+    "2026-02-23T10:59:47.717Z"
+  ]
+}10:59:47.717Z",
+    "2026-02-23T11:05:57.832Z"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Have Claude ruthlessly interrogate/review a DLP benchmark report for gaps, assumptions, and errors",
+  "goal_categories": {
+    "code_review_or_document_review": 1
+  },
+  "outcome": "unclear_from_transcript",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User invoked a /grill command to critically review a benchmark report; Claude began reading the report and CSV data but the session ended before delivering the full critique.",
+  "session_id": "443cc88c-4e91-44be-8ef7-3ff5330a55b0"
+}

@@ -1,0 +1,72 @@
+{
+  "session_id": "e212a25a-8541-47df-a88e-b98a6b87ea7f",
+  "project_path": "/root",
+  "start_time": "2026-03-18T06:27:15.565Z",
+  "duration_minutes": 1,
+  "user_message_count": 1,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Grep": 1,
+    "Read": 1,
+    "Bash": 1
+  },
+  "languages": {
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 31,
+  "output_tokens": 658,
+  "first_prompt": "test the toast notify",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T06:27:34.148Z"
+  ]
+}fied": 1,
+  "message_hours": [
+    11,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T06:27:34.148Z",
+    "2026-03-18T06:30:48.536Z",
+    "2026-03-18T06:31:24.054Z",
+    "2026-03-18T06:32:04.054Z",
+    "2026-03-18T06:32:39.947Z",
+    "2026-03-18T06:32:50.421Z",
+    "2026-03-18T06:33:03.152Z"
+  ]
+}03-18T06:32:50.421Z",
+    "2026-03-18T06:33:03.152Z",
+    "2026-03-18T06:33:45.682Z",
+    "2026-03-18T06:34:06.299Z",
+    "2026-03-18T06:34:16.170Z"
+  ]
+}2Z",
+    "2026-03-18T06:34:06.299Z",
+    "2026-03-18T06:34:16.170Z",
+    "2026-03-18T06:45:06.814Z",
+    "2026-03-18T06:45:06.814Z",
+    "2026-03-18T06:45:06.814Z",
+    "2026-03-18T16:47:46.817Z"
+  ]
+}

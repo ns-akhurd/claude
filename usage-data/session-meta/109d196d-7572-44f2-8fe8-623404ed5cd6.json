@@ -1,0 +1,57 @@
+{
+  "session_id": "109d196d-7572-44f2-8fe8-623404ed5cd6",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-18T06:11:02.593Z",
+  "duration_minutes": 10,
+  "user_message_count": 5,
+  "assistant_message_count": 39,
+  "tool_counts": {
+    "ToolSearch": 4,
+    "Read": 5,
+    "Edit": 3,
+    "AskUserQuestion": 1,
+    "Bash": 4
+  },
+  "languages": {
+    "Markdown": 7,
+    "JSON": 1
+  },
+  "git_commits": 1,
+  "git_pushes": 0,
+  "input_tokens": 107,
+  "output_tokens": 8221,
+  "first_prompt": "add claude instructions to ask for permission in dont ask mode when denied not silently ignore it",
+  "user_interruptions": 0,
+  "user_response_times": [
+    102.312,
+    74.675,
+    76.717,
+    21.593
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Other": 3,
+    "File Changed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 11,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T06:11:48.351Z",
+    "2026-03-18T06:14:51.068Z",
+    "2026-03-18T06:16:28.206Z",
+    "2026-03-18T06:18:19.492Z",
+    "2026-03-18T06:20:53.962Z"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "session_id": "443cc88c-4e91-44be-8ef7-3ff5330a55b0",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2",
+  "start_time": "2026-03-14T09:39:13.864Z",
+  "duration_minutes": 1,
+  "user_message_count": 2,
+  "assistant_message_count": 21,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Read": 7,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 1,
+    "Glob": 1
+  },
+  "languages": {
+    "Markdown": 5,
+    "Python": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 55,
+  "output_tokens": 2477,
+  "first_prompt": "/grill dlp_benchmark_report.md",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-03-14T09:39:20.124Z",
+    "2026-03-14T09:39:20.124Z"
+  ]
+}

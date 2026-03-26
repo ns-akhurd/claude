@@ -1,0 +1,105 @@
+{
+  "session_id": "5990d4e0-bbdc-40c2-9d57-7db8edba6973",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-03-14T05:06:52.408Z",
+  "duration_minutes": 46,
+  "user_message_count": 3,
+  "assistant_message_count": 76,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Read": 14,
+    "Grep": 7,
+    "Edit": 11,
+    "Bash": 12,
+    "Skill": 1
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 5791,
+  "output_tokens": 18175,
+  "first_prompt": "commit and push this",
+  "user_interruptions": 0,
+  "user_response_times": [
+    2206.526
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Other": 3,
+    "Command Failed": 3
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 54,
+  "lines_removed": 25,
+  "files_modified": 2,
+  "message_hours": [
+    10,
+    10,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-14T05:06:52.409Z",
+    "2026-03-14T05:13:05.266Z",
+    "2026-03-14T05:51:50.970Z"
+  ]
+},
+  "uses_web_fetch": false,
+  "lines_added": 732,
+  "lines_removed": 27,
+  "files_modified": 4,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    8,
+    8,
+    8,
+    8,
+    8,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-13T15:10:04.347Z",
+    "2026-03-13T15:10:04.338Z",
+    "2026-03-13T15:11:18.658Z",
+    "2026-03-13T15:12:34.617Z",
+    "2026-03-13T15:13:55.412Z",
+    "2026-03-13T15:14:04.530Z",
+    "2026-03-13T15:14:04.530Z",
+    "2026-03-13T15:14:04.530Z",
+    "2026-03-13T15:14:07.782Z",
+    "2026-03-13T15:14:21.484Z",
+    "2026-03-13T15:14:21.493Z",
+    "2026-03-13T15:14:21.516Z",
+    "2026-03-13T15:18:25.730Z",
+    "2026-03-14T02:41:46.356Z",
+    "2026-03-14T02:45:18.840Z",
+    "2026-03-14T02:49:39.741Z",
+    "2026-03-14T03:10:50.542Z",
+    "2026-03-14T03:13:10.548Z",
+    "2026-03-14T03:31:51.356Z",
+    "2026-03-14T03:33:23.537Z",
+    "2026-03-14T04:54:25.573Z",
+    "2026-03-14T04:56:53.394Z",
+    "2026-03-14T05:01:33.866Z"
+  ]
+}

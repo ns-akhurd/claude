@@ -1,0 +1,58 @@
+{
+  "session_id": "3e98a6ae-b06f-4eb3-b74a-2602140f1baa",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-02-27T11:26:36.506Z",
+  "duration_minutes": 0,
+  "user_message_count": 1,
+  "assistant_message_count": 0,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "No prompt",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T11:26:36.506Z"
+  ]
+}  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 958,
+  "lines_removed": 24,
+  "files_modified": 5,
+  "message_hours": [
+    15,
+    15,
+    15,
+    15,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-02-27T10:01:14.699Z",
+    "2026-02-27T10:02:47.367Z",
+    "2026-02-27T10:06:55.688Z",
+    "2026-02-27T10:16:29.049Z",
+    "2026-02-27T10:37:04.974Z",
+    "2026-02-27T10:52:20.238Z",
+    "2026-02-27T11:00:59.377Z"
+  ]
+}

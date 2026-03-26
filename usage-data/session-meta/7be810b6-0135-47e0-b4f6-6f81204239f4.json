@@ -1,0 +1,79 @@
+{
+  "session_id": "7be810b6-0135-47e0-b4f6-6f81204239f4",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-25T13:52:03.999Z",
+  "duration_minutes": 73,
+  "user_message_count": 7,
+  "assistant_message_count": 64,
+  "tool_counts": {
+    "Bash": 25,
+    "Glob": 1,
+    "ToolSearch": 1,
+    "Skill": 1,
+    "Read": 8,
+    "Edit": 3
+  },
+  "languages": {
+    "Markdown": 9,
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 50856,
+  "output_tokens": 6383,
+  "first_prompt": "can you show me actual logs of nsdlp where you see dpdk and hyperscan fallback , i dont see it",
+  "user_interruptions": 0,
+  "user_response_times": [
+    302.68,
+    191.559,
+    2277.089,
+    713.548,
+    615.609
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 29,
+  "lines_removed": 4,
+  "files_modified": 1,
+  "message_hours": [
+    19,
+    19,
+    19,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T13:52:04.000Z",
+    "2026-02-25T13:57:18.202Z",
+    "2026-02-25T14:02:27.005Z",
+    "2026-02-25T14:40:40.111Z",
+    "2026-02-25T14:40:49.291Z",
+    "2026-02-25T14:54:11.744Z",
+    "2026-02-25T15:04:53.780Z"
+  ]
+}-02-25T14:02:27.005Z",
+    "2026-02-25T14:40:40.111Z",
+    "2026-02-25T14:40:49.291Z",
+    "2026-02-25T14:54:11.744Z",
+    "2026-02-25T15:04:53.780Z",
+    "2026-02-25T16:42:37.628Z",
+    "2026-02-25T17:06:28.273Z",
+    "2026-02-25T17:18:34.022Z",
+    "2026-02-25T17:22:46.326Z"
+  ]
+}  "2026-02-25T12:27:36.879Z",
+    "2026-02-25T12:27:36.879Z",
+    "2026-02-25T12:27:47.420Z",
+    "2026-02-25T12:27:47.420Z",
+    "2026-02-25T12:27:47.420Z",
+    "2026-02-25T12:33:05.321Z",
+    "2026-02-25T12:50:38.857Z",
+    "2026-02-25T12:54:31.092Z"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "a95f462f-ac93-4101-891c-8ea863a96ae7",
+  "project_path": "/root/code/nvidia/gpu/awsinstance/code/v2/v2/bench_comparison",
+  "start_time": "2026-03-18T12:40:44.113Z",
+  "duration_minutes": 2,
+  "user_message_count": 5,
+  "assistant_message_count": 5,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 2
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 15,
+  "output_tokens": 339,
+  "first_prompt": "! ls",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-03-18T12:40:52.172Z",
+    "2026-03-18T12:40:51.606Z",
+    "2026-03-18T12:40:52.172Z",
+    "2026-03-18T12:42:50.280Z",
+    "2026-03-18T12:42:50.280Z"
+  ]
+}18T12:40:52.172Z",
+    "2026-03-18T12:42:50.280Z",
+    "2026-03-18T12:42:50.280Z",
+    "2026-03-18T12:46:54.630Z",
+    "2026-03-18T12:46:56.105Z",
+    "2026-03-18T12:46:56.104Z",
+    "2026-03-18T12:47:08.016Z"
+  ]
+}

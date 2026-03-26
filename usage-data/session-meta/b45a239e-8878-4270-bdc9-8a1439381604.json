@@ -1,0 +1,41 @@
+{
+  "session_id": "b45a239e-8878-4270-bdc9-8a1439381604",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-03-10T15:13:12.660Z",
+  "duration_minutes": 2,
+  "user_message_count": 4,
+  "assistant_message_count": 13,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Bash": 8
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 23,
+  "output_tokens": 4779,
+  "first_prompt": "https://github.com/netSkope/dataplane/pull/13752",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-03-10T15:13:12.660Z",
+    "2026-03-10T15:13:12.660Z",
+    "2026-03-10T15:13:21.833Z",
+    "2026-03-10T15:13:21.875Z"
+  ]
+}

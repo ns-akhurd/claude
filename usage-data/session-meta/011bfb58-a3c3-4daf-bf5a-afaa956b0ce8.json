@@ -1,0 +1,85 @@
+{
+  "session_id": "011bfb58-a3c3-4daf-bf5a-afaa956b0ce8",
+  "project_path": "/root",
+  "start_time": "2026-03-20T08:22:16.815Z",
+  "duration_minutes": 13,
+  "user_message_count": 14,
+  "assistant_message_count": 53,
+  "tool_counts": {
+    "ToolSearch": 4,
+    "Bash": 3,
+    "mcp__plugin_context-mode_context-mode__ctx_execute": 8,
+    "Skill": 1,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 128,
+  "output_tokens": 11943,
+  "first_prompt": "how can i check my bedrock claude usage",
+  "user_interruptions": 0,
+  "user_response_times": [
+    67.727,
+    63.717,
+    17.071,
+    61.479,
+    68.627,
+    13.565,
+    13.565,
+    14.395,
+    34.418
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 99,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-03-20T08:22:16.935Z",
+    "2026-03-20T08:22:16.809Z",
+    "2026-03-20T08:22:28.965Z",
+    "2026-03-20T08:24:49.299Z",
+    "2026-03-20T08:25:15.528Z",
+    "2026-03-20T08:26:41.954Z",
+    "2026-03-20T08:27:33.648Z",
+    "2026-03-20T08:29:14.916Z",
+    "2026-03-20T08:31:34.082Z",
+    "2026-03-20T08:31:46.333Z",
+    "2026-03-20T08:33:21.057Z",
+    "2026-03-20T08:33:21.057Z",
+    "2026-03-20T08:34:32.667Z",
+    "2026-03-20T08:35:28.861Z"
+  ]
+}6-03-20T08:34:32.667Z",
+    "2026-03-20T08:35:28.861Z",
+    "2026-03-20T08:36:57.323Z",
+    "2026-03-20T08:37:05.936Z",
+    "2026-03-20T08:37:50.206Z"
+  ]
+}}

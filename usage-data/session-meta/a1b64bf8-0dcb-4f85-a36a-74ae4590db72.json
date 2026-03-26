@@ -1,0 +1,46 @@
+{
+  "session_id": "a1b64bf8-0dcb-4f85-a36a-74ae4590db72",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-12T14:41:40.547Z",
+  "duration_minutes": 2,
+  "user_message_count": 3,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 18,
+  "output_tokens": 535,
+  "first_prompt": "claude should subagents effectively , and global claude instrcution to make sure it effecintly spawns manage, and validate the agents completeions",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-03-12T14:41:40.547Z",
+    "2026-03-12T14:41:55.247Z",
+    "2026-03-12T14:41:55.287Z"
+  ]
+}-12T17:22:38.247Z",
+    "2026-03-12T17:24:30.313Z",
+    "2026-03-12T17:24:30.313Z",
+    "2026-03-12T17:25:29.277Z"
+  ]
+}

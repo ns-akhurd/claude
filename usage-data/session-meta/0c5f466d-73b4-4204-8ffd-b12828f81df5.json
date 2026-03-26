@@ -1,0 +1,53 @@
+{
+  "session_id": "0c5f466d-73b4-4204-8ffd-b12828f81df5",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-03-05T13:23:40.584Z",
+  "duration_minutes": 82,
+  "user_message_count": 8,
+  "assistant_message_count": 4,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 8,
+  "output_tokens": 506,
+  "first_prompt": "dose BlueField-3 B3140H-C support an atx power connector , it is a super by default not dpu",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-03-05T13:23:40.584Z",
+    "2026-03-05T14:43:01.974Z",
+    "2026-03-05T14:43:01.973Z",
+    "2026-03-05T14:43:01.973Z",
+    "2026-03-05T14:44:10.124Z",
+    "2026-03-05T14:44:08.876Z",
+    "2026-03-05T14:45:21.469Z",
+    "2026-03-05T14:45:20.284Z"
+  ]
+}

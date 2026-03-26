@@ -1,0 +1,51 @@
+{
+  "session_id": "8b38979a-6e37-4a7f-be8d-a157ed7d2da0",
+  "project_path": "/root/code/nvidia/feasibility",
+  "start_time": "2026-03-20T16:11:12.420Z",
+  "duration_minutes": 40,
+  "user_message_count": 7,
+  "assistant_message_count": 18,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_search": 3
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 38,
+  "output_tokens": 10314,
+  "first_prompt": "/esummary for feasibility/bench_wide.csv feasibility/tenant_bench_wide.csv and RXP_32K_PREFIX_LIMIT.md feasibility/dpdk_regex_bench.cpp,",
+  "user_interruptions": 1,
+  "user_response_times": [
+    86.98,
+    1947.952
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-03-20T16:11:24.199Z",
+    "2026-03-20T16:11:24.199Z",
+    "2026-03-20T16:11:27.027Z",
+    "2026-03-20T16:13:02.068Z",
+    "2026-03-20T16:13:02.070Z",
+    "2026-03-20T16:16:30.322Z",
+    "2026-03-20T16:50:30.994Z"
+  ]
+}

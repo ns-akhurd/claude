@@ -1,0 +1,76 @@
+{
+  "session_id": "d9b4a5b3-3103-419d-bbdd-789f90a1d4bb",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-25T04:19:18.933Z",
+  "duration_minutes": 3,
+  "user_message_count": 4,
+  "assistant_message_count": 17,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Skill": 2,
+    "mcp__slack__slack_read_channel": 1,
+    "Read": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 47,
+  "output_tokens": 1487,
+  "first_prompt": "categroize the issues obsered on slack channel C04BWGYJJH1",
+  "user_interruptions": 0,
+  "user_response_times": [
+    26.9
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-03-25T04:20:39.832Z",
+    "2026-03-25T04:20:51.692Z",
+    "2026-03-25T04:21:37.845Z",
+    "2026-03-25T04:21:46.087Z"
+  ]
+}0:39.832Z",
+    "2026-03-25T04:20:51.692Z",
+    "2026-03-25T04:21:37.845Z",
+    "2026-03-25T04:21:46.087Z",
+    "2026-03-25T04:22:39.858Z",
+    "2026-03-25T04:23:39.221Z",
+    "2026-03-25T04:33:26.727Z",
+    "2026-03-25T04:33:47.719Z"
+  ]
+}26-03-25T04:20:51.692Z",
+    "2026-03-25T04:21:37.845Z",
+    "2026-03-25T04:21:46.087Z",
+    "2026-03-25T04:22:39.858Z",
+    "2026-03-25T04:23:39.221Z",
+    "2026-03-25T04:33:26.727Z",
+    "2026-03-25T04:33:47.719Z",
+    "2026-03-25T04:36:19.670Z",
+    "2026-03-25T04:38:10.609Z",
+    "2026-03-25T04:38:37.099Z",
+    "2026-03-25T04:39:15.032Z",
+    "2026-03-25T04:39:47.457Z",
+    "2026-03-25T04:39:49.673Z",
+    "2026-03-25T04:39:59.426Z",
+    "2026-03-25T04:40:33.545Z",
+    "2026-03-25T04:42:19.197Z"
+  ]
+}

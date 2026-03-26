@@ -1,0 +1,88 @@
+{
+  "session_id": "2e43e032-8bd9-45fd-8c97-a779b40b64b7",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-03-17T06:40:50.358Z",
+  "duration_minutes": 158,
+  "user_message_count": 12,
+  "assistant_message_count": 118,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "Read": 17,
+    "Glob": 1,
+    "Bash": 20,
+    "Edit": 14,
+    "Write": 12
+  },
+  "languages": {
+    "JSON": 8,
+    "Markdown": 33,
+    "Shell": 2
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 314,
+  "output_tokens": 36804,
+  "first_prompt": "Implement the following plan:  # Plan: Claude Effectiveness Improvements **Date**: 2026-03-17 **Branch**: cudf **Scope**: ~/.claude/ global config + /root/code/dataplane/.claude/ project config **Sour…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    303.144,
+    481.782,
+    236.841,
+    2456.163,
+    2455.994,
+    2456.163,
+    2610.992,
+    1390.549,
+    206.363,
+    1155.029,
+    1828.174
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Other": 2,
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 346,
+  "lines_removed": 15,
+  "files_modified": 16,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-03-17T06:40:49.023Z",
+    "2026-03-17T06:53:55.345Z",
+    "2026-03-17T07:02:17.316Z",
+    "2026-03-17T07:07:11.272Z",
+    "2026-03-17T07:52:47.261Z",
+    "2026-03-17T07:52:47.092Z",
+    "2026-03-17T07:52:47.261Z",
+    "2026-03-17T07:55:22.090Z",
+    "2026-03-17T08:20:40.001Z",
+    "2026-03-17T08:25:09.446Z",
+    "2026-03-17T08:44:46.096Z",
+    "2026-03-17T09:16:00.151Z"
+  ]
+}6Z",
+    "2026-03-17T08:44:46.096Z",
+    "2026-03-17T09:16:00.151Z",
+    "2026-03-17T09:31:28.041Z",
+    "2026-03-17T10:30:00.794Z",
+    "2026-03-17T10:30:12.195Z",
+    "2026-03-17T10:51:58.329Z"
+  ]
+}

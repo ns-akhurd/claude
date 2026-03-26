@@ -1,0 +1,51 @@
+{
+  "session_id": "f3f200ef-e9b4-4df4-a96c-75615f050c9f",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-02-26T15:11:34.120Z",
+  "duration_minutes": 9,
+  "user_message_count": 2,
+  "assistant_message_count": 54,
+  "tool_counts": {
+    "Read": 8,
+    "Glob": 4,
+    "Grep": 3,
+    "TaskCreate": 3,
+    "TaskUpdate": 6,
+    "Bash": 1,
+    "Edit": 10
+  },
+  "languages": {
+    "Markdown": 10,
+    "Python": 7,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 54319,
+  "output_tokens": 19416,
+  "first_prompt": "look at plan review it for gaps ,         /root/code/dataplane/libs/dlp/ciengine/test/dlp_ciengine_test/src/UNICODE_SCRIPT_ORACLE_PLAN.md\u0007",
+  "user_interruptions": 0,
+  "user_response_times": [
+    196.507
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Other": 3,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 17,
+  "lines_removed": 39,
+  "files_modified": 3,
+  "message_hours": [
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T15:11:34.120Z",
+    "2026-02-26T15:18:45.401Z"
+  ]
+}

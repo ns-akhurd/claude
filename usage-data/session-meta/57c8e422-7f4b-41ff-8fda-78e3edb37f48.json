@@ -1,0 +1,63 @@
+{
+  "session_id": "57c8e422-7f4b-41ff-8fda-78e3edb37f48",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-26T13:32:06.005Z",
+  "duration_minutes": 2,
+  "user_message_count": 3,
+  "assistant_message_count": 7,
+  "tool_counts": {
+    "Task": 1,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 17,
+  "output_tokens": 3989,
+  "first_prompt": "look at the structure of educttion tar ball, create a plan to achive the same for arm architecure , here are arm bins /root/code/keyviewfilter/EductionSDK_25.3.0_LINUX_ARM, document the plan in .md fi…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    4.568,
+    11.653
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 244,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T13:32:06.005Z",
+    "2026-02-26T13:33:15.818Z",
+    "2026-02-26T13:33:22.903Z"
+  ]
+}Z",
+    "2026-02-26T13:33:15.818Z",
+    "2026-02-26T13:33:22.903Z",
+    "2026-02-26T13:34:51.210Z",
+    "2026-02-26T13:38:28.029Z"
+  ]
+}0
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T13:32:06.005Z",
+    "2026-02-26T13:33:15.818Z",
+    "2026-02-26T13:33:22.903Z",
+    "2026-02-26T13:34:51.210Z",
+    "2026-02-26T13:38:28.029Z",
+    "2026-02-26T13:41:09.173Z",
+    "2026-02-26T14:12:17.543Z",
+    "2026-02-26T14:21:23.038Z",
+    "2026-02-26T14:41:18.781Z"
+  ]
+}

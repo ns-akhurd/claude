@@ -19,6 +19,8 @@
       "Task",
       "mcp__plugin_slack_slack__*",
       "mcp__slack__*",
+      "mcp__plugin_jira__*",
+      "mcp__plugin_confluence__*",
       "mcp__plugin_context-mode_context-mode__*",
       "mcp__plugin_context7_context7__*",
       "Skill",
@@ -63,7 +65,7 @@
       "/root/.claude"
     ]
   },
-  "model": "opusplan",
+  "model": "sonnet",
   "hooks": {
     "PreToolUse": [
       {
@@ -157,7 +159,6 @@
     "command": "/bin/bash /root/.claude/statusline-robbyrussell.sh"
   },
   "enabledPlugins": {
-    "voicemode@voicemode": false,
     "eng-skills@netskope": true,
     "clangd-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
@@ -165,7 +166,6 @@
     "gopls-lsp@claude-plugins-official": true,
     "lua-lsp@claude-plugins-official": true,
     "slack@claude-plugins-official": true,
-    "context-mode@context-mode": true,
     "superpowers@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,

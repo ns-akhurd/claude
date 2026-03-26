@@ -1,0 +1,40 @@
+{
+  "session_id": "7378c7e1-6f92-4dd9-9db1-b14abfa3ff37",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-02-26T04:23:42.257Z",
+  "duration_minutes": 2,
+  "user_message_count": 5,
+  "assistant_message_count": 0,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "Unknown skill: remote-control",
+  "user_interruptions": 1,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T04:23:42.257Z",
+    "2026-02-26T04:23:42.257Z",
+    "2026-02-26T04:26:10.737Z",
+    "2026-02-26T04:26:10.737Z",
+    "2026-02-26T04:26:12.089Z"
+  ]
+}

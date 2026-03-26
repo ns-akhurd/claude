@@ -1,0 +1,45 @@
+{
+  "session_id": "e5c45814-753b-4db4-a52b-4e2dce1d6ee5",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-03-06T14:20:28.075Z",
+  "duration_minutes": 1,
+  "user_message_count": 2,
+  "assistant_message_count": 14,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Bash": 8
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 26,
+  "output_tokens": 1107,
+  "first_prompt": "i want to setup claude on remote machine https://github.com/netSkope/claude-skills/blob/main/docs/claude-code-setup.md",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-03-06T14:20:28.075Z",
+    "2026-03-06T14:20:36.405Z"
+  ]
+}ge_timestamps": [
+    "2026-03-06T14:20:28.075Z",
+    "2026-03-06T14:20:36.405Z",
+    "2026-03-06T14:27:10.696Z",
+    "2026-03-06T14:29:48.516Z",
+    "2026-03-06T14:30:04.681Z",
+    "2026-03-06T14:59:42.950Z"
+  ]
+}

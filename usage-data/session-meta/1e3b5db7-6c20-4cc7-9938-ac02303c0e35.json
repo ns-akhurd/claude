@@ -1,0 +1,61 @@
+{
+  "session_id": "1e3b5db7-6c20-4cc7-9938-ac02303c0e35",
+  "project_path": "/root/code/nvidia",
+  "start_time": "2026-02-25T01:58:31.702Z",
+  "duration_minutes": 2,
+  "user_message_count": 7,
+  "assistant_message_count": 9,
+  "tool_counts": {
+    "Read": 2,
+    "Task": 4
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 19,
+  "output_tokens": 59,
+  "first_prompt": "Thoroughly review the DPU offload plan Identify any gaps and fix them Also make sure whatever we can do locally on the current machine make sure it   works as expected , /root/code/nvidia/DLP_DPDK_REG…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "File Too Large": 1,
+    "Other": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "user_message_timestamps": [
+    "2026-02-25T01:58:31.702Z",
+    "2026-02-25T01:58:31.702Z",
+    "2026-02-25T01:58:31.702Z",
+    "2026-02-25T01:58:44.902Z",
+    "2026-02-25T01:58:44.901Z",
+    "2026-02-25T01:58:44.901Z",
+    "2026-02-25T01:59:00.643Z"
+  ]
+}02Z",
+    "2026-02-25T01:58:31.702Z",
+    "2026-02-25T01:58:31.702Z",
+    "2026-02-25T01:58:44.902Z",
+    "2026-02-25T01:58:44.901Z",
+    "2026-02-25T01:58:44.901Z",
+    "2026-02-25T01:59:00.643Z",
+    "2026-02-25T02:14:37.231Z"
+  ]
+}

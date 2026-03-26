@@ -1,0 +1,52 @@
+{
+  "session_id": "e8359123-0992-4e50-92ef-eb9e5d3b3efb",
+  "project_path": "/mnt/c/Users/AkshaySanjayKhurd",
+  "start_time": "2026-03-13T12:13:13.395Z",
+  "duration_minutes": 21,
+  "user_message_count": 4,
+  "assistant_message_count": 16,
+  "tool_counts": {
+    "ToolSearch": 3,
+    "Read": 2,
+    "Glob": 1,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 38,
+  "output_tokens": 4125,
+  "first_prompt": "I think bottom line I think we want to have some summary statement the details are good to have somebody is at the end here so I have tried to accept ok let's let's look at this Dupatta highlights bes…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    1077.123,
+    37.195,
+    37.718
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Not Found": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 89,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    17,
+    18,
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-03-13T12:13:13.395Z",
+    "2026-03-13T12:31:38.317Z",
+    "2026-03-13T12:32:41.446Z",
+    "2026-03-13T12:32:41.969Z"
+  ]
+}

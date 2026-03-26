@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Summarize a Slack channel using a newly installed Slack plugin",
+  "goal_categories": {
+    "slack_channel_summary": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "wrong_approach": 1
+  },
+  "friction_detail": "Slack MCP tools were not available after plugin install, preventing channel summarization.",
+  "primary_success": "none",
+  "brief_summary": "User wanted to summarize the #data-guardians Slack channel via a plugin, but the required MCP tools were unavailable after installation.",
+  "session_id": "a1b64bf8-0dcb-4f85-a36a-74ae4590db72"
+}

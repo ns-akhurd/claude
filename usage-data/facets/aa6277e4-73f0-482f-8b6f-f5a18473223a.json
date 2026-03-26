@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "Check and upgrade the context-mode MCP plugin",
+  "goal_categories": {
+    "plugin_diagnostics": 1,
+    "plugin_stats": 1,
+    "plugin_upgrade": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 3
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "fast_accurate_search",
+  "brief_summary": "User wanted to check, inspect stats, and upgrade the context-mode MCP plugin, and all three tasks were completed successfully.",
+  "session_id": "aa6277e4-73f0-482f-8b6f-f5a18473223a"
+}

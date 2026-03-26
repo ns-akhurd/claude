@@ -1,0 +1,78 @@
+{
+  "session_id": "ca475e72-4cf4-4f92-a9fd-1f7eaa0c6017",
+  "project_path": "/root/code/keyviewfilter",
+  "start_time": "2026-02-26T10:02:49.953Z",
+  "duration_minutes": 195,
+  "user_message_count": 8,
+  "assistant_message_count": 146,
+  "tool_counts": {
+    "Skill": 2,
+    "WebFetch": 1,
+    "Bash": 60,
+    "Read": 10,
+    "Task": 1,
+    "TaskCreate": 3,
+    "TaskUpdate": 8,
+    "Edit": 3,
+    "Write": 1,
+    "Glob": 2
+  },
+  "languages": {
+    "Markdown": 5,
+    "Shell": 1,
+    "Python": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 3569,
+  "output_tokens": 29171,
+  "first_prompt": "I want to package arm binaries for keyview  like the way it mentioned in the document https://netskope.atlassian.net/wiki/spaces/DataSecurityTeam/pages/4538368178/DLP+Keyview+Packaging . for x86",
+  "user_interruptions": 0,
+  "user_response_times": [
+    2838.961,
+    2838.961,
+    2685.281,
+    2685.281,
+    213.374,
+    213.374
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Other": 2,
+    "Command Failed": 2
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": true,
+  "lines_added": 371,
+  "lines_removed": 2,
+  "files_modified": 3,
+  "message_hours": [
+    15,
+    16,
+    16,
+    17,
+    17,
+    17,
+    17,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-02-26T10:02:49.953Z",
+    "2026-02-26T10:51:09.859Z",
+    "2026-02-26T10:51:09.859Z",
+    "2026-02-26T11:43:13.031Z",
+    "2026-02-26T11:43:13.031Z",
+    "2026-02-26T11:48:30.683Z",
+    "2026-02-26T11:48:30.683Z",
+    "2026-02-26T13:15:45.311Z"
+  ]
+}0.683Z",
+    "2026-02-26T13:15:45.311Z",
+    "2026-02-26T13:21:14.778Z"
+  ]
+}:45.311Z",
+    "2026-02-26T13:21:14.778Z"
+  ]
+}
