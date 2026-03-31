@@ -119,7 +119,7 @@ MUST write doc FIRST — before any grep, read, or code change. MUST update as w
 
 ## 11. Memory
 
-**11.0 Memory Directory** — Project memory lives at `.claude/projects/<project>/memory/`. `MEMORY.md` is auto-loaded each session (truncated after line 200). Store deep notes in topic files and link from `MEMORY.md`.
+**11.0 Memory Directory** — MUST store ALL project memory files at `<project-root>/.claude/memory/` (inside the project directory). NEVER write project memory to `~/.claude/projects/<project>/memory/` — that path pollutes the global folder and leaks context across projects. MUST add `@.claude/memory/MEMORY.md` to the project's `.claude/CLAUDE.md` so it loads each session. `MEMORY.md` is the index (truncated after 200 lines); store deep notes in topic files linked from it.
 
 **11.1 Read Memory at Session Start** — MUST read `MEMORY.md` on the first tool call of every session for the active project. NEVER skip.
 

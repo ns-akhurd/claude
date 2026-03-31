@@ -104,11 +104,21 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/da30827df51b",
-        "version": "da30827df51b",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/816589f8b2c3",
+        "version": "816589f8b2c3",
         "installedAt": "2026-03-20T15:23:23.940Z",
-        "lastUpdated": "2026-03-25T12:29:20.562Z",
+        "lastUpdated": "2026-03-26T06:01:04.881Z",
         "gitCommitSha": "b664e152af5742dd11b6a6e5d7a65848a8c5a261"
+      }
+    ],
+    "claude-hud@claude-hud": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/claude-hud/claude-hud/0.0.11",
+        "version": "0.0.11",
+        "installedAt": "2026-03-30T16:34:31.991Z",
+        "lastUpdated": "2026-03-30T16:34:31.991Z",
+        "gitCommitSha": "30e1dfe46ad7b9a39ca2a4df7c735aaa33a90fd9"
       }
     ]
   }

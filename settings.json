@@ -131,6 +131,18 @@
         ]
       }
     ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/sounds.sh notify",
+            "async": true
+          }
+        ]
+      }
+    ],
     "PermissionRequest": [
       {
         "matcher": "",
@@ -138,6 +150,11 @@
           {
             "type": "command",
             "command": "~/.claude/notify.sh 'Claude needs your permission!'"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/sounds.sh alert",
+            "async": true
           }
         ]
       }
@@ -149,6 +166,11 @@
           {
             "type": "command",
             "command": "~/.claude/notify.sh 'Claude finished!'"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/sounds.sh done",
+            "async": true
           }
         ]
       }
@@ -156,7 +178,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "/bin/bash /root/.claude/statusline-robbyrussell.sh"
+    "command": "~/.claude/claude-hud.sh"
   },
   "enabledPlugins": {
     "eng-skills@netskope": true,
@@ -169,13 +191,20 @@
     "superpowers@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
-    "context7@claude-plugins-official": true
+    "context7@claude-plugins-official": true,
+    "claude-hud@claude-hud": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {
       "source": {
         "source": "github",
         "repo": "mksglu/context-mode"
+      }
+    },
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
       }
     }
   },

@@ -16,6 +16,25 @@ Before applying any lens, MUST build a topic index from ALL artifacts in scope:
 
 This index is the grill scaffold. NEVER proceed to Phase 1 without completing it.
 
+### Phase 0 Step 4 — External Reference Enrichment (REQUIRED)
+
+Scan ALL artifacts for external references and fetch them before interrogating:
+
+1. **Jira tickets** — grep artifacts for `[A-Z]+-\d+` patterns (e.g., `ENG-1234`, `IMF-567`). For each ticket found:
+   - Invoke `eng-skills:jira` skill, then run: `jira issue TICKET-ID`
+   - Check ticket status, assignee, description, and comments
+   - If artifact claims an issue is **resolved** but the ticket is still **Open/In Progress** → `[GAP]`
+   - If ticket description or comments contradict the approach taken in the artifact → `[CRITICAL]`
+   - If ticket is a blocker/critical priority with no corresponding treatment in artifacts → `[GAP]`
+
+2. **Confluence pages** — grep artifacts for `https://netskope.atlassian.net/wiki/` URLs. For each URL:
+   - Invoke `eng-skills:confluence` skill, then fetch the page
+   - Verify artifact claims are consistent with the Confluence documentation
+   - If artifact contradicts the authoritative Confluence doc → `[CRITICAL]`
+   - If artifact omits caveats or constraints documented in Confluence → `[GAP]`
+
+NEVER treat ticket IDs or Confluence URLs as opaque context. NEVER skip fetching when references exist — that is rubber-stamping.
+
 ## Phase 1 — Six-Lens Interrogation
 
 For EVERY artifact (code file, plan section, design decision, config change, document paragraph) produced in this session, MUST systematically apply ALL of the following question lenses:
@@ -109,6 +128,12 @@ For every `[V1]`…`[Vn]` in the Validation Claims Index:
 
 9. MUST ask the user pointed follow-up questions for any `[QUESTION]` items. Do not assume answers.
 
+10. **LOOP UNTIL PASS** — After producing the verdict:
+    - If verdict is **FAIL** or **CONDITIONAL PASS**: MUST fix ALL CRITICAL and GAP findings immediately (no user prompt needed), then re-run the full grill cycle from Phase 0 on the updated artifacts.
+    - Repeat until the verdict is **PASS** or until only `[UNCLEAR]`/`[SMELL]`/`[QUESTION]` items remain.
+    - NEVER declare done while any CRITICAL or GAP finding is unresolved.
+    - Each iteration MUST produce a new findings table and verdict — NEVER reuse a prior table.
+
 ## Anti-Patterns — NEVER Do These During Grill
 
 - NEVER say "looks good" without evidence
@@ -121,9 +146,10 @@ For every `[V1]`…`[Vn]` in the Validation Claims Index:
 
 Begin grilling NOW. Execute in order — do NOT skip phases:
 
-1. **Phase 0:** Read all modified/created artifacts → build Limitations Index `[L1..Ln]`, Recommendations Index `[R1..Rn]`, Validation Claims Index `[V1..Vn]`
+1. **Phase 0:** Read all modified/created artifacts → build Limitations Index `[L1..Ln]`, Recommendations Index `[R1..Rn]`, Validation Claims Index `[V1..Vn]` → fetch all Jira tickets (`eng-skills:jira`) and Confluence pages (`eng-skills:confluence`) referenced in artifacts
 2. **Phase 1:** Apply all six lenses (WHAT/WHY/HOW/WHERE/WHEN/WHICH) to every artifact
 3. **Phase 2:** Run Check A (caveat propagation), Check B (stale rationale), Check C (validation self-verification)
 4. Produce findings table + verdict
+5. **If FAIL or CONDITIONAL PASS:** fix all CRITICAL/GAP findings → loop back to step 1
 
-All three phases happen in ONE pass. NEVER deliver a verdict before completing all three.
+All three phases happen in ONE pass per iteration. NEVER deliver a verdict before completing all three. NEVER stop looping while CRITICAL or GAP findings remain.

@@ -1,0 +1,3 @@
+[submodule "plugins/marketplaces/claude-hud"]
+	path = plugins/marketplaces/claude-hud
+	url = git@github.com:jarrodwatts/claude-hud.git
