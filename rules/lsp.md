@@ -10,13 +10,18 @@ LSP is a **deferred tool** — its schema is not loaded at session start. MUST c
 | `gopls-lsp` | Go | All Go navigation, diagnostics, formatting |
 | `lua-lsp` | Lua | All Lua navigation and diagnostics |
 
-**10.1 Prefer LSP over text search for code navigation:**
-- `goToDefinition` / `goToImplementation` — jump to source, NEVER grep for definitions
-- `findReferences` — find all usages across the codebase
-- `workspaceSymbol` — locate where something is defined by name
-- `documentSymbol` — list all symbols in a file
-- `hover` — get type info without reading the file
-- `incomingCalls` / `outgoingCalls` — trace call hierarchy
+**10.1 LSP-first for all code navigation — strict fallback order:**
+
+| Task | MUST use | NEVER use instead |
+|---|---|---|
+| Find where a symbol is defined | `workspaceSymbol` → `goToDefinition` | `grep`, `Bash grep`, `Glob` |
+| List all symbols in a file | `documentSymbol` | Read the whole file |
+| Find all usages | `findReferences` | `grep` for the name |
+| Get type/signature info | `hover` | Read the header |
+| Trace callers/callees | `incomingCalls` / `outgoingCalls` | Manual grep + read |
+| Jump to implementation | `goToImplementation` | `grep` for impl |
+
+NEVER reach for Grep/Bash/Read for any of the above without first attempting the LSP operation. If LSP returns no results, THEN fall back to Grep — and document why.
 
 **10.2** Before renaming or changing a function signature, MUST use `findReferences` to find all call sites first.
 
