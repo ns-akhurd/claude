@@ -5,7 +5,12 @@
     "CLAUDE_CODE_USE_BEDROCK": "1",
     "AWS_REGION": "us-east-1",
     "ENABLE_LSP_TOOL": "1",
-    "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
+    "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0",
+    "cleanupPeriodDays": "365",
+    "ENABLE_TOOL_SEARCH": "true",
+    "BASH_MAX_OUTPUT_LENGTH": "100000",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "75"
   },
   "permissions": {
     "allow": [
@@ -65,68 +70,15 @@
       "/root/.claude"
     ]
   },
-  "model": "sonnet",
+  "model": "opusplan",
   "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash|WebFetch|Read|Grep|Agent|Task|mcp__plugin_context-mode_context-mode__ctx_execute|mcp__plugin_context-mode_context-mode__ctx_execute_file|mcp__plugin_context-mode_context-mode__ctx_batch_execute",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/pretooluse.mjs"
-          }
-        ]
-      }
-    ],
     "PostToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/posttooluse.mjs"
-          }
-        ]
-      },
       {
         "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
-            "command": "python3 -c \"import json,os,subprocess; d=json.loads(os.environ.get('CLAUDE_TOOL_INPUT','{}')); f=d.get('file_path',''); f and any(f.endswith(e) for e in ('.cpp','.hpp','.h','.c')) and subprocess.run(['/opt/llvm-21/bin/clang-format','-i',f])\" 2>/dev/null || true"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node \"/root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/sessionstart.mjs\""
-          }
-        ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/precompact.mjs"
-          }
-        ]
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node /root/.claude/plugins/cache/context-mode/context-mode/1.0.20/hooks/userpromptsubmit.mjs"
+            "command": "bash /root/.claude/hooks/post-clang-format.sh"
           }
         ]
       }
@@ -178,7 +130,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/claude-hud.sh"
+    "command": "~/.claude/statusline-robbyrussell.sh"
   },
   "enabledPlugins": {
     "eng-skills@netskope": true,
@@ -205,7 +157,8 @@
       "source": {
         "source": "github",
         "repo": "jarrodwatts/claude-hud"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "effortLevel": "high"

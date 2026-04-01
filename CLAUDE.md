@@ -25,7 +25,7 @@ MANDATORY: MUST/NEVER/ALWAYS = enforced. Obey exactly.
 
 Post-edit: MUST verify claims against code, confirm code blocks are executable, count lists/tables, compute formulas from first principles, grep downstream refs. **Numerics:** ALWAYS compute from first principles. NEVER adjust "in right direction" without doing the arithmetic. **Code sketches:** MUST diff token-by-token against actual file.
 
-**1.2 Exhaustive First-Pass Reading** — Given a reference to compare: (1) MUST read ENTIRE reference AND target line by line BEFORE producing output. (2) MUST number every requirement; map each to where target addresses it. (3) NEVER skim or start writing findings before finishing the full read.
+**1.2 Exhaustive First-Pass Reading** — MUST read ANY text (files, user messages, tool results, documents) line by line in full BEFORE producing output. NEVER skim. Given a reference to compare: (1) MUST read ENTIRE reference AND target line by line BEFORE producing output. (2) MUST number every requirement; map each to where target addresses it. (3) NEVER skim or start writing findings before finishing the full read.
 
 **1.3 Evidence Provenance** — When asserting how code behaves: MUST state evidence source explicitly. MUST prefer actual output/data over code reading. NEVER present code-reading inferences as confirmed facts — label: "based on code at X" or "code shows Y (not empirically confirmed)".
 
@@ -71,6 +71,16 @@ MUST write doc FIRST — before any grep, read, or code change. MUST update as w
 
 **2.11 Scope-First Analysis** — When user references a specific file, function, or component: MUST constrain analysis to that exact target FIRST. NEVER search broadly or explore adjacent code before addressing the specified target. Expand scope ONLY on explicit request.
 
+**2.12 Autonomous Execution** — NEVER instruct the user to run a command, execute a step, or perform an action that Claude can do directly with its tools. MUST execute all such steps autonomously. Exception: interactive actions requiring human input (e.g., browser-based auth, hardware operations).
+
+**2.13 Requirements-First Document Creation** — IF creating any design, spec, or plan document against a reference (EFR, analysis doc, checklist, or user-provided items list):
+1. MUST extract and number ALL requirements/items from the reference BEFORE writing any document sections
+2. MUST create a coverage table mapping each requirement to a document section
+3. MUST verify every item maps to a section BEFORE declaring the document complete
+4. NEVER write document prose before step 1 is complete
+
+DO NOT create the doc and then iterate — enumerate requirements first.
+
 ## 3. Communication & Permissions
 
 **3.0 Ask Before Assuming** — When an instruction is ambiguous: MUST ask a single focused clarifying question BEFORE taking any action. NEVER infer and proceed. Example: "update claude instructions" → ask "Which file — project CLAUDE.md, global ~/.claude/CLAUDE.md, or both?"
@@ -107,6 +117,13 @@ MUST write doc FIRST — before any grep, read, or code change. MUST update as w
 **7.4 Autonomous Bug Fixing** — When given a bug report: MUST just fix it. MUST point at logs, errors, and failing tests, then resolve without prompting. NEVER say "I found the issue, would you like me to fix it?"
 
 **7.5 Two-Attempt Limit** — If the same fix, test strategy, or grep pattern fails twice: MUST STOP — NEVER attempt a third retry with the same approach. MUST use `AskUserQuestion` to surface: (1) what was tried, (2) what failed, (3) what alternatives exist.
+
+**7.6 Multi-Channel Input Debugging** — IF debugging a hook, callback, subprocess, or plugin where expected input appears empty or missing:
+1. MUST dump ALL input channels simultaneously in the FIRST debug attempt: stdin (`STDIN_DATA=$(cat)`), relevant env vars (`env | grep -i <prefix>`), positional args (`"$@"`), and any known file-based channels
+2. NEVER test one channel at a time — always dump all at once
+3. MUST read source of an analogous working component in the same framework to verify the expected channel BEFORE hypothesizing
+
+DO NOT assume input channel by analogy — mechanism can differ by event type even within the same framework.
 
 ## 8. Token Efficiency
 @~/.claude/rules/token-efficiency.md
