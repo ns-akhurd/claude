@@ -23,7 +23,7 @@ except:
     print('')
 " <<< "$STDIN_DATA" 2>/dev/null)
 
-echo "[post-clang-format] $(date '+%H:%M:%S') file='${f}' input_len=${#INPUT}" >> "$LOGFILE"
+echo "[post-clang-format] $(date '+%H:%M:%S') file='${f}'" >> "$LOGFILE"
 
 [ -z "$f" ] && exit 0
 
