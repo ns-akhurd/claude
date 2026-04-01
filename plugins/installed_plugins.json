@@ -74,10 +74,10 @@
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.6",
-        "version": "5.0.6",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7",
+        "version": "5.0.7",
         "installedAt": "2026-03-14T14:27:00.501Z",
-        "lastUpdated": "2026-03-26T04:30:33.962Z",
+        "lastUpdated": "2026-04-01T05:48:19.415Z",
         "gitCommitSha": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90"
       }
     ],
@@ -104,10 +104,10 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/816589f8b2c3",
-        "version": "816589f8b2c3",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/0dbe357daaa3",
+        "version": "0dbe357daaa3",
         "installedAt": "2026-03-20T15:23:23.940Z",
-        "lastUpdated": "2026-03-26T06:01:04.881Z",
+        "lastUpdated": "2026-04-01T08:28:56.545Z",
         "gitCommitSha": "b664e152af5742dd11b6a6e5d7a65848a8c5a261"
       }
     ],
