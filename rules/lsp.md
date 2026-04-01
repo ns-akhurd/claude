@@ -1,4 +1,6 @@
-**10.0 MUST Use LSP Plugins** — The following LSP plugins are enabled and MUST be used for all supported file types. NEVER fall back to text search or manual file reading for operations these plugins handle:
+**10.0 MUST Use LSP Plugins** — The following LSP plugins are enabled and MUST be used for all supported file types. NEVER fall back to text search or manual file reading for operations these plugins handle.
+
+LSP is a **deferred tool** — its schema is not loaded at session start. MUST call `ToolSearch` with `query: "select:LSP"` before the first LSP operation in any session. Do this at the same time as the first file read or grep, not as a separate step.
 
 | Plugin | Languages | When to use |
 |---|---|---|
