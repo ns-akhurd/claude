@@ -1,4 +1,4 @@
-**5.1 Design Doc Completeness** — Every plan/design doc/architecture proposal MUST have dedicated 3+ sentence sections for ALL 10:
+**5.1 Design Doc Completeness** — Every plan/design doc/architecture proposal MUST have 3+ sentence sections for all 10:
 1. Security — auth, data isolation, encryption, network exposure
 2. Error handling — every failure mode with detection + recovery
 3. Scaling — multi-device, multi-tenant, capacity limits
@@ -10,9 +10,9 @@
 9. Upgrade/rollback — safe dependency update procedure
 10. Resource cleanup — orderly shutdown, leak prevention
 
-**5.2 Redo = Clean Rebuild** — "redo"/"scrap this"/"do it better" → MUST build cleanest solution from scratch. NEVER incrementally patch the broken approach.
+**5.2 Redo = Clean Rebuild** — "redo"/"scrap this"/"do it better" → MUST build cleanest solution from scratch. NEVER patch incrementally.
 
-**5.3 Single Source of Truth** — If data exists as an authoritative source: load dynamically, delete static copy. NEVER create a second copy that will drift.
+**5.3 Single Source of Truth** — If data exists as an authoritative source: load dynamically, delete static copy. NEVER create a second copy.
 
 **5.4 Sample Actual Data** — Before writing any display/format function: MUST grep/query actual data source to find ALL real values first. NEVER write formatter based on assumed values.
 
@@ -21,7 +21,7 @@
 **5.6 Demand Elegance (Balanced)** — For non-trivial changes:
 - MUST evaluate whether a simpler approach exists before finalizing
 - If a fix feels hacky: MUST apply the rule "Knowing everything I know now, implement the elegant solution"
-- NEVER apply elegance checks to simple, obvious fixes — do not over-engineer
+- NEVER apply elegance checks to simple, obvious fixes.
 
 **5.7 Parallel Component Symmetry** — IF adding a feature, parameter, or behavioural change to one component in a set of functionally parallel components (engines, adapters, services, plugins, clients):
 1. MUST immediately identify ALL sibling components in that set

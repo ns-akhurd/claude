@@ -104,21 +104,21 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/57cd40bae0cf",
-        "version": "57cd40bae0cf",
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/context7/b81c36d851dc",
+        "version": "b81c36d851dc",
         "installedAt": "2026-03-20T15:23:23.940Z",
-        "lastUpdated": "2026-04-01T14:09:39.453Z",
+        "lastUpdated": "2026-04-02T06:10:52.208Z",
         "gitCommitSha": "b664e152af5742dd11b6a6e5d7a65848a8c5a261"
       }
     ],
-    "claude-hud@claude-hud": [
+    "code-simplifier@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/claude-hud/claude-hud/0.0.11",
-        "version": "0.0.11",
-        "installedAt": "2026-03-30T16:34:31.991Z",
-        "lastUpdated": "2026-03-30T16:34:31.991Z",
-        "gitCommitSha": "30e1dfe46ad7b9a39ca2a4df7c735aaa33a90fd9"
+        "installPath": "/root/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-04-02T06:11:35.030Z",
+        "lastUpdated": "2026-04-02T06:11:35.030Z",
+        "gitCommitSha": "b81c36d851dc86a67129b50604b385a4557c12fb"
       }
     ]
   }

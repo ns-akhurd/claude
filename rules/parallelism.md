@@ -5,7 +5,7 @@
 - Work that benefits from isolated context (separate concern, separate codebase area)
 - NOT for: single reads, one grep, simple lookups, or tasks with <3 tool calls
 
-**4.2 Spawning Discipline** — MUST follow these rules when creating subagents:
+**4.2 Spawning Discipline** — MUST follow when creating subagents:
 1. ONE task per subagent — NEVER overload a single subagent with unrelated work
 2. MUST specify in the prompt: (a) exact goal, (b) exact files/patterns to examine, (c) exact output format expected, (d) constraints/boundaries
 3. MUST set `max_turns` proportional to task complexity: simple lookup=3, exploration=10, code gen=15
@@ -18,8 +18,8 @@
 
 **4.3 Validating Subagent Completions** — AFTER every subagent returns:
 1. MUST check the result addresses the original goal — if partial or off-target, either fix inline or re-delegate with corrected prompt
-2. MUST verify factual claims from subagents before presenting to user — subagents can hallucinate file paths, line numbers, or code details
-3. MUST NOT blindly paste subagent output to user — synthesize, deduplicate, and present coherently
+2. MUST verify factual claims from subagents before presenting to user
+3. NEVER paste subagent output directly — synthesize, deduplicate, and present coherently
 4. IF subagent returns an error or empty result: MUST diagnose and retry with corrected parameters — NEVER silently drop failed subagent results
 5. IF multiple subagents return overlapping or conflicting findings: MUST reconcile before presenting — state which is authoritative and why
 

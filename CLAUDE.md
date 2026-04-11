@@ -79,8 +79,6 @@ MUST write doc FIRST — before any grep, read, or code change. MUST update as w
 3. MUST verify every item maps to a section BEFORE declaring the document complete
 4. NEVER write document prose before step 1 is complete
 
-DO NOT create the doc and then iterate — enumerate requirements first.
-
 ## 3. Communication & Permissions
 
 **3.0 Ask Before Assuming** — When an instruction is ambiguous: MUST ask a single focused clarifying question BEFORE taking any action. NEVER infer and proceed. Example: "update claude instructions" → ask "Which file — project CLAUDE.md, global ~/.claude/CLAUDE.md, or both?"
@@ -123,7 +121,7 @@ DO NOT create the doc and then iterate — enumerate requirements first.
 2. NEVER test one channel at a time — always dump all at once
 3. MUST read source of an analogous working component in the same framework to verify the expected channel BEFORE hypothesizing
 
-DO NOT assume input channel by analogy — mechanism can differ by event type even within the same framework.
+NEVER assume input channel by analogy across event types.
 
 ## 8. Token Efficiency
 @~/.claude/rules/token-efficiency.md
@@ -136,17 +134,21 @@ DO NOT assume input channel by analogy — mechanism can differ by event type ev
 
 ## 11. Memory
 
-**11.0 Memory Directory** — MUST store ALL project memory files at `<project-root>/.claude/memory/` (inside the project directory). NEVER write project memory to `~/.claude/projects/<project>/memory/` — that path pollutes the global folder and leaks context across projects. MUST add `@.claude/memory/MEMORY.md` to the project's `.claude/CLAUDE.md` so it loads each session. `MEMORY.md` is the index (truncated after 200 lines); store deep notes in topic files linked from it.
+**11.0 Memory Directory** — MUST store ALL project memory files at `<project-root>/.claude/memory/` (inside the project directory). NEVER write project memory to `~/.claude/projects/<project>/memory/` — that path pollutes the global folder and leaks context across projects. NEVER add `@.claude/memory/MEMORY.md` to any CLAUDE.md file — that causes eager loading every session. `MEMORY.md` is the index (truncated after 200 lines); store deep notes in topic files linked from it.
 
-**11.1 Read Memory at Session Start** — MUST read `MEMORY.md` on the first tool call of every session for the active project. NEVER skip.
+**11.1 Lazy Memory Loading** — NEVER read `MEMORY.md` eagerly at session start. MUST read `MEMORY.md` only when the task is explicitly memory-relevant: user says "remember"/"recall"/"check memory", references prior-session work, or asks about decisions/patterns from past sessions.
 
 **11.2 Write Memory After Significant Work** — MUST update memory after: non-trivial architectural/design decisions; confirmed patterns/conventions; bug root-causes found; user corrections (also write to CLAUDE.md per 3.2); new component/file layout understood.
 
-**11.3 Memory Write Rules:** (1) MUST update existing entries — NEVER duplicate. (2) MUST delete/correct wrong entries. (3) NEVER write session-specific state. (4) Topic files for depth; `MEMORY.md` for index only. (5) NEVER leave `MEMORY.md` >200 lines. (6) MUST keep project-level CLAUDE.md files under 200 lines — move verbose content to `.claude/rules/` files or `@path` imports.
+**11.3 Memory Write Rules:** (1) MUST update existing entries — NEVER duplicate. (2) MUST delete/correct wrong entries. (3) NEVER write session-specific state. (4) Topic files for depth; `MEMORY.md` for index only. (5) NEVER leave `MEMORY.md` >200 lines. (6) MUST keep project-level CLAUDE.md files under 200 lines — move verbose content to `.claude/rules/` files or `@path` imports. (7) MUST synthesize observations into concept articles — NEVER append raw notes verbatim. (8) MUST add backlinks in topic files when they reference related topics. (9) Each `MEMORY.md` index entry MUST include a 1-2 sentence summary after the link — links-only entries defeat lazy loading.
 
 **11.4 Proactive Triggers** — MUST write to memory without being asked when: user says "always"/"never"/"from now on"; a build/test/config trick is discovered; an important file path or environment quirk is confirmed.
 
 **11.5 Learning Digest** — Best practices live at `~/.claude/learning/digest.md`. MUST consult when looking for productivity improvements, workflow patterns, or prompting techniques.
+
+**11.6 File Outputs Back** — After completing any analysis, investigation, or architectural decision: MUST file key insights back into the relevant memory topic file. Every session MUST compound the knowledge base, not just consume it.
+
+**11.7 Memory Health Check** — When memory files feel stale or inconsistent: MUST scan for duplicate entries, stale facts, broken backlinks, and topic files that should be merged or split. Fix all findings in one pass.
 
 ## 12. Core Principles
 
@@ -163,7 +165,8 @@ DO NOT assume input channel by analogy — mechanism can differ by event type ev
 **13.2 Slack Timestamp Computation** — IF computing a Unix timestamp for a Slack `oldest` parameter: (1) MUST verify by back-converting: `datetime.utcfromtimestamp(ts)`. (2) NEVER pass an unverified integer timestamp. (3) MUST log the computed date (human-readable) before the API call.
 
 ## 14. Grill Mode (`/grill`)
-@~/.claude/rules/grill.md
+
+**14.1 Invoke skill** — MUST invoke the `grill` skill via the Skill tool whenever `/grill` is invoked or grill mode is triggered. All rules live in the skill.
 
 ## 15. Integration with any Libraries
 @~/.claude/rules/library-integration.md

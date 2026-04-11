@@ -1,6 +1,6 @@
-**10.0 MUST Use LSP Plugins** — The following LSP plugins are enabled and MUST be used for all supported file types. NEVER fall back to text search or manual file reading for operations these plugins handle.
+**10.0 MUST Use LSP Plugins** — LSP plugins are enabled and MUST be used for all supported file types. NEVER fall back to text search or manual file reading for these operations.
 
-LSP is a **deferred tool** — its schema is not loaded at session start. MUST call `ToolSearch` with `query: "select:LSP"` before the first LSP operation in any session. Do this at the same time as the first file read or grep, not as a separate step.
+LSP is a **deferred tool**. WHEN the first Grep, Read, or Bash targets a C/C++ file (`.c`, `.cpp`, `.hpp`, `.h`, `.cc`): MUST batch `ToolSearch` with `query: "select:LSP"` in that SAME message — before the tool results arrive. NEVER wait until an LSP operation is planned; fetch it proactively on first C++ contact so it is ready.
 
 | Plugin | Languages | When to use |
 |---|---|---|
@@ -15,13 +15,15 @@ LSP is a **deferred tool** — its schema is not loaded at session start. MUST c
 | Task | MUST use | NEVER use instead |
 |---|---|---|
 | Find where a symbol is defined | `workspaceSymbol` → `goToDefinition` | `grep`, `Bash grep`, `Glob` |
+
+**`workspaceSymbol` requires a file path, not a directory** (e.g. `libs/base/ns_types.h`). NEVER pass a directory — the tool rejects it with "Path is not a file".
 | List all symbols in a file | `documentSymbol` | Read the whole file |
 | Find all usages | `findReferences` | `grep` for the name |
 | Get type/signature info | `hover` | Read the header |
 | Trace callers/callees | `incomingCalls` / `outgoingCalls` | Manual grep + read |
 | Jump to implementation | `goToImplementation` | `grep` for impl |
 
-NEVER reach for Grep/Bash/Read for any of the above without first attempting the LSP operation. If LSP returns no results, THEN fall back to Grep — and document why.
+NEVER use Grep/Bash/Read above without attempting LSP first. If LSP returns no results, fall back to Grep — document why.
 
 **10.2** Before renaming or changing a function signature, MUST use `findReferences` to find all call sites first.
 
