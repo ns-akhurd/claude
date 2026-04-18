@@ -1,6 +1,13 @@
 {
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "slack"
   ],
-  "enableAllProjectMcpServers": true
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /root/.claude/hooks/terse-mode.sh)",
+      "Bash(mkdir -p /root/.claude/tools)",
+      "Bash(cp -r /tmp/caveman/repo/caveman-compress /root/.claude/tools/)"
+    ]
+  }
 }

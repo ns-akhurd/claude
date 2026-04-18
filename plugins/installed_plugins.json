@@ -120,6 +120,16 @@
         "lastUpdated": "2026-04-02T06:11:35.030Z",
         "gitCommitSha": "b81c36d851dc86a67129b50604b385a4557c12fb"
       }
+    ],
+    "context-mode@context-mode": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/context-mode/context-mode/1.0.89",
+        "version": "1.0.89",
+        "installedAt": "2026-04-18T14:25:56.955Z",
+        "lastUpdated": "2026-04-18T16:00:14.166Z",
+        "gitCommitSha": "e43c78849957fbe1c79cf1874aa54bbcc02c5b63"
+      }
     ]
   }
 }

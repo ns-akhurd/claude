@@ -6,7 +6,7 @@
     "AWS_REGION": "us-east-1",
     "ENABLE_LSP_TOOL": "1",
     "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0",
-    "cleanupPeriodDays": "365",
+    "cleanupPeriodDays": "90",
     "ENABLE_TOOL_SEARCH": "true",
     "BASH_MAX_OUTPUT_LENGTH": "100000",
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
@@ -90,33 +90,10 @@
           {
             "type": "command",
             "command": "bash /root/.claude/hooks/post-clang-format.sh"
-          }
-        ]
-      },
-      {
-        "matcher": "Read",
-        "hooks": [
+          },
           {
             "type": "command",
-            "command": "/usr/bin/python3 /root/code/tools/context-pilot/hook.py post_read"
-          }
-        ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/bin/python3 /root/code/tools/context-pilot/hook.py post_bash"
-          }
-        ]
-      },
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/bin/python3 /root/code/tools/context-pilot/hook.py post_edit"
+            "command": "bash /root/.claude/hooks/strip-crlf.sh"
           }
         ]
       }
@@ -149,6 +126,28 @@
         ]
       }
     ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /root/.claude/hooks/rule-11-4-trigger.sh"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /root/.claude/hooks/terse-mode.sh"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",
@@ -164,28 +163,6 @@
           }
         ]
       }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/bin/python3 /root/code/tools/context-pilot/hook.py pre_bash"
-          }
-        ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/bin/python3 /root/code/tools/context-pilot/hook.py pre_compact"
-          }
-        ]
-      }
     ]
   },
   "statusLine": {
@@ -198,13 +175,14 @@
     "pyright-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "gopls-lsp@claude-plugins-official": true,
-    "lua-lsp@claude-plugins-official": true,
+    "lua-lsp@claude-plugins-official": false,
     "slack@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "context-mode@context-mode": true
   },
   "extraKnownMarketplaces": {
     "context-mode": {
@@ -212,13 +190,6 @@
         "source": "github",
         "repo": "mksglu/context-mode"
       }
-    },
-    "claude-hud": {
-      "source": {
-        "source": "github",
-        "repo": "jarrodwatts/claude-hud"
-      },
-      "autoUpdate": true
     }
   },
   "effortLevel": "high",
