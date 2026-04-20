@@ -81,7 +81,10 @@
       "/root/.claude"
     ]
   },
-  "model": "sonnet",
+  "model": "opus",
+  "skillOverrides": {
+    "init-agent-os": "off"
+  },
   "hooks": {
     "PostToolUse": [
       {
