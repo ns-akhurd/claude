@@ -6,6 +6,8 @@ input=$(cat)
 # Extract model display name
 model=$(echo "$input" | jq -r '.model.display_name')
 model_id=$(echo "$input" | jq -r '.model.id')
+effort=$(echo "$input" | jq -r '.effort_level // .effortLevel // empty')
+[ -n "$effort" ] && model_display="$model [$effort]" || model_display="$model"
 
 # Extract current working directory (shorten home to ~)
 cwd=$(echo "$input" | jq -r '.cwd // .workspace.current_dir // empty')
@@ -149,7 +151,7 @@ if [ -n "$used_pct" ]; then
     sep=" \033[2m│\033[0m "
     # Model │ [bar·] 7% │ i:X o:X r:X w:X $cost │ ~/cwd │ HH:MM · duration
     printf "\033[1;36m%s\033[0m${sep}%b%s %d%%\033[0m${sep}\033[2mi:%s o:%s r:%s w:%s\033[0m \033[1;33m%s\033[0m${sep}\033[1;34m%s\033[0m${sep}\033[0;37m%s\033[0m \033[2m·\033[0m \033[0;35m%s\033[0m" \
-        "$model" \
+        "$model_display" \
         "$color" "$bar" "$used_int" \
         "$itok" "$otok" "$crtok" "$cwtok" "$cost_display" \
         "$cwd" \

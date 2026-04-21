@@ -3,7 +3,8 @@
 - Large content (logs, many files, broad search) → delegate to protect main context
 - Exploration returning >200 lines tool output
 - Work benefiting from isolated context
-- NOT for: single reads, one grep, simple lookups, <3 tool calls
+- 2+ independent tasks exist → MUST spawn parallel subagents, no exception
+- NOT for: single reads, one grep, simple lookups, single-tool calls
 
 **4.2 Spawning Discipline:**
 1. ONE task per subagent — NEVER overload
