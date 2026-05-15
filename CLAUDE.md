@@ -1,6 +1,10 @@
 # Agent Behavioral Directives
 MANDATORY: MUST/NEVER/ALWAYS = enforced. Obey exactly.
 
+## RULE 0 — HIGHEST PRIORITY: Todo List Before Multi-File Work
+
+**Before fixing multiple tests/files:** MUST create `tasks/todo.md` listing every item (file:line, what to fix) BEFORE reading any file. Use the list to drive all subsequent reads — NEVER re-read a file already read this session unless it was modified. Read once, fix, move on. Violating this wastes tokens and is forbidden.
+
 ## Lazy-Loaded Rules — MUST Read on Trigger
 
 Situational rules in separate files. MUST `Read` file first time trigger fires. NEVER proceed matching work before reading. Re-read unchanged file same session: NEVER (per 8.6).
@@ -16,6 +20,7 @@ Situational rules in separate files. MUST `Read` file first time trigger fires. 
 | Editing C/C++/Py/TS/JS/Go/Lua | `~/.claude/rules/lsp.md` |
 | Slack MCP tool use | `~/.claude/rules/slack.md` |
 | Vendor SDK / C library (CUDA, DPDK, etc.) | `~/.claude/rules/library-integration.md` |
+| Writing prompts for agents / skills / delegation | `~/.claude/rules/prompt-engineering.md` |
 | `/grill` invoked | invoke `grill` skill (Skill tool) |
 
 ## 0. Rule Authoring Standard
@@ -46,7 +51,7 @@ Post-edit: MUST verify claims vs code, confirm code executes, count lists/tables
 
 **1.3 Evidence Provenance** — Asserting code behavior: MUST state source. Prefer actual output over code-reading. NEVER present inferences as confirmed — label: "based on code at X" or "code shows Y (not empirically confirmed)".
 
-**1.4 Ripple-Effect Checking** — After ANY fix to command/flag/path/CLI: (1) grep repo for all references; fix broken refs SAME pass. (2) Semantic changes: grep concept name — NEVER rely on literal string grep only. (3) New field on struct/class: grep all construction sites (constructors, factories, `make_shared`/`make_unique`, copy/move, test fixtures) — NEVER assume defaults cover all sites.
+**1.4 Ripple-Effect Checking** — After ANY fix to command/flag/path/CLI: (1) grep ENTIRE repo (`libs/`, `apps/`, `test/`, `src/`) — NEVER limit grep to the source directory of the changed file; (2) fix broken refs SAME pass. (3) Semantic changes: grep concept name — NEVER rely on literal string grep only. (4) New field on struct/class: grep all construction sites (constructors, factories, `make_shared`/`make_unique`, copy/move, test fixtures) — NEVER assume defaults cover all sites. (5) Serialization output change (enum/type value now emits different string): MUST grep all test files for the OLD expected string BEFORE touching any test — find ALL assertion sites, fix ALL in one pass. NEVER discover incrementally via repeated build failures.
 
 ## 2. Task Execution
 
@@ -73,9 +78,9 @@ Post-edit: MUST verify claims vs code, confirm code executes, count lists/tables
 
 | Trigger | Doc | Required sections |
 |---|---|---|
-| "plan", "design", "architect", "propose" | `plan.md` in CWD | Goal, Scope, Approach, Steps, Risks, Open Questions |
-| "analyze", "investigate", "research", "audit", "review", "compare", "evaluate" | `analysis.md` in CWD | Summary, Findings (numbered), Evidence/Data, Gaps, Recommendations |
-| "implement", "build", "add feature", "write code for", "create" (non-trivial) | `impl.md` in CWD | Goal, Design Decisions, Components Changed, Step-by-Step Plan, Verification |
+| "plan", "design", "architect", "propose" | `<feature-or-ask-name>_plan.md` in CWD | Goal, Scope, Approach, Steps, Risks, Open Questions |
+| "analyze", "investigate", "research", "audit", "review", "compare", "evaluate" | `<feature-or-ask-name>_analysis.md` in CWD | Summary, Findings (numbered), Evidence/Data, Gaps, Recommendations |
+| "implement", "build", "add feature", "write code for", "create" (non-trivial) | `<feature-or-ask-name>_impl.md` in CWD | Goal, Design Decisions, Components Changed, Step-by-Step Plan, Verification |
 
 Write doc FIRST — before grep/read/code. Update as work progresses. Finalize with actual outcomes before done. Overlapping: create BOTH. NEVER ask whether to create doc.
 
@@ -113,6 +118,8 @@ Write doc FIRST — before grep/read/code. Update as work progresses. Finalize w
 
 **3.4 Multi-Question Answer Mapping** — Numbered question series answers: MUST map each answer to question number. Confirm "Q1→A, Q2→B, Q3→C" internally. NEVER assume 1:1 order.
 
+**3.7 GitHub PR Inline Comments** — Fetching PR review comments: MUST use `gh api repos/<owner>/<repo>/pulls/<id>/comments` for inline diff comments. NEVER use `gh pr view --comments` — that returns only issue-level (top-level) comments and will miss all inline code review threads.
+
 **3.5 MCP Allow-List Verification** — Adding MCP tool to allow list: MUST verify exact registered tool name (prefix varies: `mcp__slack__*` vs `mcp__plugin_slack__*`). Confirm from actual denied name. NEVER copy pattern across MCP servers.
 
 **3.6 Two-Correction Session Reset** — Same behavior corrected 2+ times: MUST recommend `/clear` + restart. NEVER keep iterating in polluted context.
@@ -142,6 +149,10 @@ See `~/.claude/rules/token-efficiency.md` (8.1–8.13). Always-on; MUST read fir
 ## 12. Core Principles
 
 **12.1 Simplicity First** — MUST make every change as simple as possible. Minimal code impact. NEVER introduce complexity not required.
+
+**12.6 Test Injection Without Production Change** — Before adding a function pointer / hook / indirection to production code solely to allow test injection: MUST first check whether a real failure can be triggered via bad inputs (invalid key length, malformed data, boundary value). If yes, NEVER add production infrastructure — use the bad input in the test instead.
+
+**12.7 Error Path Trace-Through** — After writing an error recovery branch (e.g., `patchRedactionOutcome(Error...)`): MUST trace every code path from the error site to the response serialization point and verify the error actually prevents downstream side-effects (uploads, writes). NEVER assume a guard condition at the top of a block prevents subsequent calls — read the actual flow.
 
 **12.2 No Laziness** — MUST find root causes. NEVER apply temporary fixes, workarounds, or "good enough for now" patches.
 

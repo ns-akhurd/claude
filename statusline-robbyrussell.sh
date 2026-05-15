@@ -123,42 +123,46 @@ cost_display=$(awk -v c="$cost" 'BEGIN {
     else                 printf "$%.2f", c
 }')
 
-# If context data is available, create a progress bar
-if [ -n "$used_pct" ]; then
-    # Round to nearest integer
-    used_int=$(printf "%.0f" "$used_pct")
+# Git branch (from cwd, skip optional locks)
+git_branch=""
+if [ -n "$cwd" ]; then
+    raw_cwd="${cwd/#\~/$HOME}"
+    git_branch=$(git -C "$raw_cwd" --no-optional-locks symbolic-ref --short HEAD 2>/dev/null \
+        || git -C "$raw_cwd" --no-optional-locks rev-parse --short HEAD 2>/dev/null)
+fi
 
-    # Calculate bar width (20 characters total)
+sep=" \033[2m│\033[0m "
+
+# Line 1 (static): model │ context bar + % │ token breakdown + cost
+if [ -n "$used_pct" ]; then
+    used_int=$(printf "%.0f" "$used_pct")
     bar_width=20
     filled=$(( used_int * bar_width / 100 ))
     empty=$(( bar_width - filled ))
-
-    # Build progress bar (filled=, empty=·)
     bar="["
     for ((i=0; i<filled; i++)); do bar+="="; done
     for ((i=0; i<empty; i++)); do bar+="·"; done
     bar+="]"
-
-    # Color code based on usage: green <50%, yellow 50-80%, red >80%
     if [ "$used_int" -lt 50 ]; then
-        color="\033[32m"  # green
+        color="\033[32m"
     elif [ "$used_int" -lt 80 ]; then
-        color="\033[33m"  # yellow
+        color="\033[33m"
     else
-        color="\033[31m"  # red
+        color="\033[31m"
     fi
-
-    sep=" \033[2m│\033[0m "
-    # Model │ [bar·] 7% │ i:X o:X r:X w:X $cost │ ~/cwd │ HH:MM · duration
-    printf "\033[1;36m%s\033[0m${sep}%b%s %d%%\033[0m${sep}\033[2mi:%s o:%s r:%s w:%s\033[0m \033[1;33m%s\033[0m${sep}\033[1;34m%s\033[0m${sep}\033[0;37m%s\033[0m \033[2m·\033[0m \033[0;35m%s\033[0m" \
+    printf "\033[1;36m%s\033[0m${sep}%b%s %d%%\033[0m${sep}\033[2mi:%s o:%s r:%s w:%s\033[0m \033[1;33m%s\033[0m" \
         "$model_display" \
         "$color" "$bar" "$used_int" \
-        "$itok" "$otok" "$crtok" "$cwtok" "$cost_display" \
-        "$cwd" \
-        "$(date +%H:%M)" "$duration_display"
+        "$itok" "$otok" "$crtok" "$cwtok" "$cost_display"
 else
-    sep=" \033[2m│\033[0m "
-    # No context data yet
-    printf "\033[1;36m%s\033[0m${sep}\033[1;33m%s\033[0m${sep}\033[1;34m%s\033[0m${sep}\033[0;37m%s\033[0m \033[2m·\033[0m \033[0;35m%s\033[0m" \
-        "$model" "$cost_display" "$cwd" "$(date +%H:%M)" "$duration_display"
+    printf "\033[1;36m%s\033[0m${sep}\033[1;33m%s\033[0m" \
+        "$model_display" "$cost_display"
 fi
+
+# Line 2 (dynamic): git branch │ ~/cwd │ HH:MM · duration
+printf "\n"
+if [ -n "$git_branch" ]; then
+    printf "\033[1;35m %s\033[0m${sep}" "$git_branch"
+fi
+printf "\033[1;34m%s\033[0m${sep}\033[0;37m%s\033[0m \033[2m·\033[0m \033[0;35m%s\033[0m" \
+    "$cwd" "$(date +%H:%M)" "$duration_display"

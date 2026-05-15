@@ -107,7 +107,7 @@ wc -l CLAUDE.md 2>/dev/null
 ```
 
 - ✅ ≤ 200 lines
-- ⚠️ 180–200 lines — approaching limit, consider moving content to topic files
+- ⚠️ 180–200 lines — approaching limit; MUST move content to topic files
 - ❌ > 200 lines — content after line 200 is truncated and ignored
 
 **Manual fix:** Move verbose sections to `.claude/rules/<topic>.md` and replace with `@.claude/rules/<topic>.md` import.

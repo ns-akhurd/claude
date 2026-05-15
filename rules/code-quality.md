@@ -27,6 +27,7 @@
 1. MUST identify ALL siblings
 2. MUST apply same change to ALL siblings SAME pass — NEVER wait for "same for X?"
 3. MUST document siblings where change intentionally skipped + reason
+4. Bug found in one sibling's helper/utility (path resolution, config lookup, file traversal): MUST inspect ALL siblings for same bug class SAME pass — NEVER wait for failure evidence in sibling before checking
 
 **5.8 Grep Before Add** — Before new function/constant/data structure:
 - MUST grep codebase for existing similar

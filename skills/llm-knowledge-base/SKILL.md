@@ -7,7 +7,9 @@ description: Use when building or maintaining a personal or project knowledge ba
 
 ## Overview
 
-Treat the LLM as a **compiler**: raw source documents go in, a structured, interlinked markdown wiki comes out. No vector DB needed at personal scale (~100 articles, ~400K words). Every session adds value back — the KB compounds.
+Treat the LLM as a **compiler**: raw source documents go in, a structured, interlinked markdown wiki comes out. Every session adds value back — the KB compounds.
+
+NEVER introduce a vector DB at personal scale (≤500 articles / ≤1M words) — markdown + grep is sufficient.
 
 ## Four-Phase Cycle
 

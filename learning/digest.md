@@ -15,6 +15,45 @@ Each entry:
 ---
 
 <!-- New entries are prepended below this line -->
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Structure prompts as `<context>` → `<instructions>` → `<constraints>` → `<output_format>` → `<examples>`. Context before instructions; long docs (≥20k tokens) before everything else for ~30% quality gain.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.1, 16.2, 16.9 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Provide 2-3 concrete `<example>` tags instead of abstract descriptions ("be concise"). Claude pattern-matches examples far more reliably than prose style instructions.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.3 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Opus 4.7 is more literal — NEVER assume it generalizes an instruction across all items. Always state scope explicitly ("apply to all three strategies, not just the first").
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.4 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Show a positive example at desired concision level rather than writing "don't be verbose" — positive examples beat prohibitions for format control.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.5 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Add explicit "Do NOT open with X" anti-pattern lines in every prompt. Claude won't suppress preambles/platitudes/hedging openers without explicit instruction.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.6 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Use `<analysis>` + `<output>` tags to separate reasoning from final answer on complex tasks — prevents back-filled justifications and forces genuine step-by-step thinking.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.8 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Fill every `[PLACEHOLDER]` before submitting prompt templates — unfilled template variables silently degrade output quality.
+**Confidence:** HIGH
+**Status:** [promoted to ~/.claude/rules/prompt-engineering.md §16.7 on 2026-05-14]
+
+### [2026-05-14] Source: Linas Substack — Claude Opus 4.7 Prompting Guide
+**Tip:** Opus 4.7: raise `effort` param before rewriting prompts on hard tasks. Low-effort Opus 4.7 ≈ medium-effort Opus 4.6. Use `max`/`xhigh` with ≥64k token budget for deep agentic work.
+**Confidence:** MEDIUM
+**Status:** [promoted to ~/.claude/rules/token-efficiency.md §8.4 on 2026-05-14]
 ### [2026-03-18] Source: Simon Willison (simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)
 **Tip:** NEVER file a PR with agent-produced code you haven't personally reviewed and tested — "inflicting unreviewed code on collaborators" is an anti-pattern; include evidence of manual testing, screenshots, or comments on implementation choices; prefer several small PRs over one large one.
 **Confidence:** HIGH

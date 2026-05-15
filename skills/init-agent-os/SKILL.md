@@ -73,6 +73,16 @@ Use Glob to confirm files are present:
 
 Report to user: "Wrote 9 agents, 8 commands."
 
+### 6. Create scaffolding directories
+
+MUST create product/spec/standards scaffolding before prompting the user to plan:
+
+```bash
+mkdir -p agent-os/product agent-os/specs agent-os/standards
+```
+
+Confirm each dir exists before reporting to the user.
+
 ### 7. Kick off planning
 
 Tell the user:

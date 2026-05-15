@@ -1,6 +1,6 @@
 ---
 name: esummary
-description: Review the current session conversation and produce a crisp executive summary suitable for a VP or SVP of Engineering. Captures what was investigated, key findings, decisions made, blockers, risks, and next steps — without verbosity.
+description: Use when the user invokes /esummary or asks for an executive engineering summary of the current session for a VP/SVP audience — captures what was investigated, key findings, decisions, blockers, risks, next steps, without verbosity.
 ---
 
 You are producing an **executive engineering summary** of this session for a VP/SVP of Engineering audience.

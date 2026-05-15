@@ -1,3 +1,8 @@
+---
+name: learn-web
+description: Use when user invokes /learn-web to harvest Claude/AI best practices from curated online sources, append them to the learning digest, and auto-promote HIGH-confidence tips into ~/.claude/CLAUDE.md.
+---
+
 # Skill: learn-web
 
 Harvest Claude/AI best practices from curated online sources, append to the learning digest, and auto-promote HIGH-confidence tips into CLAUDE.md.

@@ -80,7 +80,11 @@ Rules:
 
 ## Step 5 — Update project auto-memory
 
-Read `~/.claude/projects/<project>/memory/MEMORY.md` (create if absent — the directory already exists per auto-memory setup).
+Ensure the memory directory exists, then read `MEMORY.md` (create if absent):
+
+```bash
+mkdir -p ~/.claude/projects/<project>/memory
+```
 
 Add or update entries for:
 - New build/test commands discovered

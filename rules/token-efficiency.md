@@ -9,8 +9,9 @@
 - `sonnet` — code gen/review/multi-file edits
 - `opus` — complex architecture/ambiguous requirements/security-critical
 NEVER use `opus` for search/read/reformat.
+Opus 4.7: raise `effort` param before rewriting prompts — low-effort Opus 4.7 ≈ medium-effort Opus 4.6; use `max`/`xhigh` with ≥64k token budget for deep agentic work.
 
-**8.5 Context Hygiene** — Recommend `/compact` after ~50 turns or topic shift. Delegate broad searches. NEVER paste large file/log blocks; say "See `<path>:<lines>`". Tool result >200 lines: extract only relevant.
+**8.5 Context Hygiene** — MUST suggest `/compact` after ~50 turns or topic shift. Delegate broad searches. NEVER paste large file/log blocks; say "See `<path>:<lines>`". Tool result >200 lines: extract only relevant.
 
 **8.6 No Redundant Operations** — NEVER re-read unchanged file. NEVER re-run unchanged-state command. NEVER re-grep what you found. Use subagent results directly.
 
