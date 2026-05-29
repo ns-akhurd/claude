@@ -28,3 +28,35 @@ Opus 4.7: raise `effort` param before rewriting prompts — low-effort Opus 4.7 
 **8.12 Terse Commit Messages** — MUST use Conventional Commits: `<type>(<scope>): <imperative summary>` (scope optional). Subject ≤50 chars preferred, hard cap 72, no trailing period, imperative ("add"/"fix"/"remove"). Body ONLY when "why" non-obvious, breaking change, migration note, or linked issue. NEVER restate diff. NEVER "I"/"we"/"now"/"currently" or AI attribution.
 
 **8.13 Terse Code Review Comments** — MUST one line per finding: `L<line>: <problem>. <fix>.` Severity prefix when mixed: `🔴 bug:` (broken), `🟡 risk:` (fragile), `🔵 nit:` (style/minor), `❓ q:` (genuine question). NEVER hedge ("perhaps"/"maybe"/"you might consider"). NEVER restate line. NEVER throat-clear. Exception: security findings + architectural disagreements → full paragraph.
+
+(8.14 lives in CLAUDE.md — context-mode tools.)
+
+**8.15 Clear vs Compact** — MUST recommend `/clear` (not `/compact`) when next task is unrelated to current context — `/clear` drops the whole window, `/compact` only summarizes. Use `/compact` when continuing the SAME task past ~50 turns. NEVER carry an unrelated prior task's context into a new one — wasted input tokens every turn.
+
+**8.16 Cap Command Output** — MUST bound any command whose output could exceed ~50 lines before it enters context:
+- Grep: MUST pass `head_limit`; use `output_mode: "files_with_matches"` or `"count"` when content not needed
+- Bash: MUST append `| head -n N`, use tool `-n`/`--max-count` flags, and `git --no-pager` (NEVER let `git log`/`diff`/`branch` page full history)
+- NEVER `cat` a whole file into context to inspect a section — use Read `offset`/`limit` (8.1)
+- Large unavoidable output: delegate to subagent (parallelism 4.1) — only its summary returns
+
+**8.17 Batch Clarifying Questions** — Multiple open questions: MUST ask all in ONE `AskUserQuestion` call (up to 4). NEVER serialize across turns — each round-trip re-sends full context.
+
+**8.18 Stop When Done** — Answer delivered / task verified: MUST stop. NEVER add recap, "let me also…", or speculative follow-up work. Extra turns cost input re-send of whole context.
+
+## Session Command Cheat-Sheet — cost levers
+Recommend these to the user (Claude can't invoke slash-commands itself; surface them):
+| Command | When | Saves |
+|---|---|---|
+| `/clear` | Switching to unrelated task | Drops entire context window |
+| `/compact` | Same task, ~50+ turns | Summarizes, keeps thread |
+| `/model haiku` | Lookups, formatting, simple edits | ~5× cheaper than opus in/out |
+| `/cost` | Anytime | Shows session spend (decide clear/compact) |
+| `/fast` | Opus 4.6/4.7 only | Faster output, same model |
+| `--allowedTools <list>` | Unattended `claude -p` loops | Avoids interactive stalls (rule 2.9) |
+| `git --no-pager log/diff -n N` | Inspecting history | Caps output vs full pager dump |
+
+**8.19 Targeted Test Execution** — MUST run the narrowest test selection covering the change (single test/file/filter, e.g. `pytest path::test`, `--gtest_filter=`, `go test -run`). NEVER run the full suite when a subset covers the change. MUST cap test output (`-q`, fail-fast, `| tail`). Full suite ONLY on explicit request or final pre-commit gate.
+
+**8.20 Answer From Certainty** — NEVER issue a tool call to confirm a fact already known with certainty (well-known API, just-read content, established session fact). Tool-call ONLY on genuine uncertainty. NEVER re-grep/re-read to "double-check" what's already established (extends 8.6 to verification reads).
+
+**8.21 No Verify-Read After Edit** — NEVER re-read a file solely to confirm an `Edit`/`Write` applied — the tool errors on failure, so success is implicit. Re-read ONLY when subsequent logic needs content changed by a different actor (hook, formatter, concurrent process).
