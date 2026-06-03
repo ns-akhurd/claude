@@ -49,9 +49,11 @@ Recommend these to the user (Claude can't invoke slash-commands itself; surface 
 |---|---|---|
 | `/clear` | Switching to unrelated task | Drops entire context window |
 | `/compact` | Same task, ~50+ turns | Summarizes, keeps thread |
+| `/model opusplan` | Non-trivial multi-file changes | Opus plans, Sonnet executes — best cost/quality split |
 | `/model haiku` | Lookups, formatting, simple edits | ~5× cheaper than opus in/out |
 | `/cost` | Anytime | Shows session spend (decide clear/compact) |
 | `/fast` | Opus 4.6/4.7 only | Faster output, same model |
+| `/effort low` | Simple known-answer tasks | Cuts output tokens ~50% |
 | `--allowedTools <list>` | Unattended `claude -p` loops | Avoids interactive stalls (rule 2.9) |
 | `git --no-pager log/diff -n N` | Inspecting history | Caps output vs full pager dump |
 
@@ -60,3 +62,13 @@ Recommend these to the user (Claude can't invoke slash-commands itself; surface 
 **8.20 Answer From Certainty** — NEVER issue a tool call to confirm a fact already known with certainty (well-known API, just-read content, established session fact). Tool-call ONLY on genuine uncertainty. NEVER re-grep/re-read to "double-check" what's already established (extends 8.6 to verification reads).
 
 **8.21 No Verify-Read After Edit** — NEVER re-read a file solely to confirm an `Edit`/`Write` applied — the tool errors on failure, so success is implicit. Re-read ONLY when subsequent logic needs content changed by a different actor (hook, formatter, concurrent process).
+
+**8.22 Opusplan for Non-Trivial Changes** — For multi-file or design-heavy work: recommend `/model opusplan` — Opus drives plan mode, Sonnet executes after plan accepted. NEVER use Opus for mechanical execution of an already-approved plan.
+
+**8.23 Logs → File Path or Script** — Large logs/dumps: MUST save to file and Read specific lines, OR write a small extraction script and run it. NEVER pipe raw logs (>50 lines) through prompt context. Extraction script cost ≪ reasoning over full dump.
+
+**8.24 Bound Output Shape** — Analysis/summary/relationship tasks: MUST request specific output shape ("list top 5", "one-paragraph summary", "table of X vs Y"). Output tokens grow faster than input — unbounded analysis burns tokens without proportional insight.
+
+**8.25 Explicit Stopping Condition** — Iterative/agentic work (fix N tests, process records, search-and-fix): MUST state stopping condition ("stop after 10 fixes", "stop when test passes", "stop at 3 failures"). NEVER rely on model to decide "done" — tends to over-iterate or stop short.
+
+**8.26 Deterministic → Script** — Repeated work with stable logic (parse known format, apply rule across inputs, same transformation each time): MUST push to a script after pattern emerges (~2-3 manual iterations). Prompt becomes thin orchestration wrapper. NEVER keep paying inference tokens for deterministic transforms.
