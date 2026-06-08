@@ -5,7 +5,8 @@
       "Bash(mkdir -p /root/.claude/tools)",
       "Bash(cp -r /tmp/caveman/repo/caveman-compress /root/.claude/tools/)",
       "Bash(mkdir -p /root/.claude)",
-      "Bash(cat)"
+      "Bash(cat)",
+      "Workflow(deep-research)"
     ]
   },
   "enableAllProjectMcpServers": true,
