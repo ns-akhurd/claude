@@ -1,0 +1,53 @@
+{
+  "session_id": "b6a9e178-139d-4dcf-9430-012aaaf3e4aa",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-27T15:38:30.285Z",
+  "duration_minutes": 3,
+  "user_message_count": 5,
+  "assistant_message_count": 25,
+  "tool_counts": {
+    "Read": 1,
+    "Bash": 8,
+    "ToolSearch": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 73,
+  "output_tokens": 8899,
+  "first_prompt": "DLP servers install dlpcicontent.ns. Let us read the file that already has the default obfuscation for predefined entities.",
+  "user_interruptions": 1,
+  "user_response_times": [
+    53.883,
+    53.919
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-04-27T15:38:30.546Z",
+    "2026-04-27T15:38:30.081Z",
+    "2026-04-27T15:38:34.875Z",
+    "2026-04-27T15:40:25.251Z",
+    "2026-04-27T15:40:25.287Z"
+  ]
+}

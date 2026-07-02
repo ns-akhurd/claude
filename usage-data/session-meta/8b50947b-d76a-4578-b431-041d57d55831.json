@@ -1,0 +1,75 @@
+{
+  "session_id": "8b50947b-d76a-4578-b431-041d57d55831",
+  "project_path": "/root/.claude",
+  "start_time": "2026-04-21T03:29:08.456Z",
+  "duration_minutes": 138,
+  "user_message_count": 13,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "Read": 4,
+    "Grep": 1,
+    "Edit": 2,
+    "Bash": 6,
+    "Write": 2
+  },
+  "languages": {
+    "Markdown": 8
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 139,
+  "output_tokens": 28986,
+  "first_prompt": "one of the critical rule for implementation is to reason whther a apporach is right or wrong or incomplete based on the code analysis and design / implementation docs , add a clear instrcution for the…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    1002.245,
+    15.597,
+    15.597,
+    15.597,
+    36.199,
+    4.783,
+    89.234,
+    91.613
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Changed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 307,
+  "lines_removed": 2,
+  "files_modified": 2,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-04-21T03:30:29.368Z",
+    "2026-04-21T03:48:04.874Z",
+    "2026-04-21T03:48:38.380Z",
+    "2026-04-21T03:48:38.380Z",
+    "2026-04-21T03:48:38.380Z",
+    "2026-04-21T03:48:58.982Z",
+    "2026-04-21T03:50:07.421Z",
+    "2026-04-21T03:54:15.816Z",
+    "2026-04-21T03:54:18.195Z",
+    "2026-04-21T05:46:07.906Z",
+    "2026-04-21T05:46:07.906Z",
+    "2026-04-21T05:46:07.906Z",
+    "2026-04-21T05:46:13.022Z"
+  ]
+}

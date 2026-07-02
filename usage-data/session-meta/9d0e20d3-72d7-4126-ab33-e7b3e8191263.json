@@ -1,0 +1,59 @@
+{
+  "session_id": "9d0e20d3-72d7-4126-ab33-e7b3e8191263",
+  "project_path": "/root/code/ruleEnginePlayground",
+  "start_time": "2026-06-04T13:10:39.424Z",
+  "duration_minutes": 1003,
+  "user_message_count": 6,
+  "assistant_message_count": 73,
+  "tool_counts": {
+    "Read": 10,
+    "Bash": 27,
+    "ToolSearch": 1,
+    "LSP": 2
+  },
+  "languages": {
+    "Markdown": 1,
+    "Python": 1,
+    "C++": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 104,
+  "output_tokens": 112706,
+  "first_prompt": "───────────────────────────────────────────────────────────────── > rule A NEAR(100) B NEAR(50) C [parse error] NEAR is non-associative; use parens",
+  "user_interruptions": 0,
+  "user_response_times": [
+    136.129,
+    199.906,
+    50.179
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 1,
+    "File Not Found": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-06-04T13:11:23.036Z",
+    "2026-06-05T05:36:20.981Z",
+    "2026-06-05T05:42:05.640Z",
+    "2026-06-05T05:52:35.901Z",
+    "2026-06-05T05:53:46.657Z",
+    "2026-06-05T05:53:57.317Z"
+  ]
+}

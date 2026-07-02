@@ -1,0 +1,58 @@
+{
+  "session_id": "e4fb15cd-77a8-4f08-ae55-a04915bc60d0",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-14T04:53:41.419Z",
+  "duration_minutes": 151,
+  "user_message_count": 7,
+  "assistant_message_count": 85,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 18,
+    "ToolSearch": 1,
+    "LSP": 5,
+    "Read": 11,
+    "Edit": 2
+  },
+  "languages": {
+    "C++": 13
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 235,
+  "output_tokens": 149347,
+  "first_prompt": "analyse the jira and comments look at the code https://netskope.atlassian.net/browse/ENG-1009362, libs/dlp/ciengine/src/DlpHyperscanEngine.cpp, I belive inorder to emulate edk behavior we reject hyper…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    287.799,
+    476.762
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 32,
+  "lines_removed": 5,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-05-14T04:53:41.461Z",
+    "2026-05-14T04:53:41.301Z",
+    "2026-05-14T04:55:31.193Z",
+    "2026-05-14T04:55:43.491Z",
+    "2026-05-14T05:13:07.689Z",
+    "2026-05-14T07:13:35.338Z",
+    "2026-05-14T07:23:05.240Z"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "session_id": "7c70a5a6-87e6-49ce-9009-1eb604e65427",
+  "project_path": "/root",
+  "start_time": "2026-04-18T12:58:38.794Z",
+  "duration_minutes": 24,
+  "user_message_count": 10,
+  "assistant_message_count": 80,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 15,
+    "Edit": 11,
+    "Bash": 11,
+    "Write": 13,
+    "Grep": 2,
+    "ToolSearch": 1,
+    "AskUserQuestion": 1
+  },
+  "languages": {
+    "Markdown": 39
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 21306,
+  "output_tokens": 98313,
+  "first_prompt": "optmize claude instrcutions for efficiency, accuracy , use minimum tokens and agent must follow strictly",
+  "user_interruptions": 0,
+  "user_response_times": [
+    181.673,
+    413.738
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Other": 5
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 586,
+  "lines_removed": 26,
+  "files_modified": 13,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-04-18T12:58:44.112Z",
+    "2026-04-18T12:58:44.112Z",
+    "2026-04-18T12:58:44.112Z",
+    "2026-04-18T12:59:11.100Z",
+    "2026-04-18T12:59:11.099Z",
+    "2026-04-18T12:59:11.100Z",
+    "2026-04-18T13:00:16.412Z",
+    "2026-04-18T13:00:29.648Z",
+    "2026-04-18T13:04:58.234Z",
+    "2026-04-18T13:19:19.616Z"
+  ]
+}

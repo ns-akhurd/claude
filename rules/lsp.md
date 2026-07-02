@@ -34,3 +34,5 @@ NEVER use Grep/Bash/Read above without LSP first. LSP no results → fall back t
 **10.5 Never Guess Signatures** — Before calling any function not read this session:
 - MUST `goToDefinition` (LSP) or Read header to confirm param order/types/return
 - NEVER guess from call site — wrong guesses compile silently, fail at runtime
+
+**10.6 Build After Every C++ Edit** — After editing any C++ file: MUST compile the affected target and confirm clean build BEFORE declaring done, committing, or pushing. NEVER assume edits compile. Show actual build output. Common silent failures: dropped includes, `std::string` used as bool, GCC-only extensions.

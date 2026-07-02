@@ -43,3 +43,5 @@ config.json
 
 # MCP auth cache
 mcp-needs-auth-cache.json
+# CocoIndex Code (ccc)
+/.cocoindex_code/

@@ -1,0 +1,53 @@
+{
+  "session_id": "1caf269e-542b-49c5-9d9d-865818fd328b",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-03T11:55:28.786Z",
+  "duration_minutes": 29,
+  "user_message_count": 6,
+  "assistant_message_count": 86,
+  "tool_counts": {
+    "Bash": 33,
+    "Write": 20
+  },
+  "languages": {
+    "C++": 19
+  },
+  "git_commits": 1,
+  "git_pushes": 0,
+  "input_tokens": 2076,
+  "output_tokens": 108326,
+  "first_prompt": "based on PR , I need to create a new PR that currently on has interfaces and header files defined for rule under libs/dlp/rule_engine folder, can you list out which headers can be independently raise…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    149.206,
+    768.471,
+    768.471
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 917,
+  "lines_removed": 0,
+  "files_modified": 20,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-06-03T11:55:28.791Z",
+    "2026-06-03T11:55:28.632Z",
+    "2026-06-03T11:57:50.140Z",
+    "2026-06-03T12:06:01.393Z",
+    "2026-06-03T12:24:08.192Z",
+    "2026-06-03T12:24:08.192Z"
+  ]
+}

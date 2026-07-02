@@ -1,0 +1,55 @@
+{
+  "session_id": "0384e8a0-deae-4288-879e-0f8890618685",
+  "project_path": "/root",
+  "start_time": "2026-05-05T06:33:56.269Z",
+  "duration_minutes": 3,
+  "user_message_count": 8,
+  "assistant_message_count": 12,
+  "tool_counts": {
+    "Read": 1,
+    "Edit": 2
+  },
+  "languages": {
+    "Shell": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 100,
+  "output_tokens": 5010,
+  "first_prompt": "fix this script to support opus 4.6",
+  "user_interruptions": 1,
+  "user_response_times": [
+    77.316
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 6,
+  "lines_removed": 10,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-05-05T06:34:17.031Z",
+    "2026-05-05T06:34:17.031Z",
+    "2026-05-05T06:34:17.031Z",
+    "2026-05-05T06:34:42.538Z",
+    "2026-05-05T06:34:45.748Z",
+    "2026-05-05T06:34:45.800Z",
+    "2026-05-05T06:36:29.634Z",
+    "2026-05-05T06:36:49.712Z"
+  ]
+}

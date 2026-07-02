@@ -1,0 +1,47 @@
+{
+  "session_id": "185340a5-d422-419e-a778-b3ad2508277f",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-08T15:01:57.877Z",
+  "duration_minutes": 97,
+  "user_message_count": 5,
+  "assistant_message_count": 14,
+  "tool_counts": {
+    "Bash": 2,
+    "Read": 2,
+    "Edit": 1,
+    "AskUserQuestion": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 38,
+  "output_tokens": 4670,
+  "first_prompt": "Please disable execution of dlp_ims_post_test in the CMake build. I'll figure out what regressed later today.",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 3,
+  "lines_removed": 2,
+  "files_modified": 1,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-05-08T15:02:02.322Z",
+    "2026-05-08T15:02:02.322Z",
+    "2026-05-08T15:02:02.322Z",
+    "2026-05-08T15:02:04.814Z",
+    "2026-05-08T16:36:04.689Z"
+  ]
+}

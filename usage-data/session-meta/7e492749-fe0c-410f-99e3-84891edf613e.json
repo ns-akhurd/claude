@@ -1,0 +1,42 @@
+{
+  "session_id": "7e492749-fe0c-410f-99e3-84891edf613e",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-26T03:45:16.223Z",
+  "duration_minutes": 0,
+  "user_message_count": 4,
+  "assistant_message_count": 1,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "first_prompt": "hi",
+  "user_interruptions": 0,
+  "user_response_times": [
+    5.051,
+    5.05,
+    5.05
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-04-26T03:45:17.475Z",
+    "2026-04-26T03:45:44.815Z",
+    "2026-04-26T03:45:44.814Z",
+    "2026-04-26T03:45:44.814Z"
+  ]
+}

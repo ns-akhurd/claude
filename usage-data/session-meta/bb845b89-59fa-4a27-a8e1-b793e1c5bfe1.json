@@ -1,0 +1,83 @@
+{
+  "session_id": "bb845b89-59fa-4a27-a8e1-b793e1c5bfe1",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-14T13:36:20.682Z",
+  "duration_minutes": 66,
+  "user_message_count": 14,
+  "assistant_message_count": 97,
+  "tool_counts": {
+    "Bash": 27,
+    "Read": 11,
+    "ToolSearch": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_execute": 1,
+    "Edit": 3,
+    "Agent": 2
+  },
+  "languages": {
+    "Shell": 1,
+    "Python": 2,
+    "Markdown": 3,
+    "JSON": 1,
+    "C++": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 538,
+  "output_tokens": 52140,
+  "first_prompt": "run the gen2 and gen3 comparison script for  rule engine with rest interface and identitfy issues",
+  "user_interruptions": 1,
+  "user_response_times": [
+    15.776,
+    17.432,
+    24.026,
+    71.853,
+    47.286,
+    380.933,
+    164.997
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 75,
+  "lines_removed": 21,
+  "files_modified": 2,
+  "message_hours": [
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-05-14T13:36:20.812Z",
+    "2026-05-14T13:36:20.562Z",
+    "2026-05-14T13:36:26.941Z",
+    "2026-05-14T13:36:26.940Z",
+    "2026-05-14T13:36:26.940Z",
+    "2026-05-14T13:37:02.313Z",
+    "2026-05-14T13:38:46.357Z",
+    "2026-05-14T13:38:48.013Z",
+    "2026-05-14T13:44:38.038Z",
+    "2026-05-14T13:52:49.630Z",
+    "2026-05-14T14:20:11.515Z",
+    "2026-05-14T14:21:26.306Z",
+    "2026-05-14T14:30:21.853Z",
+    "2026-05-14T14:41:21.773Z"
+  ]
+}

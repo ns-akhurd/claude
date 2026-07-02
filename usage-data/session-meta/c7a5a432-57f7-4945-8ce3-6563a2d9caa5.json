@@ -1,0 +1,50 @@
+{
+  "session_id": "c7a5a432-57f7-4945-8ce3-6563a2d9caa5",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-04T14:15:37.002Z",
+  "duration_minutes": 6,
+  "user_message_count": 4,
+  "assistant_message_count": 26,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 10,
+    "Read": 2,
+    "Edit": 2
+  },
+  "languages": {
+    "C++": 4
+  },
+  "git_commits": 2,
+  "git_pushes": 3,
+  "input_tokens": 41,
+  "output_tokens": 7557,
+  "first_prompt": "use git worktree to fix the clang tidy issue in PR /drone/src/libs/dlp/svc/src/DlpGlobalCfg.cpp:62:44: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-error…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    73.796,
+    34.903
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 39,
+  "lines_removed": 20,
+  "files_modified": 2,
+  "message_hours": [
+    19,
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-06-04T14:16:59.040Z",
+    "2026-06-04T14:17:08.317Z",
+    "2026-06-04T14:20:16.575Z",
+    "2026-06-04T14:21:07.728Z"
+  ]
+}

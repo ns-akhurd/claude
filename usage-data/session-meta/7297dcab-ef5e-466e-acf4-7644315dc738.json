@@ -1,0 +1,80 @@
+{
+  "session_id": "7297dcab-ef5e-466e-acf4-7644315dc738",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-11T05:04:55.762Z",
+  "duration_minutes": 10,
+  "user_message_count": 12,
+  "assistant_message_count": 32,
+  "tool_counts": {
+    "Grep": 3,
+    "ToolSearch": 1,
+    "Read": 3,
+    "Glob": 1,
+    "Edit": 1,
+    "Write": 1,
+    "Bash": 9
+  },
+  "languages": {
+    "C": 1,
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 2107,
+  "output_tokens": 9212,
+  "first_prompt": "/explain ns_process_utf8_buffer /root/code/dataplane/libs/util/src/ns_utf8.c",
+  "user_interruptions": 0,
+  "user_response_times": [
+    123.504,
+    87.935,
+    87.935,
+    47.651,
+    31.372,
+    29.386,
+    31.372,
+    100.481,
+    100.481,
+    100.481
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 1,
+    "Edit Failed": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 100,
+  "lines_removed": 3,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-04-11T05:04:55.762Z",
+    "2026-04-11T05:04:55.762Z",
+    "2026-04-11T05:07:37.597Z",
+    "2026-04-11T05:10:01.769Z",
+    "2026-04-11T05:10:01.769Z",
+    "2026-04-11T05:12:30.477Z",
+    "2026-04-11T05:13:16.686Z",
+    "2026-04-11T05:13:14.700Z",
+    "2026-04-11T05:13:16.686Z",
+    "2026-04-11T05:14:25.795Z",
+    "2026-04-11T05:14:25.795Z",
+    "2026-04-11T05:14:25.795Z"
+  ]
+}

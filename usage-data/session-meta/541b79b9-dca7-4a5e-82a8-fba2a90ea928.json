@@ -1,0 +1,62 @@
+{
+  "session_id": "541b79b9-dca7-4a5e-82a8-fba2a90ea928",
+  "project_path": "/root",
+  "start_time": "2026-04-22T09:07:15.419Z",
+  "duration_minutes": 1411,
+  "user_message_count": 10,
+  "assistant_message_count": 66,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 29,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 168,
+  "output_tokens": 42752,
+  "first_prompt": "can you 3 create a sub task ticket for https://netskope.atlassian.net/browse/ENG-966345, Performance & Memory Goals Define target metrics for:  Memory usage (average and worst-case vs. today's baselin…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    214.559,
+    304.286,
+    209.075
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 4,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    10,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-04-22T09:07:15.567Z",
+    "2026-04-22T09:07:15.192Z",
+    "2026-04-22T09:09:54.869Z",
+    "2026-04-22T09:10:11.208Z",
+    "2026-04-22T09:17:16.104Z",
+    "2026-04-22T09:23:27.123Z",
+    "2026-04-22T09:28:34.075Z",
+    "2026-04-23T04:39:29.015Z",
+    "2026-04-23T08:37:03.698Z",
+    "2026-04-23T08:37:03.698Z"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Merge upstream/develop into a diverged feature branch and resolve all merge conflicts",
+  "goal_categories": {
+    "git_operations": 1,
+    "merge_conflict_resolution": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "wrong_approach": 2
+  },
+  "friction_detail": "User interrupted Claude's AskUserQuestion prompts twice with 'try now', wanting Claude to proceed autonomously rather than ask.",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User wanted to merge upstream/develop and resolve conflicts; Claude resolved all 5 conflicts and committed the merge successfully.",
+  "session_id": "6478c0cd-a7a4-4663-8cc4-0b8c74e9220b"
+}

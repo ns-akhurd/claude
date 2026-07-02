@@ -1,0 +1,45 @@
+{
+  "session_id": "9c03681b-0d57-4e4e-b6cb-a9d80a1eceb6",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-02T13:44:53.114Z",
+  "duration_minutes": 3,
+  "user_message_count": 4,
+  "assistant_message_count": 24,
+  "tool_counts": {
+    "Bash": 9,
+    "Read": 2
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 70,
+  "output_tokens": 6897,
+  "first_prompt": "- ~/code/dataplane/obj (classicmultipasswithEnumerator*) # make -j16 nsdlp                                                                                               2 ↵ root@24RLFF4   Proto    lib…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    85.419
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    19,
+    19,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-06-02T13:44:53.198Z",
+    "2026-06-02T13:44:52.952Z",
+    "2026-06-02T13:44:54.851Z",
+    "2026-06-02T13:47:52.095Z"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "session_id": "3b1a4edf-97e4-4c82-ac28-6226adb0515b",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-21T06:05:28.042Z",
+  "duration_minutes": 313,
+  "user_message_count": 14,
+  "assistant_message_count": 94,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_fetch_and_index": 1,
+    "Bash": 21,
+    "Agent": 1,
+    "Read": 11,
+    "Edit": 9
+  },
+  "languages": {
+    "C++": 13,
+    "C": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 256,
+  "output_tokens": 105054,
+  "first_prompt": "/pr-description provide updated pr description as per https://github.com/netSkope/dataplane/pull/14433",
+  "user_interruptions": 1,
+  "user_response_times": [
+    202.403,
+    202.402,
+    202.402,
+    104.071,
+    4.617,
+    9.973,
+    257.354
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "File Too Large": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 30,
+  "lines_removed": 19,
+  "files_modified": 4,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    14,
+    14,
+    14,
+    14,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-04-21T06:05:28.113Z",
+    "2026-04-21T06:05:27.935Z",
+    "2026-04-21T06:05:52.457Z",
+    "2026-04-21T06:05:52.457Z",
+    "2026-04-21T08:45:54.966Z",
+    "2026-04-21T08:49:32.819Z",
+    "2026-04-21T08:49:32.818Z",
+    "2026-04-21T08:49:32.818Z",
+    "2026-04-21T10:58:24.764Z",
+    "2026-04-21T10:58:24.764Z",
+    "2026-04-21T11:04:02.988Z",
+    "2026-04-21T11:04:30.439Z",
+    "2026-04-21T11:04:35.795Z",
+    "2026-04-21T11:15:31.525Z"
+  ]
+}

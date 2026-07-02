@@ -1,0 +1,74 @@
+{
+  "session_id": "d00fc51a-5dcf-41ff-8039-7fa867421366",
+  "project_path": "/root",
+  "start_time": "2026-05-28T17:40:34.680Z",
+  "duration_minutes": 5005,
+  "user_message_count": 14,
+  "assistant_message_count": 136,
+  "tool_counts": {
+    "Bash": 18,
+    "Read": 22,
+    "AskUserQuestion": 5,
+    "Write": 12,
+    "Edit": 7
+  },
+  "languages": {
+    "Markdown": 41
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 268,
+  "output_tokens": 197395,
+  "first_prompt": "try now",
+  "user_interruptions": 1,
+  "user_response_times": [
+    10.597,
+    10.671,
+    39.79,
+    88.357
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 2,
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 522,
+  "lines_removed": 25,
+  "files_modified": 14,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    10,
+    12,
+    12,
+    12,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-28T17:40:43.552Z",
+    "2026-05-28T17:40:43.551Z",
+    "2026-05-28T17:40:43.552Z",
+    "2026-05-28T17:40:46.728Z",
+    "2026-05-28T17:40:46.728Z",
+    "2026-05-28T17:42:12.497Z",
+    "2026-05-28T17:42:12.571Z",
+    "2026-05-29T04:40:57.410Z",
+    "2026-05-29T06:39:42.219Z",
+    "2026-05-29T06:43:04.323Z",
+    "2026-05-29T06:47:13.099Z",
+    "2026-06-01T05:05:14.763Z",
+    "2026-06-01T05:05:14.756Z",
+    "2026-06-01T05:05:14.756Z"
+  ]
+}

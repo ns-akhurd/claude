@@ -1,0 +1,77 @@
+{
+  "session_id": "b796f143-140f-4fd8-9c99-710c03998bd0",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-04-28T08:12:37.243Z",
+  "duration_minutes": 40,
+  "user_message_count": 12,
+  "assistant_message_count": 201,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 22,
+    "Bash": 44,
+    "Edit": 25
+  },
+  "languages": {
+    "C++": 35,
+    "Markdown": 12
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 542,
+  "output_tokens": 91971,
+  "first_prompt": "run nsdlp and then run scripts/nsdlp_redaction_test.py",
+  "user_interruptions": 0,
+  "user_response_times": [
+    94.758,
+    39.209,
+    46.711,
+    266.105,
+    11.015,
+    5.713,
+    5.267,
+    5.268,
+    28.169,
+    28.169,
+    259.936
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Command Failed": 4,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 134,
+  "lines_removed": 55,
+  "files_modified": 11,
+  "message_hours": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-04-28T08:12:37.245Z",
+    "2026-04-28T08:19:24.185Z",
+    "2026-04-28T08:21:05.030Z",
+    "2026-04-28T08:22:13.644Z",
+    "2026-04-28T08:26:59.564Z",
+    "2026-04-28T08:28:03.533Z",
+    "2026-04-28T08:29:39.712Z",
+    "2026-04-28T08:40:39.299Z",
+    "2026-04-28T08:40:39.300Z",
+    "2026-04-28T08:44:08.532Z",
+    "2026-04-28T08:44:08.532Z",
+    "2026-04-28T08:51:04.217Z"
+  ]
+}

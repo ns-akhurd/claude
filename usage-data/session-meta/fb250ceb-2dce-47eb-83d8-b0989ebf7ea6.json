@@ -1,0 +1,66 @@
+{
+  "session_id": "fb250ceb-2dce-47eb-83d8-b0989ebf7ea6",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-10T17:48:21.677Z",
+  "duration_minutes": 720,
+  "user_message_count": 8,
+  "assistant_message_count": 156,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Edit": 9,
+    "LSP": 3,
+    "Bash": 42,
+    "Read": 9,
+    "Agent": 1,
+    "Skill": 1,
+    "Write": 2
+  },
+  "languages": {
+    "C++": 9,
+    "Markdown": 8
+  },
+  "git_commits": 2,
+  "git_pushes": 0,
+  "input_tokens": 429,
+  "output_tokens": 89513,
+  "first_prompt": "continue with pending items",
+  "user_interruptions": 0,
+  "user_response_times": [
+    48.621,
+    106.957,
+    1151.134,
+    2237.689
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Other": 3
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 409,
+  "lines_removed": 11,
+  "files_modified": 9,
+  "message_hours": [
+    23,
+    9,
+    9,
+    9,
+    10,
+    10,
+    10,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-05-10T17:48:21.678Z",
+    "2026-05-11T03:35:57.449Z",
+    "2026-05-11T03:37:04.673Z",
+    "2026-05-11T03:38:10.463Z",
+    "2026-05-11T04:45:10.500Z",
+    "2026-05-11T04:47:49.852Z",
+    "2026-05-11T05:07:44.569Z",
+    "2026-05-11T05:45:50.900Z"
+  ]
+}

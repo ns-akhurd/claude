@@ -1,0 +1,44 @@
+{
+  "session_id": "0cb13e24-f48c-4458-9466-7eb0f5c85577",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-26T03:46:10.123Z",
+  "duration_minutes": 2,
+  "user_message_count": 3,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "Bash": 5,
+    "Write": 1
+  },
+  "languages": {
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 31,
+  "output_tokens": 2910,
+  "first_prompt": "create a script to unset default claude models and lauch claude with default opus 4.6",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 10,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-04-26T03:46:10.450Z",
+    "2026-04-26T03:46:09.757Z",
+    "2026-04-26T03:47:01.748Z"
+  ]
+}

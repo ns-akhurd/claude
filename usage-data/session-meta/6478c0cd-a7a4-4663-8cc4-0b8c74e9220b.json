@@ -1,0 +1,63 @@
+{
+  "session_id": "6478c0cd-a7a4-4663-8cc4-0b8c74e9220b",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-02T08:39:36.945Z",
+  "duration_minutes": 12,
+  "user_message_count": 8,
+  "assistant_message_count": 82,
+  "tool_counts": {
+    "Bash": 17,
+    "AskUserQuestion": 3,
+    "Read": 13,
+    "Edit": 8
+  },
+  "languages": {
+    "C++": 19
+  },
+  "git_commits": 2,
+  "git_pushes": 0,
+  "input_tokens": 224,
+  "output_tokens": 44228,
+  "first_prompt": "~/code/dataplane (classicmultipasswithEnumerator*) # git pull upstream develop -f                                                                                          root@24RLFF4 remote: Enumerat…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    13.041,
+    2.272,
+    101.779,
+    99.641,
+    168.562
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Command Failed": 3,
+    "Other": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 6,
+  "lines_removed": 68,
+  "files_modified": 5,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-06-02T08:39:37.438Z",
+    "2026-06-02T08:39:36.114Z",
+    "2026-06-02T08:39:38.188Z",
+    "2026-06-02T08:40:24.217Z",
+    "2026-06-02T08:40:44.774Z",
+    "2026-06-02T08:42:24.281Z",
+    "2026-06-02T08:44:10.812Z",
+    "2026-06-02T08:45:19.733Z"
+  ]
+}

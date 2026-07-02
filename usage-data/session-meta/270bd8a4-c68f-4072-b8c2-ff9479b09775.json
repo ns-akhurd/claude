@@ -1,0 +1,53 @@
+{
+  "session_id": "270bd8a4-c68f-4072-b8c2-ff9479b09775",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-27T01:57:02.334Z",
+  "duration_minutes": 238,
+  "user_message_count": 5,
+  "assistant_message_count": 66,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Bash": 19,
+    "Read": 11
+  },
+  "languages": {
+    "C++": 10,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 196,
+  "output_tokens": 60639,
+  "first_prompt": "list all the uniq rule fired [verify] and2_both ... PASS (+NEAR rules fired: ['r_A_near_B', 'r_AnearB_or_notCnearD', 'r_AorB_and_notCnearD']) [verify] and2_a_only ... PASS (+NEAR rules fired: ['r_Anea…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    9.401,
+    24.498,
+    20.347
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    7,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-05-27T01:57:16.525Z",
+    "2026-05-27T05:48:55.201Z",
+    "2026-05-27T05:49:30.195Z",
+    "2026-05-27T05:50:41.417Z",
+    "2026-05-27T05:55:21.217Z"
+  ]
+}

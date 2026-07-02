@@ -1,0 +1,63 @@
+{
+  "session_id": "11c531eb-4c09-41fc-9f81-99c667207226",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-05T06:39:32.141Z",
+  "duration_minutes": 189,
+  "user_message_count": 7,
+  "assistant_message_count": 98,
+  "tool_counts": {
+    "Bash": 14,
+    "Read": 10,
+    "ToolSearch": 1,
+    "TaskCreate": 3,
+    "TaskUpdate": 6,
+    "Edit": 19,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 30
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 408,
+  "output_tokens": 74040,
+  "first_prompt": "as per zoom meetings note of may 01 2026 check the poc goals and design doc for docs/rule_engine/ verify and update",
+  "user_interruptions": 0,
+  "user_response_times": [
+    147.768,
+    2.481,
+    127.181,
+    97.227
+  ],
+  "tool_errors": 4,
+  "tool_error_categories": {
+    "File Not Found": 1,
+    "Command Failed": 1,
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 345,
+  "lines_removed": 24,
+  "files_modified": 8,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-05-05T06:40:37.352Z",
+    "2026-05-05T06:44:05.826Z",
+    "2026-05-05T06:44:28.172Z",
+    "2026-05-05T06:46:55.332Z",
+    "2026-05-05T06:51:21.643Z",
+    "2026-05-05T09:45:27.486Z",
+    "2026-05-05T09:45:27.486Z"
+  ]
+}

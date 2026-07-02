@@ -1,0 +1,47 @@
+{
+  "session_id": "0d453b67-fe57-4adf-ba2b-bd341668e893",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-05-15T07:59:25.075Z",
+  "duration_minutes": 2,
+  "user_message_count": 3,
+  "assistant_message_count": 14,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 2,
+    "Bash": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 40,
+  "output_tokens": 2889,
+  "first_prompt": "why claude is unable to kill a process is there a permission issue",
+  "user_interruptions": 0,
+  "user_response_times": [
+    46.074
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-05-15T07:59:47.038Z",
+    "2026-05-15T08:00:51.766Z",
+    "2026-05-15T08:01:01.667Z"
+  ]
+}

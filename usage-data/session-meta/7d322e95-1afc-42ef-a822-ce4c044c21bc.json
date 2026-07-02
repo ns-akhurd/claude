@@ -1,0 +1,81 @@
+{
+  "session_id": "7d322e95-1afc-42ef-a822-ce4c044c21bc",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-27T06:43:52.538Z",
+  "duration_minutes": 55,
+  "user_message_count": 15,
+  "assistant_message_count": 247,
+  "tool_counts": {
+    "Agent": 1,
+    "ToolSearch": 1,
+    "Bash": 55,
+    "Read": 32,
+    "Edit": 26
+  },
+  "languages": {
+    "C++": 57
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 683,
+  "output_tokens": 299204,
+  "first_prompt": "do the fixes dont commit",
+  "user_interruptions": 1,
+  "user_response_times": [
+    20.207,
+    49.12,
+    110.989,
+    50.527,
+    235.408,
+    174.021,
+    600.104,
+    54.618,
+    234.189
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Too Large": 1,
+    "File Changed": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 42,
+  "lines_removed": 56,
+  "files_modified": 8,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-04-27T06:43:52.588Z",
+    "2026-04-27T06:43:52.409Z",
+    "2026-04-27T06:44:02.542Z",
+    "2026-04-27T06:44:02.542Z",
+    "2026-04-27T06:46:23.996Z",
+    "2026-04-27T06:59:18.408Z",
+    "2026-04-27T07:07:32.578Z",
+    "2026-04-27T07:07:32.657Z",
+    "2026-04-27T07:11:25.184Z",
+    "2026-04-27T07:12:42.161Z",
+    "2026-04-27T07:16:51.596Z",
+    "2026-04-27T07:20:07.612Z",
+    "2026-04-27T07:32:07.404Z",
+    "2026-04-27T07:33:31.012Z",
+    "2026-04-27T07:37:44.211Z"
+  ]
+}

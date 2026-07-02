@@ -1,0 +1,82 @@
+{
+  "session_id": "9ad74134-641e-43ea-8a08-4ae134cfe1e7",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-05T05:31:14.406Z",
+  "duration_minutes": 489,
+  "user_message_count": 15,
+  "assistant_message_count": 317,
+  "tool_counts": {
+    "Bash": 140,
+    "Read": 39,
+    "Edit": 29
+  },
+  "languages": {
+    "C++": 21,
+    "Python": 19,
+    "Shell": 27
+  },
+  "git_commits": 5,
+  "git_pushes": 4,
+  "input_tokens": 359,
+  "output_tokens": 160565,
+  "first_prompt": "evaluate case where entity A is sticky and present in one type of section say cont_type=1 and entity B is in cont_type 2 , then with skicky entity cross section matches happen stciky entity persist ac…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    184.793,
+    54.343,
+    479.056,
+    71.574,
+    5.966,
+    93.445,
+    117.237,
+    8.76,
+    8.764
+  ],
+  "tool_errors": 11,
+  "tool_error_categories": {
+    "Command Failed": 8,
+    "Other": 2,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 389,
+  "lines_removed": 103,
+  "files_modified": 4,
+  "message_hours": [
+    11,
+    10,
+    10,
+    11,
+    11,
+    11,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    19,
+    19
+  ],
+  "user_message_timestamps": [
+    "2026-06-05T05:31:14.391Z",
+    "2026-06-05T05:28:56.076Z",
+    "2026-06-05T05:28:56.076Z",
+    "2026-06-05T05:31:20.904Z",
+    "2026-06-05T06:04:43.824Z",
+    "2026-06-05T06:10:22.734Z",
+    "2026-06-05T12:34:27.111Z",
+    "2026-06-05T12:40:10.312Z",
+    "2026-06-05T12:49:42.590Z",
+    "2026-06-05T13:06:53.886Z",
+    "2026-06-05T13:08:52.909Z",
+    "2026-06-05T13:11:28.298Z",
+    "2026-06-05T13:22:28.251Z",
+    "2026-06-05T13:31:06.291Z",
+    "2026-06-05T13:31:06.295Z"
+  ]
+}

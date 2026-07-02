@@ -1,0 +1,44 @@
+{
+  "session_id": "5d65548c-dabb-4b70-9b35-c0ded9ce5f3f",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-12T18:00:31.300Z",
+  "duration_minutes": 3,
+  "user_message_count": 4,
+  "assistant_message_count": 11,
+  "tool_counts": {
+    "Bash": 3
+  },
+  "languages": {},
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 33,
+  "output_tokens": 1725,
+  "first_prompt": "ammend the git commit 3b6016484eb894202310da2d26f28c3fe2fa3d64 message change ENG-1005089 to ENG-999867",
+  "user_interruptions": 0,
+  "user_response_times": [
+    6.125
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    23,
+    23,
+    23,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-05-12T18:00:31.344Z",
+    "2026-05-12T18:00:31.137Z",
+    "2026-05-12T18:02:52.199Z",
+    "2026-05-12T18:03:14.288Z"
+  ]
+}

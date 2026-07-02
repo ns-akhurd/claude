@@ -1,0 +1,42 @@
+{
+  "session_id": "e10cfe87-ea1e-4445-9f0f-589ece76a3f6",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-26T05:05:33.230Z",
+  "duration_minutes": 90,
+  "user_message_count": 2,
+  "assistant_message_count": 34,
+  "tool_counts": {
+    "Bash": 18,
+    "Read": 2
+  },
+  "languages": {
+    "Markdown": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 102,
+  "output_tokens": 8835,
+  "first_prompt": "does nsldp take dlp profile file as input for a given tenant",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-05-26T05:05:51.914Z",
+    "2026-05-26T06:35:01.261Z"
+  ]
+}

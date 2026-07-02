@@ -1,0 +1,62 @@
+{
+  "session_id": "5d1c7a87-8aaf-4229-98ae-910efe56bb85",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-05-23T14:51:05.506Z",
+  "duration_minutes": 2287,
+  "user_message_count": 8,
+  "assistant_message_count": 116,
+  "tool_counts": {
+    "Skill": 2,
+    "Bash": 24,
+    "Read": 16,
+    "Edit": 2,
+    "Agent": 7,
+    "ToolSearch": 1
+  },
+  "languages": {
+    "Shell": 2,
+    "Python": 10,
+    "C++": 6
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 14967,
+  "output_tokens": 140518,
+  "first_prompt": "══════════════════════════════════════════════════════   Stage 4 — compare_matrix.py (asp + rest + async) ══════════════════════════════════════════════════════ Starting compare_matrix.py (asp + rest…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    40.566,
+    40.639,
+    695.887,
+    170.134
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 6,
+  "lines_removed": 2,
+  "files_modified": 2,
+  "message_hours": [
+    21,
+    21,
+    21,
+    21,
+    9,
+    9,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-24T15:30:07.071Z",
+    "2026-05-24T15:30:16.917Z",
+    "2026-05-24T15:35:06.096Z",
+    "2026-05-24T15:35:06.169Z",
+    "2026-05-25T04:28:14.291Z",
+    "2026-05-25T04:28:31.359Z",
+    "2026-05-25T04:45:43.024Z",
+    "2026-05-25T04:53:07.620Z"
+  ]
+}

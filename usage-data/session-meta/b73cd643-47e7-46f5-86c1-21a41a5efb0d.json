@@ -1,0 +1,42 @@
+{
+  "session_id": "b73cd643-47e7-46f5-86c1-21a41a5efb0d",
+  "project_path": "/root/.claude",
+  "start_time": "2026-06-08T04:47:15.497Z",
+  "duration_minutes": 3,
+  "user_message_count": 2,
+  "assistant_message_count": 23,
+  "tool_counts": {
+    "Bash": 11,
+    "ToolSearch": 1,
+    "WebFetch": 3
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 35,
+  "output_tokens": 3412,
+  "first_prompt": "commit the cnages done",
+  "user_interruptions": 0,
+  "user_response_times": [
+    26.028
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": true,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-06-08T04:48:25.130Z",
+    "2026-06-08T04:49:44.710Z"
+  ]
+}

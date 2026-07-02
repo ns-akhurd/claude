@@ -1,0 +1,51 @@
+{
+  "session_id": "33b11aef-71f4-4155-9d79-3a015fe84f9c",
+  "project_path": "/root/code/dlp-eng-claude-plugin",
+  "start_time": "2026-04-20T06:53:59.892Z",
+  "duration_minutes": 1085,
+  "user_message_count": 5,
+  "assistant_message_count": 18,
+  "tool_counts": {
+    "Bash": 4,
+    "Glob": 1,
+    "Read": 3,
+    "Edit": 1
+  },
+  "languages": {
+    "Markdown": 4
+  },
+  "git_commits": 1,
+  "git_pushes": 2,
+  "input_tokens": 52,
+  "output_tokens": 3668,
+  "first_prompt": "for last commit read is not updated",
+  "user_interruptions": 0,
+  "user_response_times": [
+    178.209
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    12,
+    12,
+    6,
+    6,
+    6
+  ],
+  "user_message_timestamps": [
+    "2026-04-20T06:54:07.907Z",
+    "2026-04-20T06:57:39.922Z",
+    "2026-04-21T00:58:54.331Z",
+    "2026-04-21T00:58:54.325Z",
+    "2026-04-21T00:58:54.325Z"
+  ]
+}

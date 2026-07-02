@@ -1,0 +1,46 @@
+{
+  "session_id": "edcb833f-3cc3-479c-a4ad-88acc2f46155",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-30T12:11:20.647Z",
+  "duration_minutes": 1,
+  "user_message_count": 4,
+  "assistant_message_count": 19,
+  "tool_counts": {
+    "Bash": 6,
+    "ToolSearch": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 55,
+  "output_tokens": 4932,
+  "first_prompt": "~/code/dataplane (pr/ENG-982968-predefentities*) # git pull origin pr/ENG-982968-predefentities --force                                                              128 ↵ root@24RLFF4 From github.com:…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    8.899,
+    8.149
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-04-30T12:11:22.371Z",
+    "2026-04-30T12:11:49.796Z",
+    "2026-04-30T12:12:03.416Z",
+    "2026-04-30T12:12:09.670Z"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "session_id": "d06486d0-ff4b-4cd8-9c7c-974ff385a98a",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-05-22T04:58:58.608Z",
+  "duration_minutes": 50,
+  "user_message_count": 8,
+  "assistant_message_count": 37,
+  "tool_counts": {
+    "Bash": 10,
+    "Read": 3,
+    "Edit": 1
+  },
+  "languages": {
+    "C++": 3,
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 108,
+  "output_tokens": 9737,
+  "first_prompt": "~/code/dataplane/obj (pr/ENG-242513/hsshadowmode*) # git pull upstream develop                                                                                             root@24RLFF4 remote: Enumerat…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    474.922,
+    2360.474,
+    2.666,
+    19.327,
+    19.325,
+    19.325
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 1,
+    "File Not Found": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 3,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-05-22T04:59:02.450Z",
+    "2026-05-22T05:07:45.599Z",
+    "2026-05-22T05:08:46.430Z",
+    "2026-05-22T05:48:06.709Z",
+    "2026-05-22T05:48:16.761Z",
+    "2026-05-22T05:48:33.422Z",
+    "2026-05-22T05:48:33.420Z",
+    "2026-05-22T05:48:33.420Z"
+  ]
+}

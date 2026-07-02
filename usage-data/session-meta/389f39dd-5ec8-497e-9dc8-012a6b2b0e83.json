@@ -1,0 +1,66 @@
+{
+  "session_id": "389f39dd-5ec8-497e-9dc8-012a6b2b0e83",
+  "project_path": "/root",
+  "start_time": "2026-04-28T04:16:39.550Z",
+  "duration_minutes": 3,
+  "user_message_count": 9,
+  "assistant_message_count": 20,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 2,
+    "Read": 1,
+    "ToolSearch": 1,
+    "AskUserQuestion": 1,
+    "Write": 2
+  },
+  "languages": {
+    "Markdown": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 54,
+  "output_tokens": 9438,
+  "first_prompt": "how can we incorporate this claude prompt cpnow (\"Checkpoint Now\"): Write a session-state checkpoint to a file under ~/.nstools/claude/checkpoints/ with enough detail that a fresh agent (after context…",
+  "user_interruptions": 2,
+  "user_response_times": [
+    10.152,
+    36.546,
+    2.797,
+    10.828,
+    11.086
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 2,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 250,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-04-28T04:16:39.568Z",
+    "2026-04-28T04:16:39.251Z",
+    "2026-04-28T04:16:57.175Z",
+    "2026-04-28T04:17:11.820Z",
+    "2026-04-28T04:17:21.704Z",
+    "2026-04-28T04:17:48.098Z",
+    "2026-04-28T04:19:13.778Z",
+    "2026-04-28T04:19:21.809Z",
+    "2026-04-28T04:19:55.613Z"
+  ]
+}

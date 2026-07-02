@@ -1,0 +1,52 @@
+{
+  "session_id": "650e12e2-2336-42e5-9143-ab0eed9d395b",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-05-15T15:50:51.911Z",
+  "duration_minutes": 535,
+  "user_message_count": 4,
+  "assistant_message_count": 150,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 21,
+    "Bash": 34,
+    "Edit": 14
+  },
+  "languages": {
+    "JSON": 12,
+    "Python": 12,
+    "C++": 11
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 412,
+  "output_tokens": 330456,
+  "first_prompt": "try running compare_matrix.py",
+  "user_interruptions": 0,
+  "user_response_times": [
+    380.175,
+    99.41
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Command Failed": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 631,
+  "lines_removed": 7,
+  "files_modified": 4,
+  "message_hours": [
+    21,
+    21,
+    22,
+    6
+  ],
+  "user_message_timestamps": [
+    "2026-05-15T15:50:51.912Z",
+    "2026-05-15T16:29:22.134Z",
+    "2026-05-15T16:34:31.701Z",
+    "2026-05-16T00:43:55.283Z"
+  ]
+}

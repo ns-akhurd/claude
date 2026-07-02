@@ -5,12 +5,23 @@ description: Use when user invokes /explain [topic] to produce a terse, nested-l
 
 # explain
 
-## Response Format
+## Step 0 — Read Before Explaining
 
-Produce two sections, in order:
+If the topic names a file, function, class, or component:
+1. Locate via LSP (`workspaceSymbol` → `goToDefinition`) or `grep` if LSP unavailable.
+2. Read actual source — NEVER explain from memory or training data alone.
+3. Read callers/callees relevant to understanding (max 3 hops).
+4. Anchor key claims in the nested list with `file:line` citations.
 
-1. **ASCII diagram** — a compact flow or state diagram capturing the essence of the topic.
+If the topic is purely conceptual (no code artifact): skip Step 0.
+
+## Step 1 — Response Format
+
+Produce three sections, in order:
+
+1. **ASCII diagram** — compact flow or state diagram capturing the essence of the topic.
 2. **Nested list** — terse breakdown as described below.
+3. **Validation** — gaps, edge cases, and inconsistencies found during reading.
 
 No intro sentence. No outro sentence.
 
@@ -42,7 +53,20 @@ No intro sentence. No outro sentence.
   - [Why it matters or what it produces — one sentence.]
     - [Edge case or sub-mechanism — one sentence.]
 - [Next component...]
+
+**Validation**
+| Sev | Finding | Evidence |
+|-----|---------|----------|
+| [GAP/SMELL/UNCLEAR] | ... | file:line or "conceptual" |
 ```
+
+### Validation Rules
+
+- Run after composing the nested list — single pass, no re-reads.
+- Severity tags: `[GAP]` missing case/path/doc; `[SMELL]` suspicious but not provably wrong; `[UNCLEAR]` ambiguous behavior needing clarification.
+- Omit `[CRITICAL]` — explain is not a bug-finder; flag only what affects understanding.
+- Cap 10 rows. If nothing to flag: emit `No gaps found.` instead of an empty table.
+- NEVER hedge ("might", "could"). State findings directly.
 
 ## Example — /explain TCP handshake
 

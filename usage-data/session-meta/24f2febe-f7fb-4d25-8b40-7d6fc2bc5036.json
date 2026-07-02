@@ -1,0 +1,44 @@
+{
+  "session_id": "24f2febe-f7fb-4d25-8b40-7d6fc2bc5036",
+  "project_path": "/root",
+  "start_time": "2026-04-26T05:37:07.014Z",
+  "duration_minutes": 2,
+  "user_message_count": 4,
+  "assistant_message_count": 16,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 2,
+    "Bash": 5
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 38,
+  "output_tokens": 11476,
+  "first_prompt": "No prompt",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-04-26T05:37:07.079Z",
+    "2026-04-26T05:37:06.891Z",
+    "2026-04-26T05:37:11.817Z",
+    "2026-04-26T05:37:11.817Z"
+  ]
+}

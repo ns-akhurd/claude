@@ -1,0 +1,66 @@
+{
+  "session_id": "f8f6dc9d-36dc-49c7-86cf-2df813e6d40f",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-04T13:05:20.767Z",
+  "duration_minutes": 959,
+  "user_message_count": 10,
+  "assistant_message_count": 171,
+  "tool_counts": {
+    "Skill": 3,
+    "Bash": 4,
+    "ToolSearch": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_search": 2,
+    "Read": 24,
+    "Edit": 48,
+    "Agent": 5
+  },
+  "languages": {
+    "Markdown": 72
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 326,
+  "output_tokens": 139504,
+  "first_prompt": "based on the reviewed poc goal for rule engine , https://netskope.atlassian.net/wiki/spaces/DataSecurityTeam/pages/7871496380/Gen3+Rule+Engine+POC+Goals+Summary, please update the poc plan and design…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    239.34,
+    143.058
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 843,
+  "lines_removed": 113,
+  "files_modified": 4,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18,
+    18,
+    22,
+    22,
+    22,
+    22,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-04T13:05:20.827Z",
+    "2026-05-04T13:05:20.641Z",
+    "2026-05-04T13:07:25.351Z",
+    "2026-05-04T13:07:34.562Z",
+    "2026-05-04T13:16:54.685Z",
+    "2026-05-04T16:35:27.875Z",
+    "2026-05-04T16:35:48.816Z",
+    "2026-05-04T16:42:26.089Z",
+    "2026-05-04T16:52:33.503Z",
+    "2026-05-05T05:01:21.002Z"
+  ]
+}

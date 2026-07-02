@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "Push a local commit to the remote branch pr/ENG-985125-ruleEngineCfgFlagChanges, resolving a divergence between local and remote",
+  "goal_categories": {
+    "git_operations": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "user_rejected_action": 1
+  },
+  "friction_detail": "User interrupted the initial push to 'upstream' and corrected the target to 'origin'.",
+  "primary_success": "proactive_help",
+  "brief_summary": "User wanted to push a local commit to the remote PR branch; Claude identified branch mismatch and divergence, then successfully pushed after rebasing.",
+  "session_id": "8b5e63c6-29df-4747-9263-9b34a34ac450"
+}

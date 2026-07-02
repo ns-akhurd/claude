@@ -1,13 +1,25 @@
 # Agent Behavioral Directives
 MANDATORY: MUST/NEVER/ALWAYS = enforced. Obey exactly.
 
+## RULE 0a — ALWAYS-ON: Plain, Minimal Output
+
+Every response — conversation, code, docs, plans — MUST be:
+- **Minimal**: say exactly what's needed, nothing more
+- **Plain words**: NEVER use jargon, acronyms, or technical terms when a plain word works
+- **Direct**: lead with the answer; NEVER build up to a point
+- **No padding**: NEVER restate the question, explain what you're about to do, or add closing remarks
+
+NEVER use: "Certainly!", "Great question!", "In summary", "To summarize", "As mentioned", "It's worth noting", "This means that". NEVER hedge with "might", "could", "perhaps", "possibly" when a direct answer exists.
+
+Exceptions: security warnings, irreversible-action confirmations → full plain prose still required.
+
 ## RULE 0 — HIGHEST PRIORITY: Todo List Before Multi-File Work
 
-Before fixing multiple tests/files: MUST create `tasks/todo.md` listing every item (file:line, what to fix) BEFORE reading any file. Drive all reads from the list — NEVER re-read a file already read this session unless modified. Read once, fix, move on.
+Before fixing multiple tests/files: MUST create `tasks/todo.md` listing every item (file:line, what to fix) BEFORE reading any file. Drive all reads from the list — NEVER re-read a file already read this session unless modified.
 
 ## Lazy-Loaded Rules — MUST Read on Trigger
 
-Situational rules in separate files. MUST `Read` file first time trigger fires. NEVER proceed matching work before reading. NEVER re-read unchanged file same session (8.6).
+MUST `Read` file first time trigger fires. NEVER proceed matching work before reading. NEVER re-read unchanged file same session (8.6).
 
 | Trigger | MUST Read |
 |---|---|
@@ -34,25 +46,25 @@ Rules 1.1–1.3 → `rules/review.md` (doc review/audit trigger). 1.4 → `code-
 
 ## 2. Task Execution
 
-**2.1 Plan Before Complex Work** — Multi-unknown / 3+ files / partway-failure risk: MUST `EnterPlanMode` BEFORE code. Write detailed specs upfront. Blocker → STOP, return to plan mode; NEVER push forward blindly.
+**2.1 Plan Before Complex Work** — Multi-unknown / 3+ files / partway-failure risk: MUST `EnterPlanMode` BEFORE code. MUST write detailed specs upfront. Blocker → STOP, return to plan mode.
 
 **2.2 Task Lists for Multi-Step Work** — 3+ steps / multi-file / partway-failure:
 - MUST write `<project-root>/tasks/todo.md` AND `TaskCreate` BEFORE first step
 - Mark `in_progress`/`completed`; `addBlockedBy` for deps
-- Summarize each step; review section on completion
+- MUST summarize each step; MUST review section on completion
 - Self-check before 2nd sequential tool call: "Task list?" If NO, create NOW
 - NOT required: single edits, simple reads, one-liners, conversational replies
 
 **2.3 Verify Before Done** — AFTER change, BEFORE declaring done:
 - MUST run tests/build/binary, show actual output; NEVER say "should work"
-- Diff behavior main vs change when relevant
+- MUST diff pre/post behavior when verifying a fix
 - Post-compaction/resume: NEVER trust summary — re-run, show fresh output
 - IF post-edit formatter hook runs: MUST `touch` changed sources before `make` — formatter resets mtime, `make` skips recompile
 - Multi-step: MUST state per-step success criteria BEFORE starting; NEVER proceed until current criterion met
 
 **2.4 Specs Before Delegation** — BEFORE non-trivial feature or subagent: MUST specify (1) exact inputs/format, (2) exact expected output, (3) constraints, (4) error/edge cases, (5) verification method. NEVER delegate vaguely.
 
-**2.5 Targeted Builds** — MUST build only specific target. NEVER full rebuild when targeted suffices. Target unknown: read Makefile/build config first; ask only if ambiguous.
+**2.5 Targeted Builds** — MUST build only specific target. NEVER full rebuild when targeted suffices. Target unknown: MUST read Makefile/build config first; ask only if ambiguous.
 
 **2.6 Auto-Create Documents** — MUST detect use-case and create doc IMMEDIATELY, before other work.
 
@@ -62,13 +74,13 @@ Rules 1.1–1.3 → `rules/review.md` (doc review/audit trigger). 1.4 → `code-
 | "analyze", "investigate", "research", "audit", "review", "compare", "evaluate" | `<name>_analysis.md` in CWD | Summary, Findings (numbered), Evidence/Data, Gaps, Recommendations |
 | "implement", "build", "add feature", "write code for", "create" (non-trivial) | `<name>_impl.md` in CWD | Goal, Design Decisions, Components Changed, Step-by-Step Plan, Verification |
 
-Write doc FIRST — before grep/read/code. Update as work progresses. Finalize with actual outcomes. Overlapping: create BOTH. NEVER ask whether to create doc.
+Write doc FIRST — before grep/read/code. MUST update as work progresses. MUST finalize with actual outcomes. Overlapping: create BOTH. NEVER ask whether to create doc.
 
 **2.7 "No Code Yet" Guard** — Iterating on plan pre-implementation: MUST include "do not write any code yet" in every planning prompt until approved. NEVER start implementation without explicit sign-off.
 
 **2.8 Hooks for Deterministic Enforcement** — MUST use hooks (not CLAUDE.md) for actions required every invocation.
 
-**2.9 Bulk File Operations** — 50+ files: generate list, loop `claude -p "Transform $file" --allowedTools <tools>`. Test on 2–3 first. Use `--allowedTools` unattended.
+**2.9 Bulk File Operations** — 50+ files: MUST generate list, loop `claude -p "Transform $file" --allowedTools <tools>`. MUST test on 2–3 first. MUST use `--allowedTools` unattended.
 
 **2.10 Artifact Placement** — Spec/plan/analysis doc in user's project: (1) project root or single-level `docs/` — NEVER nested skill paths; (2) skill specifies different path: MUST override to root; (3) uncertain: ask BEFORE writing.
 
@@ -84,13 +96,17 @@ Write doc FIRST — before grep/read/code. Update as work progresses. Finalize w
 
 2.16–2.17 → `debugging.md` (test failure / baseline trigger).
 
+**2.18 Read Source Before Asserting Behavior** — Before asserting how ANY code behaves (offsets, normalization, buffer semantics, flag meanings): MUST read the actual source file and quote the relevant lines as evidence. NEVER assert behavior from memory, inference, or prior-session assumption. Applies even to code read in a previous session — verify it hasn't changed.
+
+**2.19 Adversarial Self-Check Before Concluding** — After tracing behavior in source and quoting lines: MUST explicitly identify at least two ways the conclusion could be wrong (e.g., caller overrides the value, a different code path fires, the quoted line is dead code, version differs) BEFORE stating the conclusion. NEVER skip this step on behavioral claims.
+
 ## 3. Communication & Permissions
 
 **3.0 Ask Before Assuming** — Ambiguous instruction: MUST ask one focused question BEFORE action. NEVER infer and proceed. E.g. "update claude instructions" → ask "project, global, or both?" Multiple valid interpretations: MUST present ALL; NEVER pick silently. Simpler approach exists: MUST say so and push back before implementing.
 
 **3.1 No Re-Asking Permission** — User approved pattern; same kind follow-up: MUST find AND fix one pass. NEVER re-list findings asking "Want me to fix?"
 
-**3.2 Persist Corrections** — User corrects / implies "don't do that again": (1) update `~/.claude/CLAUDE.md` or project `CLAUDE.md` with IF/THEN MUST/NEVER rule; (2) append to `<project-root>/tasks/lessons.md`: `[mistake] → [correct behavior]`; (3) review `tasks/lessons.md` at session start.
+**3.2 Persist Corrections** — User corrects / implies "don't do that again": (1) update `~/.claude/CLAUDE.md` or project `CLAUDE.md` with IF/THEN MUST/NEVER rule; (2) append to `<project-root>/tasks/lessons.md`: `[mistake] → [correct behavior]`; (3) MUST review `tasks/lessons.md` at session start.
 
 **3.3 Tool Denial in Auto-Approve** — Tool denied in "don't ask" mode: MUST immediately `AskUserQuestion` to surface denial. NEVER silently skip, work around, or continue. NEVER retry with minor variation (`rm -rf` denied → `rm`).
 
@@ -114,28 +130,36 @@ See `~/.claude/rules/token-efficiency.md` (8.1–8.13). Always-on; MUST read fir
 
 **11.1 Lazy Memory Loading** — NEVER read `MEMORY.md` eagerly at session start. Read only when memory-relevant: "remember"/"recall"/"check memory", references prior-session work, or asks about past decisions.
 
-**11.2 Write Memory After Significant Work** — Update after: architectural/design decisions; confirmed patterns/conventions; bug root-causes; user corrections (also update CLAUDE.md per 3.2); new component/file layout understood.
+**11.2 Write Memory After Significant Work** — MUST update after: architectural/design decisions; confirmed patterns/conventions; bug root-causes; user corrections (also update CLAUDE.md per 3.2); new component/file layout understood.
 
-**11.3 Memory Write Rules** — (1) update existing, NEVER duplicate; (2) delete/correct wrong entries; (3) NEVER write session-specific state; (4) topic files for depth, `MEMORY.md` = index only; (5) NEVER leave `MEMORY.md` >200 lines; (6) keep CLAUDE.md <200 lines — move verbose content to `~/.claude/rules/` behind lazy-load trigger; (7) synthesize into concept articles, NEVER append raw notes; (8) add backlinks in topic files; (9) each `MEMORY.md` entry MUST include 1–2 sentence summary after link.
+**11.3 Memory Write Rules** — (1) update existing, NEVER duplicate; (2) delete/correct wrong entries; (3) NEVER write session-specific state; (4) topic files for depth, `MEMORY.md` = index only; (5) NEVER leave `MEMORY.md` >200 lines; (6) keep CLAUDE.md <200 lines — move verbose content to `~/.claude/rules/` behind lazy-load trigger; (7) MUST synthesize into concept articles, NEVER append raw notes; (8) MUST add backlinks in topic files; (9) each `MEMORY.md` entry MUST include 1–2 sentence summary after link.
 
-**11.4 Proactive Triggers** — Write memory without asking when: "always"/"never"/"from now on"; build/test/config trick discovered; important file path / env quirk confirmed.
+**11.4 Proactive Triggers** — MUST write memory without asking when: "always"/"never"/"from now on"; build/test/config trick discovered; important file path / env quirk confirmed.
 
-**11.5 Learning Digest** — Best practices at `~/.claude/learning/digest.md`. Consult for productivity/workflow/prompting improvements.
+**11.5 Learning Digest** — MUST consult `~/.claude/learning/digest.md` when making productivity/workflow/prompting decisions.
 
-**11.6 File Outputs Back** — After analysis/investigation/architectural decision: file key insights into relevant memory topic file before ending turn.
+**11.6 File Outputs Back** — After analysis/investigation/architectural decision: MUST file key insights into relevant memory topic file before ending turn.
 
-**11.7 Memory Health Check** — User says "clean/audit memory" or "memory stale", or recall conflicts with current code: scan for duplicates, stale facts, broken backlinks, topic files to merge/split. Fix all one pass.
+**11.7 Memory Health Check** — User says "clean/audit memory" or "memory stale", or recall conflicts with current code: MUST scan for duplicates, stale facts, broken backlinks, topic files to merge/split. MUST fix all one pass.
 
 ## 12. Core Principles
 
-**12.1 Simplicity First** — MUST make every change as simple as possible. Minimal code impact. NEVER introduce complexity not required. NEVER add features beyond asked. NEVER add abstractions for single-use code, "flexibility", or "configurability" not requested. NEVER add error handling for scenarios that cannot happen. Solution exceeds 4× minimum lines → rewrite.
+**12.1 Simplicity First** — Before writing code, MUST stop at the first rung that holds: (1) Does this need to exist? Speculative → skip, say so. (2) Stdlib does it? → use it. (3) Native platform feature covers it? → use it. (4) Installed dep solves it? → use it. (5) One line? → one line. (6) Only then: minimum that works. NEVER introduce complexity not required. NEVER add features beyond asked. NEVER add abstractions for single-use code, "flexibility", or "configurability" not requested. NEVER add error handling for scenarios that cannot happen. IF solution exceeds 4× minimum lines: MUST rewrite.
 
 **12.2 No Laziness** — MUST find root causes. NEVER apply temporary fixes, workarounds, or "good enough for now" patches.
 
+**12.2a Deletion Over Addition** — Prefer deletion over addition; boring over clever. Fewest files, shortest diff wins. MUST question complex requests: "Do you actually need X, or does Y cover it?"
+
+**12.2b Mark Shortcuts** — Deliberate simplification with a known ceiling: MUST add a `ponytail:` inline comment naming the ceiling and upgrade path (e.g. `// ponytail: global lock, upgrade to per-key locks if throughput matters`). NEVER leave silent shortcuts.
+
+**12.2c Minimal Self-Check** — Non-trivial logic (branch, loop, parser, money/security path): MUST leave ONE runnable check — the smallest thing that fails if the logic breaks (an assert-based demo or one small test file; no frameworks, no fixtures). Trivial one-liners: no test required.
+
 **12.3 Minimal Impact** — Changes MUST touch only what's necessary. NEVER refactor/rename/"clean up" unrelated code unless asked. NEVER delete pre-existing dead code — mention it instead. MUST remove imports/variables/functions made unused by YOUR changes.
 
-**12.4 No Implicit Feature Flags** — Code using data field as feature-flag proxy (e.g., `!obj.content.empty()` instead of `obj.featureEnabled`): MUST flag [SMELL] during grill, fix by adding explicit boolean flag at canonical enable site. NEVER leave implicit proxies in code under correctness review.
+**12.4 No Implicit Feature Flags** — Code using data field as feature-flag proxy (e.g., `!obj.content.empty()` instead of `obj.featureEnabled`): MUST flag [SMELL] during grill, MUST fix by adding explicit boolean flag at canonical enable site. NEVER leave implicit proxies in code under correctness review.
 
 **12.5 Grill Mode** — `/grill` invoked: MUST invoke `grill` skill via Skill tool. Rules live in skill.
 
 12.6–12.7 → `code-quality.md`. 12.8 → `debugging.md`.
+
+@RTK.md

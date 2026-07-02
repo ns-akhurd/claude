@@ -1,0 +1,76 @@
+{
+  "session_id": "f378ffd4-7b1b-4357-8811-f0c66a929cb7",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-15T06:24:24.986Z",
+  "duration_minutes": 101,
+  "user_message_count": 11,
+  "assistant_message_count": 401,
+  "tool_counts": {
+    "Read": 50,
+    "ToolSearch": 2,
+    "Bash": 99,
+    "TaskCreate": 5,
+    "TaskUpdate": 10,
+    "Edit": 27,
+    "LSP": 1
+  },
+  "languages": {
+    "Markdown": 3,
+    "C++": 66
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 1415,
+  "output_tokens": 368240,
+  "first_prompt": "as per libs/dlp/rule_engine/docs/phase1_implementation.md, implement Per-tenant feature flag refer multi_ci_engine flag do the same",
+  "user_interruptions": 2,
+  "user_response_times": [
+    193.205,
+    313.048,
+    5.288,
+    5.319,
+    65.298,
+    160.3,
+    2471.99,
+    58.424
+  ],
+  "tool_errors": 10,
+  "tool_error_categories": {
+    "Command Failed": 8,
+    "Other": 1,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 69,
+  "lines_removed": 14,
+  "files_modified": 8,
+  "message_hours": [
+    11,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-05-15T06:25:46.704Z",
+    "2026-05-15T06:53:53.468Z",
+    "2026-05-15T07:00:04.149Z",
+    "2026-05-15T07:00:24.739Z",
+    "2026-05-15T07:00:24.770Z",
+    "2026-05-15T07:03:04.451Z",
+    "2026-05-15T07:03:46.432Z",
+    "2026-05-15T07:03:46.485Z",
+    "2026-05-15T07:06:33.893Z",
+    "2026-05-15T07:58:23.697Z",
+    "2026-05-15T08:01:57.071Z"
+  ]
+}

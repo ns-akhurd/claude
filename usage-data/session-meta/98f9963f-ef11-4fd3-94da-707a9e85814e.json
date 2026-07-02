@@ -1,0 +1,53 @@
+{
+  "session_id": "98f9963f-ef11-4fd3-94da-707a9e85814e",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-21T04:45:52.337Z",
+  "duration_minutes": 9,
+  "user_message_count": 6,
+  "assistant_message_count": 85,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Bash": 22,
+    "Read": 11,
+    "LSP": 1
+  },
+  "languages": {
+    "C++": 11
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 255,
+  "output_tokens": 30247,
+  "first_prompt": "Tried with obfuscation flag disabled  root@dlp-core-1:/opt/ns/tenant/103605# curl -X POST -H 'Content-Type: application/json' -d '{ \"DLP_ENABLE_OBFUSCATE\": \"false\" }' \"http://provisioner-pycore-provis…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    24.251,
+    49.682,
+    126.951
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-21T04:45:52.609Z",
+    "2026-05-21T04:45:52.038Z",
+    "2026-05-21T04:45:54.116Z",
+    "2026-05-21T04:47:27.893Z",
+    "2026-05-21T04:52:06.260Z",
+    "2026-05-21T04:54:31.777Z"
+  ]
+}

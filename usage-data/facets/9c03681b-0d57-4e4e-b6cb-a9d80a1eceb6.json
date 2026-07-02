@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Fix a build failure when running `make -j16 nsdlp`, related to a missing auto-generated flatbuffers header in the build directory",
+  "goal_categories": {
+    "good_debugging": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "user_rejected_action": 1
+  },
+  "friction_detail": "User interrupted Claude's tool use before the debugging could complete.",
+  "primary_success": "good_debugging",
+  "brief_summary": "User wanted to fix a build error involving a missing generated header; Claude diagnosed it as a VPATH/stale .lo issue but the user interrupted before resolution.",
+  "session_id": "9c03681b-0d57-4e4e-b6cb-a9d80a1eceb6"
+}

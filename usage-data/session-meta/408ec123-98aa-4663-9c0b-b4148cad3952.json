@@ -1,0 +1,49 @@
+{
+  "session_id": "408ec123-98aa-4663-9c0b-b4148cad3952",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-28T10:52:13.961Z",
+  "duration_minutes": 4,
+  "user_message_count": 5,
+  "assistant_message_count": 17,
+  "tool_counts": {
+    "Read": 3,
+    "Write": 2,
+    "Bash": 2,
+    "Edit": 2
+  },
+  "languages": {
+    "Markdown": 7
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 41,
+  "output_tokens": 15383,
+  "first_prompt": "/zoom-meeting-notes David DeFlyer 00:14:37 Hey, Akshay, sorry, it took me a moment. Give me, like, 10 seconds more here. Oh, okay. Yeah. Sorry, just was putting my daughter to bed, so… Akshay Khurd Ak…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    32.202
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 360,
+  "lines_removed": 1,
+  "files_modified": 4,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-04-28T10:52:14.290Z",
+    "2026-04-28T10:52:13.616Z",
+    "2026-04-28T10:52:20.037Z",
+    "2026-04-28T10:52:20.037Z",
+    "2026-04-28T10:55:17.685Z"
+  ]
+}

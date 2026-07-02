@@ -1,0 +1,52 @@
+{
+  "session_id": "3ac8430c-bcc1-4068-aeb4-e0b8705315f0",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-08T14:23:58.690Z",
+  "duration_minutes": 7,
+  "user_message_count": 5,
+  "assistant_message_count": 35,
+  "tool_counts": {
+    "Skill": 1,
+    "ToolSearch": 3,
+    "Bash": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 8,
+    "mcp__plugin_context-mode_context-mode__ctx_fetch_and_index": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 63,
+  "output_tokens": 22324,
+  "first_prompt": "this is failing https://drone.netskope.io/netSkope/dataplane/69992/15/3",
+  "user_interruptions": 0,
+  "user_response_times": [
+    134.923,
+    134.922,
+    134.922
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    19,
+    19,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-05-08T14:24:10.808Z",
+    "2026-05-08T14:24:24.851Z",
+    "2026-05-08T14:31:16.473Z",
+    "2026-05-08T14:31:16.472Z",
+    "2026-05-08T14:31:16.472Z"
+  ]
+}

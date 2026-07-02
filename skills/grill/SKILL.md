@@ -1,6 +1,6 @@
 ---
 name: grill
-description: Use when user invokes /grill to interrogate session artifacts (code, plans, docs, configs). Single-pass scan → severity-tagged findings table → PASS/CONDITIONAL/FAIL verdict.
+description: Use when user invokes /grill to interrogate session artifacts (code, plans, docs, configs). Single-pass scan → severity-tagged findings table → fix ALL findings → re-grill, iterating until PASS.
 ---
 
 # Grill — Single-Pass Interrogation
@@ -66,18 +66,20 @@ Severity tags:
 - **CONDITIONAL PASS** — GAP/UNCLEAR only.
 - **FAIL** — any CRITICAL.
 
-## Step 6 — Post-Verdict Loop (max 2 iterations)
+## Step 6 — Fix-and-Regrill Loop (iterate until PASS)
 
-1. **PASS** → stop.
-2. **FAIL** → fix all `[CRITICAL]` first; re-verify those specifically; then fix `[GAP]`s.
-3. **CONDITIONAL PASS** → fix `[GAP]`s.
-4. Re-grill **once** (iteration 2). Carry finding IDs — skip rows already fixed+verified; only surface new or still-broken.
-5. Still failing after iteration 2 → surface remaining findings + `AskUserQuestion` batching all `[QUESTION]` items + proceed/abort choice. NEVER infinite-loop.
+1. **PASS** → stop. No further work.
+2. **Any non-PASS verdict** → fix **ALL** findings observed this iteration, in severity order: `[CRITICAL]` → `[GAP]` → `[UNCLEAR]` → `[SMELL]` (skip a `[SMELL]` only if it has no actionable fix). Apply fixes directly to the artifacts with `Edit`/`Write`. State each fix applied.
+3. **Re-grill** (next iteration) — fresh single-pass scan of the updated artifacts. Carry finding IDs: skip rows already fixed + verified; surface only new or still-broken findings.
+4. **Repeat** steps 5–6 until the verdict is **PASS**.
+5. **Safety cap — 6 iterations.** If still not PASS after 6 iterations, STOP: surface the remaining findings table and report the unresolved IDs. Do not infinite-loop.
+6. **`[QUESTION]` findings** (genuinely need a user decision you cannot make): do not auto-fix. Surface them, continue fixing the rest, and let the user resolve the `[QUESTION]` items. A leftover `[QUESTION]` alone does not block a PASS if no CRITICAL/GAP remains.
 
 ## Invariants
 
 1. Read actual content (or subagent report of actual content) — NEVER grill from memory.
-2. Single pass per iteration; max 2 iterations.
+2. Single pass per iteration; iterate until PASS (safety cap 6 iterations).
 3. Every finding: ID + evidence + actionable fix.
 4. ≤20 findings per iteration.
 5. Each iteration produces a fresh table.
+6. Fix ALL findings each non-PASS iteration — not just CRITICALs. A grill that leaves GAPs/SMELLs unfixed is incomplete.

@@ -1,0 +1,46 @@
+{
+  "session_id": "6cf4a06d-7b20-4701-8286-052429cf8f4a",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-04T12:33:24.393Z",
+  "duration_minutes": 1,
+  "user_message_count": 4,
+  "assistant_message_count": 7,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 2
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 18,
+  "output_tokens": 2952,
+  "first_prompt": "~/code/dataplane (pr/ENG-992527-cache-handling*) # python3 scripts/nsdlp_asp_test.py --show-response                                                                       root@24RLFF4 [FAIL] test-data…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    41.414
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    18,
+    18,
+    18,
+    18
+  ],
+  "user_message_timestamps": [
+    "2026-05-04T12:33:24.447Z",
+    "2026-05-04T12:33:24.282Z",
+    "2026-05-04T12:33:27.512Z",
+    "2026-05-04T12:34:46.109Z"
+  ]
+}

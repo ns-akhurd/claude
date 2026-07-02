@@ -1,0 +1,40 @@
+{
+  "session_id": "fe823f46-6a35-4d44-a7ce-b75abc262a12",
+  "project_path": "/root/code/dlp-ci-content",
+  "start_time": "2026-04-24T12:14:12.728Z",
+  "duration_minutes": 3214,
+  "user_message_count": 4,
+  "assistant_message_count": 6,
+  "tool_counts": {
+    "Bash": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 18,
+  "output_tokens": 2892,
+  "first_prompt": "using aws provide list opus model",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    17,
+    17,
+    17,
+    23
+  ],
+  "user_message_timestamps": [
+    "2026-04-24T12:14:12.836Z",
+    "2026-04-24T12:14:12.517Z",
+    "2026-04-24T12:16:41.423Z",
+    "2026-04-26T17:47:52.914Z"
+  ]
+}

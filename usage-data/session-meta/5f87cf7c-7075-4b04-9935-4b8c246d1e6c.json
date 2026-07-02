@@ -1,0 +1,51 @@
+{
+  "session_id": "5f87cf7c-7075-4b04-9935-4b8c246d1e6c",
+  "project_path": "/root/code/dataplane/obj",
+  "start_time": "2026-05-05T03:40:49.907Z",
+  "duration_minutes": 1,
+  "user_message_count": 6,
+  "assistant_message_count": 13,
+  "tool_counts": {
+    "Read": 1,
+    "Bash": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 32,
+  "output_tokens": 1371,
+  "first_prompt": "~/code/dataplane (ENG-971202-fix*) # git pull upstream develop                                                                                                             root@24RLFF4 remote: Enumerat…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    14.946,
+    5.611,
+    19.366
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "user_message_timestamps": [
+    "2026-05-05T03:40:50.005Z",
+    "2026-05-05T03:40:49.839Z",
+    "2026-05-05T03:40:59.584Z",
+    "2026-05-05T03:41:29.104Z",
+    "2026-05-05T03:41:38.877Z",
+    "2026-05-05T03:42:06.485Z"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "session_id": "2c34423c-821e-4451-86d4-f5f1764a6693",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-13T12:02:35.982Z",
+  "duration_minutes": 1,
+  "user_message_count": 4,
+  "assistant_message_count": 4,
+  "tool_counts": {
+    "Skill": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 10,
+  "output_tokens": 942,
+  "first_prompt": "how do i use git worktree to work on two different bugs",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-05-13T12:02:36.121Z",
+    "2026-05-13T12:02:35.714Z",
+    "2026-05-13T12:02:57.397Z",
+    "2026-05-13T12:03:07.303Z"
+  ]
+}

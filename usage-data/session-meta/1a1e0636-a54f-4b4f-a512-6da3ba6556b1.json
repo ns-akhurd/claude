@@ -1,0 +1,60 @@
+{
+  "session_id": "1a1e0636-a54f-4b4f-a512-6da3ba6556b1",
+  "project_path": "/root",
+  "start_time": "2026-05-23T14:48:12.650Z",
+  "duration_minutes": 8,
+  "user_message_count": 7,
+  "assistant_message_count": 28,
+  "tool_counts": {
+    "Agent": 1,
+    "Read": 1,
+    "Write": 1,
+    "Edit": 2,
+    "Bash": 6
+  },
+  "languages": {
+    "Shell": 4
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 74,
+  "output_tokens": 41219,
+  "first_prompt": "what is source of truth for cost",
+  "user_interruptions": 1,
+  "user_response_times": [
+    10.641,
+    10.669,
+    10.841,
+    45.076,
+    87.054
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 293,
+  "lines_removed": 57,
+  "files_modified": 1,
+  "message_hours": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "user_message_timestamps": [
+    "2026-05-23T14:48:59.835Z",
+    "2026-05-23T14:48:59.835Z",
+    "2026-05-23T14:51:42.235Z",
+    "2026-05-23T14:51:42.263Z",
+    "2026-05-23T14:51:42.435Z",
+    "2026-05-23T14:53:56.276Z",
+    "2026-05-23T14:56:07.423Z"
+  ]
+}

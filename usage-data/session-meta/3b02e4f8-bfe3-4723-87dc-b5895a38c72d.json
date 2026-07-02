@@ -1,0 +1,41 @@
+{
+  "session_id": "3b02e4f8-bfe3-4723-87dc-b5895a38c72d",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-28T11:42:02.801Z",
+  "duration_minutes": 34,
+  "user_message_count": 3,
+  "assistant_message_count": 19,
+  "tool_counts": {
+    "Bash": 7
+  },
+  "languages": {},
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 57,
+  "output_tokens": 5556,
+  "first_prompt": "remove this file from the PR libs/dlp/svc/src/ns_dlp_svc_predefinedpp.cpp PR #14532",
+  "user_interruptions": 0,
+  "user_response_times": [
+    10.748,
+    1942.065
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-04-28T11:42:18.932Z",
+    "2026-04-28T11:43:40.751Z",
+    "2026-04-28T12:16:11.454Z"
+  ]
+}

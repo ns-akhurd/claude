@@ -1,0 +1,64 @@
+{
+  "session_id": "909291ca-e7fb-4e32-a3fe-5b7d0403feee",
+  "project_path": "/root",
+  "start_time": "2026-06-04T14:04:21.498Z",
+  "duration_minutes": 1083,
+  "user_message_count": 8,
+  "assistant_message_count": 39,
+  "tool_counts": {
+    "Bash": 6,
+    "Edit": 6,
+    "Read": 4,
+    "Skill": 1,
+    "Workflow": 1,
+    "Write": 1
+  },
+  "languages": {
+    "JSON": 9,
+    "Shell": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 73,
+  "output_tokens": 24636,
+  "first_prompt": "i dont see auto compact working seamlessy my contxt wind goes 100%",
+  "user_interruptions": 2,
+  "user_response_times": [
+    3358.738,
+    705.948,
+    129.148
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "Other": 1,
+    "Command Failed": 1,
+    "Edit Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 31,
+  "lines_removed": 5,
+  "files_modified": 3,
+  "message_hours": [
+    19,
+    20,
+    20,
+    20,
+    12,
+    13,
+    13,
+    13
+  ],
+  "user_message_timestamps": [
+    "2026-06-04T14:04:43.780Z",
+    "2026-06-04T15:04:23.816Z",
+    "2026-06-04T15:04:38.601Z",
+    "2026-06-04T15:16:59.318Z",
+    "2026-06-05T06:51:59.905Z",
+    "2026-06-05T08:01:46.657Z",
+    "2026-06-05T08:01:49.614Z",
+    "2026-06-05T08:07:32.779Z"
+  ]
+}

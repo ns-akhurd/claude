@@ -1,0 +1,69 @@
+{
+  "session_id": "1dd7ec6c-2b6d-4706-80cf-1e4710ba07e0",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-08T04:52:19.650Z",
+  "duration_minutes": 277,
+  "user_message_count": 10,
+  "assistant_message_count": 68,
+  "tool_counts": {
+    "Read": 17,
+    "Bash": 21,
+    "ToolSearch": 1,
+    "Skill": 1
+  },
+  "languages": {
+    "Markdown": 2,
+    "C++": 15
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 114,
+  "output_tokens": 40890,
+  "first_prompt": "check and answer below ENG-999199: Investigate: m_originalContent includes leading space and email subject in PlainTextExtractor redaction path This is related to redaction support and making sure tha…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    47.849,
+    29.204,
+    215.904,
+    97.204,
+    151.894,
+    151.894,
+    18.52,
+    275.156
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "File Not Found": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "user_message_timestamps": [
+    "2026-06-08T09:08:11.934Z",
+    "2026-06-08T09:10:43.069Z",
+    "2026-06-08T09:12:29.344Z",
+    "2026-06-08T09:16:30.368Z",
+    "2026-06-08T09:16:36.146Z",
+    "2026-06-08T09:18:45.616Z",
+    "2026-06-08T09:21:31.528Z",
+    "2026-06-08T09:21:31.528Z",
+    "2026-06-08T09:23:59.959Z",
+    "2026-06-08T09:28:59.472Z"
+  ]
+}

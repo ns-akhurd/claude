@@ -1,0 +1,77 @@
+{
+  "session_id": "5b77c506-d39e-4fc9-8218-bc213c9608cf",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-21T06:41:12.138Z",
+  "duration_minutes": 246,
+  "user_message_count": 12,
+  "assistant_message_count": 225,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Bash": 84,
+    "LSP": 4,
+    "Read": 17,
+    "Write": 1,
+    "Edit": 5
+  },
+  "languages": {
+    "Python": 9,
+    "C++": 10
+  },
+  "git_commits": 1,
+  "git_pushes": 1,
+  "input_tokens": 655,
+  "output_tokens": 125846,
+  "first_prompt": "enable-obfuscate only control cc obfuscation of type NS_DLP_OBFUSCATE_CC",
+  "user_interruptions": 2,
+  "user_response_times": [
+    53.973,
+    95.876,
+    4.476,
+    4.515,
+    4.829,
+    12.612,
+    646.849,
+    4.257,
+    98.421,
+    18.022
+  ],
+  "tool_errors": 5,
+  "tool_error_categories": {
+    "Command Failed": 5
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 195,
+  "lines_removed": 48,
+  "files_modified": 3,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-05-21T06:41:12.139Z",
+    "2026-05-21T06:48:33.097Z",
+    "2026-05-21T06:51:33.891Z",
+    "2026-05-21T06:54:26.276Z",
+    "2026-05-21T06:54:26.315Z",
+    "2026-05-21T06:54:53.297Z",
+    "2026-05-21T06:56:14.641Z",
+    "2026-05-21T07:07:19.743Z",
+    "2026-05-21T07:09:39.833Z",
+    "2026-05-21T07:11:13.997Z",
+    "2026-05-21T10:45:05.684Z",
+    "2026-05-21T10:46:21.018Z"
+  ]
+}

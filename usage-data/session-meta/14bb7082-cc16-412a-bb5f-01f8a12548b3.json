@@ -1,0 +1,47 @@
+{
+  "session_id": "14bb7082-cc16-412a-bb5f-01f8a12548b3",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-04T12:18:25.490Z",
+  "duration_minutes": 9,
+  "user_message_count": 4,
+  "assistant_message_count": 9,
+  "tool_counts": {
+    "Skill": 1,
+    "Read": 1,
+    "Edit": 1
+  },
+  "languages": {
+    "JSON": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 22,
+  "output_tokens": 1397,
+  "first_prompt": "2.1.122 April 28, 2026 Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the X-Amzn-Bedrock-Service-Tier header, enable t…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    49.37,
+    287.581
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 2,
+  "lines_removed": 1,
+  "files_modified": 1,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "user_message_timestamps": [
+    "2026-05-04T12:18:33.897Z",
+    "2026-05-04T12:18:41.478Z",
+    "2026-05-04T12:19:42.337Z",
+    "2026-05-04T12:27:33.840Z"
+  ]
+}

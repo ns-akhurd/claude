@@ -1,10 +1,6 @@
 {
-  "awsAuthRefresh": "aws sso login --profile NSBedrockUser-889050210087",
   "cleanupPeriodDays": 90,
   "env": {
-    "AWS_PROFILE": "NSBedrockUser-889050210087",
-    "CLAUDE_CODE_USE_BEDROCK": "1",
-    "AWS_REGION": "us-east-1",
     "ENABLE_LSP_TOOL": "1",
     "PATH": "/root/go/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0",
     "ENABLE_TOOL_SEARCH": "true",
@@ -63,7 +59,6 @@
       "CronDelete"
     ],
     "deny": [
-      "Bash(rm *)",
       "Bash(rm -rf *)",
       "Bash(rmdir *)",
       "Bash(git push --force*)",
@@ -84,7 +79,7 @@
       "/root/.claude"
     ]
   },
-  "model": "us.anthropic.claude-sonnet-4-6",
+  "model": "sonnet",
   "skillOverrides": {
     "init-agent-os": "off"
   },
@@ -169,6 +164,17 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
@@ -190,7 +196,14 @@
     "context7@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true
   },
-  "extraKnownMarketplaces": {},
+  "extraKnownMarketplaces": {
+    "netskope": {
+      "source": {
+        "source": "github",
+        "repo": "netSkope/claude-skills"
+      }
+    }
+  },
   "alwaysThinkingEnabled": false,
   "effortLevel": "high",
   "autoDreamEnabled": true,

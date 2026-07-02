@@ -1,0 +1,20 @@
+{
+  "underlying_goal": "Fix the statusline cost calculation to show per-model costs (matching /cost) instead of a single aggregate cost",
+  "goal_categories": {
+    "bug_fix": 1,
+    "code_verification": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 2
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "iterative_refinement",
+  "friction_counts": {
+    "user_rejected_action": 1
+  },
+  "friction_detail": "User interrupted Claude's initial Write approach and questioned the source of truth before letting it proceed.",
+  "primary_success": "correct_code_edits",
+  "brief_summary": "User wanted the statusline to show per-model costs from the session JSONL; Claude implemented it, verified it, and corrected the model label to sonnet-4.6 as requested.",
+  "session_id": "1a1e0636-a54f-4b4f-a512-6da3ba6556b1"
+}

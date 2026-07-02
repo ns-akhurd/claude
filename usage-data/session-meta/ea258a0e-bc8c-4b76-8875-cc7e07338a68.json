@@ -1,0 +1,66 @@
+{
+  "session_id": "ea258a0e-bc8c-4b76-8875-cc7e07338a68",
+  "project_path": "/root/code/service",
+  "start_time": "2026-04-27T08:41:30.385Z",
+  "duration_minutes": 93,
+  "user_message_count": 9,
+  "assistant_message_count": 65,
+  "tool_counts": {
+    "ToolSearch": 2,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 3,
+    "Bash": 13,
+    "Agent": 4,
+    "Read": 3
+  },
+  "languages": {
+    "JSON": 3
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 177,
+  "output_tokens": 33683,
+  "first_prompt": "how is ns_dlp_postprocessors.json used in service repo",
+  "user_interruptions": 0,
+  "user_response_times": [
+    48.504,
+    151.616,
+    32.799,
+    1894.589,
+    2376.856,
+    2376.855,
+    2376.855
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Other": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    15,
+    15,
+    15,
+    15
+  ],
+  "user_message_timestamps": [
+    "2026-04-27T08:41:53.417Z",
+    "2026-04-27T08:43:37.910Z",
+    "2026-04-27T08:48:01.642Z",
+    "2026-04-27T08:53:25.085Z",
+    "2026-04-27T08:58:16.155Z",
+    "2026-04-27T09:33:51.183Z",
+    "2026-04-27T10:14:30.514Z",
+    "2026-04-27T10:14:30.513Z",
+    "2026-04-27T10:14:30.513Z"
+  ]
+}

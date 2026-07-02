@@ -1,0 +1,68 @@
+{
+  "session_id": "8ad333d8-8b42-4ec1-83f6-fb9ad05c43bf",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-11T04:13:52.877Z",
+  "duration_minutes": 58,
+  "user_message_count": 8,
+  "assistant_message_count": 42,
+  "tool_counts": {
+    "Read": 3,
+    "ToolSearch": 3,
+    "LSP": 1,
+    "mcp__plugin_context-mode_context-mode__ctx_batch_execute": 2,
+    "Bash": 5,
+    "Edit": 1
+  },
+  "languages": {
+    "Markdown": 1,
+    "C": 1,
+    "C++": 2
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 116,
+  "output_tokens": 60242,
+  "first_prompt": "look at normalization code code provide me example of new line normalization",
+  "user_interruptions": 0,
+  "user_response_times": [
+    63.731,
+    104.625,
+    150.248,
+    61.147,
+    34.554,
+    2614.041,
+    21.714
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 1,
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": true,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 69,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-11T04:14:35.671Z",
+    "2026-05-11T04:16:25.558Z",
+    "2026-05-11T04:18:24.909Z",
+    "2026-05-11T04:21:12.412Z",
+    "2026-05-11T04:23:06.992Z",
+    "2026-05-11T04:24:07.513Z",
+    "2026-05-11T05:10:51.165Z",
+    "2026-05-11T05:11:59.588Z"
+  ]
+}

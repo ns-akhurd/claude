@@ -1,0 +1,25 @@
+{
+  "underlying_goal": "Complete a git rebase with conflict resolution, then verify correctness via code review and full test suite, and commit/push the result",
+  "goal_categories": {
+    "git_conflict_resolution": 1,
+    "code_review": 1,
+    "testing": 3,
+    "debugging": 2,
+    "commit_and_push": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 5,
+    "satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {
+    "buggy_code": 2,
+    "user_rejected_action": 1
+  },
+  "friction_detail": "Claude dropped includes and introduced std::string-as-bool/undeclared-variable bugs during conflict resolution, requiring user to point out the missing compile step, and the final force-push was denied by the permission system.",
+  "primary_success": "good_debugging",
+  "brief_summary": "User wanted to rebase a branch, resolve conflicts correctly, verify via review and tests, and push; Claude resolved conflicts and fixed regressions to pass all tests, but the final force-push had to be run manually by the user.",
+  "session_id": "aee1bf38-1b44-4250-ba47-e8adb4c91ca1"
+}

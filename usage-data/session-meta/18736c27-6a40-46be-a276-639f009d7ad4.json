@@ -1,0 +1,71 @@
+{
+  "session_id": "18736c27-6a40-46be-a276-639f009d7ad4",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-04-21T03:59:40.805Z",
+  "duration_minutes": 108,
+  "user_message_count": 11,
+  "assistant_message_count": 225,
+  "tool_counts": {
+    "Skill": 1,
+    "ToolSearch": 1,
+    "Glob": 8,
+    "Read": 28,
+    "Grep": 28,
+    "Edit": 17,
+    "Bash": 15,
+    "Agent": 3
+  },
+  "languages": {
+    "C++": 44,
+    "C": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 632,
+  "output_tokens": 286378,
+  "first_prompt": "are all the pr feedback addressed Feedback on PR #14433 — ShiftMap redaction  Overall Good direction. Hooking a callback into the canonical ns_process_utf8_buffer / ns_dlp_unescape_jsonl keeps the nor…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    17.206,
+    42.518,
+    42.569,
+    2237.197,
+    1588.073,
+    100.965
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 183,
+  "lines_removed": 102,
+  "files_modified": 5,
+  "message_hours": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    10,
+    10,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-04-21T03:59:40.868Z",
+    "2026-04-21T03:59:40.719Z",
+    "2026-04-21T04:00:01.490Z",
+    "2026-04-21T04:00:21.894Z",
+    "2026-04-21T04:03:35.182Z",
+    "2026-04-21T04:04:59.273Z",
+    "2026-04-21T04:04:59.324Z",
+    "2026-04-21T05:00:38.324Z",
+    "2026-04-21T05:11:27.641Z",
+    "2026-04-21T05:40:47.573Z",
+    "2026-04-21T05:45:19.877Z"
+  ]
+}

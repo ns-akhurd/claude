@@ -1,0 +1,81 @@
+{
+  "session_id": "473bcb60-b543-4fca-a5f5-c8a9bbde493a",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-29T04:31:34.318Z",
+  "duration_minutes": 43,
+  "user_message_count": 13,
+  "assistant_message_count": 297,
+  "tool_counts": {
+    "Skill": 1,
+    "ToolSearch": 1,
+    "Bash": 114,
+    "Read": 24,
+    "Edit": 13,
+    "AskUserQuestion": 1
+  },
+  "languages": {
+    "C++": 5,
+    "Markdown": 3,
+    "Python": 24
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 841,
+  "output_tokens": 132527,
+  "first_prompt": "what is overlap handling in gen2 rule engine, explain",
+  "user_interruptions": 0,
+  "user_response_times": [
+    96.662,
+    80.068,
+    139.879,
+    84.332,
+    228.379,
+    11.099,
+    418.37,
+    41.38
+  ],
+  "tool_errors": 6,
+  "tool_error_categories": {
+    "Command Failed": 2,
+    "File Not Found": 2,
+    "Other": 1,
+    "User Rejected": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 62,
+  "lines_removed": 48,
+  "files_modified": 7,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-05-29T04:31:34.373Z",
+    "2026-05-29T04:31:34.276Z",
+    "2026-05-29T04:31:51.889Z",
+    "2026-05-29T04:32:06.186Z",
+    "2026-05-29T04:34:36.304Z",
+    "2026-05-29T04:36:10.701Z",
+    "2026-05-29T04:39:28.067Z",
+    "2026-05-29T04:42:19.652Z",
+    "2026-05-29T04:53:08.887Z",
+    "2026-05-29T04:54:17.996Z",
+    "2026-05-29T04:54:38.414Z",
+    "2026-05-29T05:03:07.844Z",
+    "2026-05-29T05:04:06.763Z"
+  ]
+}

@@ -4,11 +4,11 @@
     "eng-skills@netskope": [
       {
         "scope": "user",
-        "installPath": "/root/.claude/plugins/cache/netskope/eng-skills/1.1.0",
-        "version": "1.1.0",
+        "installPath": "/root/.claude/plugins/cache/netskope/eng-skills/1.26.3",
+        "version": "1.26.3",
         "installedAt": "2026-02-24T13:25:55.487Z",
-        "lastUpdated": "2026-02-24T13:25:55.487Z",
-        "gitCommitSha": "52b312eaa07fa4b1653c42e3a96e79df71dbe792"
+        "lastUpdated": "2026-06-30T14:29:36.939Z",
+        "gitCommitSha": "b6a676e01fc6d2ae9d93716d5865c5c4c11ef69d"
       }
     ],
     "clangd-lsp@claude-plugins-official": [

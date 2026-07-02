@@ -11,9 +11,9 @@
 NEVER use `opus` for search/read/reformat.
 Opus 4.7: raise `effort` param before rewriting prompts — low-effort Opus 4.7 ≈ medium-effort Opus 4.6; use `max`/`xhigh` with ≥64k token budget for deep agentic work.
 
-**8.5 Context Hygiene** — MUST suggest `/compact` after ~50 turns or topic shift. Delegate broad searches. NEVER paste large file/log blocks; say "See `<path>:<lines>`". Tool result >200 lines: extract only relevant.
+**8.5 Context Hygiene** — At ~50 turns or topic shift: MUST recommend `/compact` (same task) or `/clear` (new task) per 8.15. Delegate broad searches. NEVER paste large file/log blocks; say "See `<path>:<lines>`". Tool result >200 lines: extract only relevant.
 
-**8.6 No Redundant Operations** — NEVER re-read unchanged file. NEVER re-run unchanged-state command. NEVER re-grep what you found. Use subagent results directly.
+**8.6 No Redundant Operations** — NEVER re-read unchanged file. NEVER re-run unchanged-state command. NEVER re-grep what you found. NEVER re-read/re-grep to "double-check" an already-established fact — tool-call only on genuine uncertainty. Use subagent results directly.
 
 **8.7 Edit Over Write** — MUST use `Edit` (diff only) not `Write` (whole file) for existing files.
 
@@ -58,8 +58,6 @@ Recommend these to the user (Claude can't invoke slash-commands itself; surface 
 | `git --no-pager log/diff -n N` | Inspecting history | Caps output vs full pager dump |
 
 **8.19 Targeted Test Execution** — MUST run the narrowest test selection covering the change (single test/file/filter, e.g. `pytest path::test`, `--gtest_filter=`, `go test -run`). NEVER run the full suite when a subset covers the change. MUST cap test output (`-q`, fail-fast, `| tail`). Full suite ONLY on explicit request or final pre-commit gate.
-
-**8.20 Answer From Certainty** — NEVER issue a tool call to confirm a fact already known with certainty (well-known API, just-read content, established session fact). Tool-call ONLY on genuine uncertainty. NEVER re-grep/re-read to "double-check" what's already established (extends 8.6 to verification reads).
 
 **8.21 No Verify-Read After Edit** — NEVER re-read a file solely to confirm an `Edit`/`Write` applied — the tool errors on failure, so success is implicit. Re-read ONLY when subsequent logic needs content changed by a different actor (hook, formatter, concurrent process).
 

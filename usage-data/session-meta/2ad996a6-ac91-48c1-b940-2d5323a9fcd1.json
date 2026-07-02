@@ -1,0 +1,32 @@
+{
+  "session_id": "2ad996a6-ac91-48c1-b940-2d5323a9fcd1",
+  "project_path": "/root/.claude/tools/caveman-compress",
+  "start_time": "2026-04-18T16:49:39.038Z",
+  "duration_minutes": 0,
+  "user_message_count": 1,
+  "assistant_message_count": 2,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 4,
+  "output_tokens": 586,
+  "first_prompt": "Compress this markdown into caveman format.  STRICT RULES: - Do NOT modify anything inside ``` code blocks - Do NOT modify anything inside inline backticks - Preserve ALL URLs exactly - Preserve ALL h…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    22
+  ],
+  "user_message_timestamps": [
+    "2026-04-18T16:49:46.307Z"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "session_id": "bfb6aa75-a2ea-4d66-bc6e-222481f97c79",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-06-05T06:52:37.277Z",
+  "duration_minutes": 52,
+  "user_message_count": 10,
+  "assistant_message_count": 232,
+  "tool_counts": {
+    "Skill": 1,
+    "Bash": 115,
+    "Read": 19,
+    "Edit": 13,
+    "Write": 2
+  },
+  "languages": {
+    "C++": 28
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 258,
+  "output_tokens": 97669,
+  "first_prompt": "with git worktree check out https://github.com/netSkope/dataplane/pull/15190, and address the open comments , do it for both global and tenant cfg , also check if global cfg test is present if not com…",
+  "user_interruptions": 3,
+  "user_response_times": [
+    41.763,
+    59.492,
+    233.951,
+    236.257,
+    24.894
+  ],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 579,
+  "lines_removed": 123,
+  "files_modified": 11,
+  "message_hours": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "user_message_timestamps": [
+    "2026-06-05T06:52:37.328Z",
+    "2026-06-05T06:52:37.092Z",
+    "2026-06-05T06:53:50.872Z",
+    "2026-06-05T06:53:58.723Z",
+    "2026-06-05T06:59:36.172Z",
+    "2026-06-05T06:59:53.901Z",
+    "2026-06-05T07:22:40.387Z",
+    "2026-06-05T07:22:42.693Z",
+    "2026-06-05T07:26:42.662Z",
+    "2026-06-05T07:27:06.693Z"
+  ]
+}

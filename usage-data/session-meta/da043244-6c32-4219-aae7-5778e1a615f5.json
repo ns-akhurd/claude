@@ -1,0 +1,82 @@
+{
+  "session_id": "da043244-6c32-4219-aae7-5778e1a615f5",
+  "project_path": "/root/code/dataplane",
+  "start_time": "2026-05-27T11:57:29.850Z",
+  "duration_minutes": 1684,
+  "user_message_count": 15,
+  "assistant_message_count": 145,
+  "tool_counts": {
+    "ToolSearch": 1,
+    "Read": 18,
+    "Bash": 30,
+    "LSP": 1,
+    "Edit": 9
+  },
+  "languages": {
+    "Markdown": 1,
+    "C++": 26
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 409,
+  "output_tokens": 187718,
+  "first_prompt": "> A 10 D 100 A [notation] 'A 10 D 100 A' → A(us sample) + 10 filler chars + D(us sample) + 100 filler chars + A(us sample) [notation] text: '123-45-6789 xpjdczjd 021000021 tgfzgsgppavjjxpeqnetzmgkeqox…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    2152.47,
+    173.289,
+    17.822,
+    23.461,
+    48.032,
+    38.858,
+    1369.236,
+    9.849
+  ],
+  "tool_errors": 3,
+  "tool_error_categories": {
+    "File Not Found": 1,
+    "Command Failed": 1,
+    "Other": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 259,
+  "lines_removed": 54,
+  "files_modified": 3,
+  "message_hours": [
+    17,
+    17,
+    17,
+    17,
+    18,
+    18,
+    21,
+    21,
+    21,
+    21,
+    21,
+    18,
+    18,
+    21,
+    21
+  ],
+  "user_message_timestamps": [
+    "2026-05-27T11:57:29.954Z",
+    "2026-05-27T11:57:29.483Z",
+    "2026-05-27T11:57:32.250Z",
+    "2026-05-27T11:58:09.819Z",
+    "2026-05-27T12:46:32.352Z",
+    "2026-05-27T12:49:50.915Z",
+    "2026-05-27T15:57:14.739Z",
+    "2026-05-27T15:57:54.775Z",
+    "2026-05-27T15:58:38.467Z",
+    "2026-05-27T16:02:19.171Z",
+    "2026-05-27T16:04:10.436Z",
+    "2026-05-28T12:50:00.940Z",
+    "2026-05-28T13:13:12.370Z",
+    "2026-05-28T16:00:57.152Z",
+    "2026-05-28T16:01:23.409Z"
+  ]
+}
