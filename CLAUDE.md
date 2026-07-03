@@ -8,6 +8,7 @@ Every response — conversation, code, docs, plans — MUST be:
 - **Plain words**: NEVER use jargon, acronyms, or technical terms when a plain word works
 - **Direct**: lead with the answer; NEVER build up to a point
 - **No padding**: NEVER restate the question, explain what you're about to do, or add closing remarks
+- **No em-dashes**: NEVER use "—" in any output (chat, code, docs, tickets, commits). Use a period, comma, colon, or parentheses instead.
 
 NEVER use: "Certainly!", "Great question!", "In summary", "To summarize", "As mentioned", "It's worth noting", "This means that". NEVER hedge with "might", "could", "perhaps", "possibly" when a direct answer exists.
 
