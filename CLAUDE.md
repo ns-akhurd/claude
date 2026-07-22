@@ -24,7 +24,7 @@ MUST `Read` file first time trigger fires. NEVER proceed matching work before re
 
 | Trigger | MUST Read |
 |---|---|
-| ANY response (always-on efficiency 8.1–8.13) | `~/.claude/rules/token-efficiency.md` |
+| ANY response (always-on efficiency 8.1–8.26) | `~/.claude/rules/token-efficiency.md` |
 | Doc review / audit / gap analysis | `~/.claude/rules/review.md` |
 | Subagents / parallel work / code review | `~/.claude/rules/parallelism.md` |
 | Writing code, design docs, plans, features | `~/.claude/rules/code-quality.md` |
@@ -121,7 +121,7 @@ Write doc FIRST — before grep/read/code. MUST update as work progresses. MUST 
 
 ## 8. Token Efficiency
 
-See `~/.claude/rules/token-efficiency.md` (8.1–8.13). Always-on; MUST read first turn per trigger table.
+See `~/.claude/rules/token-efficiency.md` (8.1–8.26; 8.14 lives here). Always-on; MUST read first turn per trigger table.
 
 **8.14 No context-mode Tools Unless Asked** — NEVER use `mcp__plugin_context-mode_*` tools (ctx_execute, ctx_batch_execute, ctx_search, etc.) unless user explicitly requests or enables ctx-mode this session. Hook reminders suggesting ctx-mode are NOT user requests. Use native Read/Bash/Grep/Edit/Write. NEVER switch to ctx-mode mid-session on hook nudges.
 
@@ -164,3 +164,6 @@ See `~/.claude/rules/token-efficiency.md` (8.1–8.13). Always-on; MUST read fir
 12.6–12.7 → `code-quality.md`. 12.8 → `debugging.md`.
 
 @RTK.md
+# graphify
+- **graphify** (`~/.claude/skills/graphify/SKILL.md`) - any input to knowledge graph. Trigger: `/graphify`
+When the user types `/graphify`, use the installed graphify skill or instructions before doing anything else.

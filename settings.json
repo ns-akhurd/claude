@@ -171,6 +171,10 @@
           {
             "type": "command",
             "command": "rtk hook claude"
+          },
+          {
+            "type": "command",
+            "command": "bash /root/.claude/hooks/pre-clang-format-commit.sh"
           }
         ]
       }
@@ -193,7 +197,8 @@
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "dlp-eng@dlp-eng": true
   },
   "extraKnownMarketplaces": {
     "netskope": {
@@ -201,9 +206,16 @@
         "source": "github",
         "repo": "netSkope/claude-skills"
       }
+    },
+    "dlp-eng": {
+      "source": {
+        "source": "directory",
+        "path": "/root/code/dlp-eng-claude-plugin"
+      }
     }
   },
   "alwaysThinkingEnabled": false,
+  "effortLevel": "xhigh",
   "autoDreamEnabled": true,
   "showThinkingSummaries": true,
   "skipWorkflowUsageWarning": true,
@@ -212,6 +224,5 @@
   "fileCheckpointingEnabled": true,
   "showTurnDuration": true,
   "showMessageTimestamps": true,
-  "todoFeatureEnabled": true,
-  "effortLevel": "xhigh"
+  "todoFeatureEnabled": true
 }

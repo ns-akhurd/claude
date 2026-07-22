@@ -14,5 +14,13 @@
     },
     "installLocation": "/root/.claude/plugins/marketplaces/netskope",
     "lastUpdated": "2026-06-30T14:29:36.907Z"
+  },
+  "dlp-eng": {
+    "source": {
+      "source": "directory",
+      "path": "/root/code/dlp-eng-claude-plugin"
+    },
+    "installLocation": "/root/code/dlp-eng-claude-plugin",
+    "lastUpdated": "2026-07-03T05:57:22.228Z"
   }
 }

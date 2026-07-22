@@ -44,18 +44,18 @@ Opus 4.7: raise `effort` param before rewriting prompts — low-effort Opus 4.7 
 **8.18 Stop When Done** — Answer delivered / task verified: MUST stop. NEVER add recap, "let me also…", or speculative follow-up work. Extra turns cost input re-send of whole context.
 
 ## Session Command Cheat-Sheet — cost levers
-Recommend these to the user (Claude can't invoke slash-commands itself; surface them):
-| Command | When | Saves |
+Recommend these to the user (Claude can't invoke slash-commands itself; surface them). "Rule" = full detail, not restated here.
+| Command | When | Rule |
 |---|---|---|
-| `/clear` | Switching to unrelated task | Drops entire context window |
-| `/compact` | Same task, ~50+ turns | Summarizes, keeps thread |
-| `/model opusplan` | Non-trivial multi-file changes | Opus plans, Sonnet executes — best cost/quality split |
-| `/model haiku` | Lookups, formatting, simple edits | ~5× cheaper than opus in/out |
-| `/cost` | Anytime | Shows session spend (decide clear/compact) |
-| `/fast` | Opus 4.6/4.7 only | Faster output, same model |
-| `/effort low` | Simple known-answer tasks | Cuts output tokens ~50% |
-| `--allowedTools <list>` | Unattended `claude -p` loops | Avoids interactive stalls (rule 2.9) |
-| `git --no-pager log/diff -n N` | Inspecting history | Caps output vs full pager dump |
+| `/clear` | unrelated task | 8.15 |
+| `/compact` | same task, ~50+ turns | 8.15 |
+| `/model opusplan` | non-trivial multi-file changes | 8.22 |
+| `/model haiku` | lookups, formatting, simple edits | 8.4 |
+| `/cost` | anytime | shows session spend |
+| `/fast` | Opus 4.6/4.7 only | faster output, same model |
+| `/effort low` | simple known-answer tasks | ~50% fewer output tokens |
+| `--allowedTools <list>` | unattended `claude -p` loops | 2.9 |
+| `git --no-pager log/diff -n N` | inspecting history | 8.16 |
 
 **8.19 Targeted Test Execution** — MUST run the narrowest test selection covering the change (single test/file/filter, e.g. `pytest path::test`, `--gtest_filter=`, `go test -run`). NEVER run the full suite when a subset covers the change. MUST cap test output (`-q`, fail-fast, `| tail`). Full suite ONLY on explicit request or final pre-commit gate.
 

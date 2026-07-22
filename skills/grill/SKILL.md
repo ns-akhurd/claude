@@ -1,61 +1,61 @@
 ---
 name: grill
-description: Use when user invokes /grill to interrogate session artifacts (code, plans, docs, configs). Single-pass scan → severity-tagged findings table → fix ALL findings → re-grill, iterating until PASS.
+description: Use when user invokes /skill:grill (or the /grill prompt template) to interrogate session artifacts (code, plans, docs, configs). Single-pass scan → severity-tagged findings table → fix ALL findings → re-grill, iterating until PASS.
 ---
 
 # Grill — Single-Pass Interrogation
 
-GRILL MODE active. Expose gaps, errors, inconsistencies in artifacts produced/modified **this session only**. Read actual file content — NEVER grill from summaries.
+Expose gaps, errors, inconsistencies in artifacts. Scope = **this session only** by default (files edited/written this session). IF the user names a PR/branch/diff (e.g. "grill the PR", "grill the changes in the PR") → scope = all files in the PR diff vs the base branch, not just session edits. Read actual file content — NEVER grill from summaries or memory.
 
 ## Step 1 — Artifact Discovery
 
-Build the in-scope set:
-1. Scan conversation for `Write`/`Edit`/`NotebookEdit` tool calls this session → collect paths.
+1. Determine scope: session-only (default) → scan conversation for `Edit`/`Write` tool calls; PR-scoped (user named a PR/branch) → `git diff --name-only <base>...HEAD`.
 2. Run `git diff --name-only HEAD` + `git status --porcelain` to catch on-disk changes.
-3. Union the two sets. NEVER grill unchanged files.
-4. **Skip-list** (auto-exclude): `node_modules/`, `vendor/`, `dist/`, `build/`, `*.min.*`, lockfiles (`package-lock.json`, `yarn.lock`, `go.sum`, `Cargo.lock`, `poetry.lock`), binaries, generated code.
-5. **Auto-PASS** (no scan): pure rename, comment-only edit, whitespace-only, single-line typo fix, trivial ≤5-line change.
-6. If in-scope set empty after filters → reply "No session artifacts to grill" and stop.
+3. Union the scope set + on-disk changes. NEVER grill unchanged files.
+4. **Skip-list**: `node_modules/`, `vendor/`, `dist/`, `build/`, `*.min.*`, lockfiles, binaries, generated code.
+5. **Auto-PASS** (no scan): rename, comment-only, whitespace, typo, or trivial ≤5-line change.
+6. Empty after filters → "No artifacts to grill" and stop.
 
 ## Step 2 — Read Strategy
 
-- ≤5 files AND ≤2k total lines: read all in-scope files in **one parallel batch** (single message, N `Read` calls).
-- >5 files OR >2k lines: delegate to `Explore` subagent — prompt: "Read <paths>, return: (a) list of claims/decisions/assumptions per file, (b) cross-file inconsistencies, (c) external refs (Jira/Confluence). Under 400 words." Grill from subagent's report.
-- Modified files (not new): read only diff hunks + 20 lines context + immediate callers via Grep. Skip whole-file re-read.
+- **ALWAYS read source files directly, line-by-line.** Correctness bugs (null-deref, type-width mismatch, encoding disagreement, off-by-one recursion) live in details a summary drops. NEVER delegate correctness-critical files (untrusted-input parsing, pointer derefs, type conversions, hot paths) to a summary helper.
+- ≤5 files AND ≤2k lines: read all in one parallel batch.
+- \>5 files OR \>2k lines: read highest-risk files directly; grep-scan low-risk (build config, test-only, docs).
+- **Data-encoding / type-width / struct-layout changes**: `Grep` ALL consumers of the changed field and read each — producer and consumer MUST agree on the encoding.
+- Modified files (not new): changed regions + 20 lines context + immediate callers via `Grep`.
 
 ## Step 3 — Single-Pass Scan
 
-One read per artifact. Hold all checks simultaneously — NEVER multi-pass.
+"Single pass" = read each in-scope file **once**, holding all lens checks simultaneously. NEVER re-read the same file multiple times in one iteration (the re-grill in Step 6.3 is a new iteration, not a multi-pass). For ">5 files" where some are grep-scanned: that is still one pass — each file touched once.
 
-| Lens | Ask |
-|---|---|
-| Behavior | inputs/outputs specified; edge cases handled; failure modes caught |
-| Correctness | logic matches intent; no off-by-one, inverted ratios, wrong signs |
-| Consistency | plan↔impl↔tests↔docs agree; limitations propagated to recommendations; rationale matches current numbers; validation claims match source |
-| Security | injection, authz, secrets, path traversal, unsafe deserialization |
-| Scale/Perf | concurrency, retries, hot paths, quadratic loops |
-| Deps/Env | versions pinned, env vars present, config source explicit |
-| Completeness | every requirement mapped; every error path handled; tests cover non-happy paths |
+IF a finding is suspected but unconfirmed (needs runtime to verify — e.g. "this pointer might be null but only at runtime"): write a minimal test or build+run to confirm BEFORE reporting it as `[CRITICAL]`/`[GAP]`. If you cannot confirm it this pass: mark `[UNCLEAR]` with the evidence + the verification needed. NEVER report a speculative finding as confirmed.
 
-**External refs (conditional):**
-- Jira `[A-Z]+-\d+` present → `eng-skills:jira` + `jira issue <ID>`. Contradicts artifact → `[CRITICAL]`. Claimed resolved but open → `[GAP]`.
-- Confluence `netskope.atlassian.net/wiki/…` present → `eng-skills:confluence`. Contradicts doc → `[CRITICAL]`. Missing doc'd caveat → `[GAP]`.
-- NEVER fetch refs not present in artifacts.
+| Lens | W5H | Ask |
+|---|---|---|
+| Behavior | What | inputs/outputs specified; edge cases handled; failure modes caught |
+| Correctness | What/How | logic matches intent; no off-by-one, inverted ratios, wrong signs |
+| Memory-safety | What/Where | null-deref on untrusted input; use-after-free; buffer overflow/underflow; dangling pointers from moved/evicted objects; null children in recursive structures — does the builder propagate null up (reject whole structure) or create a partial structure that silently misbehaves? |
+| Input-boundary | Where/Who | untrusted input validated at entry boundary with LOG+skip (NEVER abort/CHECK); guards at boundary, not scattered redundantly inside; every nullable external field checked before deref; asymmetric guards (one sibling guarded, other not) are a red flag |
+| Type/encoding | How | type-width changes verified against ALL consumers — producer and consumer agree on bit layout; truncation guards on narrowing casts; bitmask-vs-index confusion |
+| Callers/owners | Who | who calls this function / who provides the input / who owns the lifecycle; are ALL callers updated when a signature/return/contract changes; does an untracked caller exist outside the changed files; is ownership clear (who allocates, who frees) |
+| Path-conditions | When | under what conditions does this code path fire; when is a pointer null vs guaranteed-non-null; when does eviction/expiry/reset happen; when is a guard redundant (boundary already guarantees it) vs needed (test bypasses boundary); state the precondition for each deref |
+| Rationale | Why | why was this change made — is the reason documented in commit/PR/comment; why this approach over alternatives; why is this guard/check/field present (not just absent); does the rationale still hold given the current code; a change without a stated why is a `[GAP]` |
+| Consistency | What | plan↔impl↔tests↔docs agree; rationale matches current numbers; validation claims match source |
+| Security | What | injection, authz, secrets, path traversal, unsafe deserialization |
+| Scale/Perf | How | concurrency, retries, hot paths, quadratic loops |
+| Completeness | What | every requirement mapped; every error path handled; tests cover non-happy paths; null-input tests for every external-data entry point |
+
+**External refs (conditional):** Jira `[A-Z]+-\d+` or Confluence `netskope.atlassian.net/wiki/…` present → fetch via `jira`/`confluence` skill or CLI. Contradicts artifact → `[CRITICAL]`. Claimed resolved but open / missing doc'd caveat → `[GAP]`. NEVER fetch refs not present in artifacts.
 
 ## Step 4 — Findings
 
-Severity tags:
 - `[CRITICAL]` — wrong behavior, security flaw, data loss, logic error. Blocks.
 - `[GAP]` — missing case/test/doc. Must address.
 - `[UNCLEAR]` — ambiguous; needs clarification.
 - `[SMELL]` — suspicious, not wrong.
 - `[QUESTION]` — needs user decision.
 
-**Rules:**
-- State findings directly. NEVER hedge ("might", "could").
-- Cap **20 findings per iteration** — drop lowest-severity `[SMELL]`s to stay under cap.
-- Every row MUST cite evidence (file:line excerpt or exact claim quoted).
-- Assign stable ID `F<n>` per finding — persists across iterations.
+State directly, NEVER hedge. Cap 20 findings/iteration — when over cap, drop lowest-severity `[SMELL]`s first; NEVER drop a `[CRITICAL]` or `[GAP]` to stay under the cap. Every row cites evidence (file:line). Stable ID `F<n>` per finding — persists across iterations.
 
 | ID | Sev | File:Line | Evidence | Finding | Fix/Action |
 |----|-----|-----------|----------|---------|------------|
@@ -68,18 +68,24 @@ Severity tags:
 
 ## Step 6 — Fix-and-Regrill Loop (iterate until PASS)
 
-1. **PASS** → stop. No further work.
-2. **Any non-PASS verdict** → fix **ALL** findings observed this iteration, in severity order: `[CRITICAL]` → `[GAP]` → `[UNCLEAR]` → `[SMELL]` (skip a `[SMELL]` only if it has no actionable fix). Apply fixes directly to the artifacts with `Edit`/`Write`. State each fix applied.
-3. **Re-grill** (next iteration) — fresh single-pass scan of the updated artifacts. Carry finding IDs: skip rows already fixed + verified; surface only new or still-broken findings.
-4. **Repeat** steps 5–6 until the verdict is **PASS**.
-5. **Safety cap — 6 iterations.** If still not PASS after 6 iterations, STOP: surface the remaining findings table and report the unresolved IDs. Do not infinite-loop.
-6. **`[QUESTION]` findings** (genuinely need a user decision you cannot make): do not auto-fix. Surface them, continue fixing the rest, and let the user resolve the `[QUESTION]` items. A leftover `[QUESTION]` alone does not block a PASS if no CRITICAL/GAP remains.
+1. **PASS** → stop.
+2. **Non-PASS** → fix **ALL** findings in severity order (`CRITICAL`→`GAP`→`UNCLEAR`→`SMELL`; skip unactionable `[SMELL]`). Apply with `Edit`/`Write`. State each fix.
+   - **Verify before re-grill**: MUST build + run tests/linters (the project's actual verification). NEVER declare fixed from code-reading alone — a fix is not done until tests pass. Build/test failure = fix introduced a bug → fix NOW (same iteration); a fix that breaks the build is itself `[CRITICAL]`.
+   - **Same-pass ripple check**: after each fix, `Grep` callers/consumers of the changed code — confirm the fix doesn't break them (null-return where callers didn't expect null, return-type change, field widen/narrow). Do NOT defer to next iteration.
+3. **Re-grill** — COMPLETELY FRESH full scan, NOT a delta of the last pass:
+   - Re-run Step 1 (in-scope set may grow with newly-modified files).
+   - Re-read ALL in-scope files' actual content — NEVER from memory or last pass's output.
+   - Run every lens on every in-scope file as if first time — do NOT skip previously-fixed areas; re-confirm fixes hold and introduced no new defect.
+   - Reconcile prior `F<n>`: FIXED / STILL-BROKEN / superseded. Assign NEW `F<n>` to newly-found findings (including fix-induced defects in areas not flagged before).
+   - Output table = fresh scan result, not a delta.
+4. **Repeat** 5–6 until **PASS**.
+5. **Safety cap — 6 iterations.** Not PASS after 6 → STOP, surface remaining findings + unresolved IDs.
+6. **`[QUESTION]` findings**: do not auto-fix; surface them, fix the rest, let user resolve. Leftover `[QUESTION]` alone does not block PASS if no CRITICAL/GAP remains.
 
 ## Invariants
 
-1. Read actual content (or subagent report of actual content) — NEVER grill from memory.
-2. Single pass per iteration; iterate until PASS (safety cap 6 iterations).
-3. Every finding: ID + evidence + actionable fix.
-4. ≤20 findings per iteration.
-5. Each iteration produces a fresh table.
-6. Fix ALL findings each non-PASS iteration — not just CRITICALs. A grill that leaves GAPs/SMELLs unfixed is incomplete.
+1. Read actual content — NEVER from memory or a prior pass's output.
+2. Every finding: ID + evidence + actionable fix. ≤20/iteration.
+3. Fix ALL findings each non-PASS iteration — not just CRITICALs.
+4. Build + test after every fix iteration — never declare fixed from code-reading alone.
+5. Correctness-critical files read line-by-line — NEVER delegated to a summary helper.

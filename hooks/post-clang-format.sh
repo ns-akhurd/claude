@@ -1,27 +1,39 @@
 #!/usr/bin/env bash
-# PostToolUse hook: run clang-format on C/C++ files after Edit or Write.
-# Claude Code passes hook context via stdin as JSON (not env vars).
+# PostToolUse / tool_result hook: run clang-format on C/C++ files after Edit or Write.
+#
+# Two invocation modes (single source of truth for both harnesses):
+#   * Claude Code PostToolUse: passes hook context via stdin as JSON.
+#   * Pi tool_result extension: passes the file path as $1.
+#
+# If $1 is a non-empty argument, it is treated as the file path and stdin is
+# NOT read (pi has no stdin to provide, so `cat` would block). Otherwise the
+# Claude Code JSON envelope on stdin is parsed for file_path/path.
+#
+# Always exits 0 — never surfaces a formatter failure to the agent.
+
+set -u
 
 LOGFILE="/tmp/post-clang-format.log"
 
-# Read stdin (Claude Code sends JSON context here)
-STDIN_DATA=$(cat)
-
-echo "[post-clang-format] $(date '+%H:%M:%S') stdin_len=${#STDIN_DATA}" >> "$LOGFILE"
-
-# Extract file_path from stdin JSON.
-# Format: {"tool_name":"Edit","tool_input":{"file_path":"..."},...}
-# Also handle flat format: {"file_path":"..."}
-f=$(python3 -c "
+# Resolve file path: $1 (pi) takes precedence; else parse stdin JSON (Claude Code).
+f="${1:-}"
+if [ -z "$f" ]; then
+  STDIN_DATA=$(cat)
+  echo "[post-clang-format] $(date '+%H:%M:%S') stdin_len=${#STDIN_DATA}" >> "$LOGFILE"
+  # Format: {"tool_name":"Edit","tool_input":{"file_path":"..."},...}
+  # Also handle flat format and `path` key (pi edit/write use `path`).
+  f=$(python3 -c "
 import json, sys
 raw = sys.stdin.read()
 try:
     d = json.loads(raw)
-    fp = (d.get('tool_input') or {}).get('file_path', '') or d.get('file_path', '')
+    ti = d.get('tool_input') or {}
+    fp = ti.get('file_path', '') or ti.get('path', '') or d.get('file_path', '') or d.get('path', '')
     print(fp)
 except:
     print('')
 " <<< "$STDIN_DATA" 2>/dev/null)
+fi
 
 echo "[post-clang-format] $(date '+%H:%M:%S') file='${f}'" >> "$LOGFILE"
 

@@ -120,6 +120,16 @@
         "lastUpdated": "2026-04-02T06:11:35.030Z",
         "gitCommitSha": "b81c36d851dc86a67129b50604b385a4557c12fb"
       }
+    ],
+    "dlp-eng@dlp-eng": [
+      {
+        "scope": "user",
+        "installPath": "/root/.claude/plugins/cache/dlp-eng/dlp-eng/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-07-03T05:57:26.344Z",
+        "lastUpdated": "2026-07-03T05:57:26.344Z",
+        "gitCommitSha": "6157a52a7db51442ff845580c6e7d58d13567cd1"
+      }
     ]
   }
 }
